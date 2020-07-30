@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://wujun234.github.io/2020/01/10/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/</loc>
+    <lastmod>2020-07-30</lastmod>
+  </url>  <url>
     <loc>https://wujun234.github.io/2019/12/25/07%20%E6%95%B0%E6%8D%AE%E5%BA%93/02%20MyBatis/03%20CDDATA%E5%9D%97/</loc>
     <lastmod>2020-07-29</lastmod>
   </url>  <url>
@@ -15,9 +18,6 @@
   </url>  <url>
     <loc>https://wujun234.github.io/2019/12/25/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/03%20Redis/3%20%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%8F%E5%88%97%E5%8C%96/</loc>
     <lastmod>2020-05-19</lastmod>
-  </url>  <url>
-    <loc>https://wujun234.github.io/2020/01/10/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/</loc>
-    <lastmod>2020-05-13</lastmod>
   </url>  <url>
     <loc>https://wujun234.github.io/2020/02/21/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/07%20%E5%B9%B6%E5%8F%91/1%20%E7%BA%BF%E7%A8%8B/</loc>
     <lastmod>2020-05-08</lastmod>

@@ -4792,8 +4792,10 @@ public @interface TargetDataSource {
 }
 </code></pre>
 <h3 id="6-Aspect"><a class="header-anchor" href="#6-Aspect"></a>6 Aspect</h3>
+<p>要用 @Order(0) 注解让这个切面的优先级最高，以免被其他切面（如事务管理器）影响</p>
 <pre><code>@Aspect
 @Component
+@Order(0)
 public class DynamicDataSourceAspect {
     //切换
     @Before(&quot;@annotation(targetDataSource))&quot;)
