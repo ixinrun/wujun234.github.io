@@ -2657,6 +2657,15 @@ var _hmt = _hmt || [];
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2020/08/11/06%20Spring/08%20Log/3%20%E8%BE%93%E5%87%BA%20sout%20%E5%88%B0%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/">
+										3 输出 sout 到日志文件
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -4507,6 +4516,26 @@ var _hmt = _hmt || [];
 									</a>
 									
 							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1 Json
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/10/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Json/Jackson%20%E5%B8%B8%E7%94%A8%E8%AE%B0%E5%BD%95/">
+										Jackson 常用记录
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
 								<li class="file">
 									<a href="/2019/12/25/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
 										1 Lombok消除Java冗长
@@ -4626,18 +4655,18 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/08%20%E9%80%9A%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%8857-68%EF%BC%89/">
 				<h2 class="index-title">
-					10 并发（78-84）
+					08 通用程序设计（57-68）
 				</h2>
 				<div class="index-brief">
-					第 78 条：同步访问共享的可变数据
-第 79 条：避免过度同步
-第 80 条：executor 和 task 优先于线程
+					第 57 条：将局部变量的作用域最小化
+第 58 条：for-each 循环优先于传统的 for 循环
+第 59 条：了解和使用标准类库
+第 60 条：如果需要精确的答案，请避免使用 float 和 double
 
-Executor.newCachedThreadPool：小程序，轻载的服务器
-Executor.newFixedThreadPool：大负载的服务器
-ThreadPoolE
+float 和 double 类型尤其不适合用于货币计算
+可以使用 bigDecim
 					...
 				</div>
 			</a>
@@ -4923,16 +4952,18 @@ XSLT = XSL 转换，是一种用于将 XML 文档转换为 XHTML 文档或其他
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/2%20XML%20%E8%A7%A3%E6%9E%90/">
+			<a href="/2020/01/02/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/3%20%E9%AA%8C%E8%AF%81%20XML%20%E6%96%87%E6%A1%A3/">
 				<h2 class="index-title">
-					2 XML 解析
+					3 验证 XML 文档
 				</h2>
 				<div class="index-brief">
-					xml 文件除了给开发者看，更多的情况使用程序读取 xml 文件的内容。读取 xml 文档的过程就是 xml 解析
-1 XML解析方式
-Java库提供了两种XML解析器：
-1.1 树型解析器：DOM 解析
-DOM 解析器一次性把整个xml文档加载进内存，然后在内存中构建一个 Document 的对象
+					如果要指定文档结构，可以提供一个文档类型定义（DTD）或一个 XML Schema 定义。
+1 DTD
+文档类型定义（DTD）可定义合法的 XML 文档构建模块。它使用一系列合法的元素来定义文档的结构。
+1.1 内部的 DOCTYPE 声明
+&lt;!DOCTYPE 根元素 [元素声明]&gt;
+
+
 					...
 				</div>
 			</a>
@@ -4973,18 +5004,16 @@ DOM 解析器一次性把整个xml文档加载进内存，然后在内存中构�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/3%20%E9%AA%8C%E8%AF%81%20XML%20%E6%96%87%E6%A1%A3/">
+			<a href="/2020/01/02/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/2%20XML%20%E8%A7%A3%E6%9E%90/">
 				<h2 class="index-title">
-					3 验证 XML 文档
+					2 XML 解析
 				</h2>
 				<div class="index-brief">
-					如果要指定文档结构，可以提供一个文档类型定义（DTD）或一个 XML Schema 定义。
-1 DTD
-文档类型定义（DTD）可定义合法的 XML 文档构建模块。它使用一系列合法的元素来定义文档的结构。
-1.1 内部的 DOCTYPE 声明
-&lt;!DOCTYPE 根元素 [元素声明]&gt;
-
-
+					xml 文件除了给开发者看，更多的情况使用程序读取 xml 文件的内容。读取 xml 文档的过程就是 xml 解析
+1 XML解析方式
+Java库提供了两种XML解析器：
+1.1 树型解析器：DOM 解析
+DOM 解析器一次性把整个xml文档加载进内存，然后在内存中构建一个 Document 的对象
 					...
 				</div>
 			</a>

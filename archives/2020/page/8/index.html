@@ -2657,6 +2657,15 @@ var _hmt = _hmt || [];
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2020/08/11/06%20Spring/08%20Log/3%20%E8%BE%93%E5%87%BA%20sout%20%E5%88%B0%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/">
+										3 输出 sout 到日志文件
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -4507,6 +4516,26 @@ var _hmt = _hmt || [];
 									</a>
 									
 							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1 Json
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/10/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Json/Jackson%20%E5%B8%B8%E7%94%A8%E8%AE%B0%E5%BD%95/">
+										Jackson 常用记录
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
 								<li class="file">
 									<a href="/2019/12/25/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
 										1 Lombok消除Java冗长
@@ -4624,6 +4653,91 @@ var _hmt = _hmt || [];
 	<!-- 引入正文 -->
 	<div id="content">
 		<div id="index">
+	
+		<div class="index-li">
+			<a href="/2020/02/24/05%20Java/01%20Java%20%E8%99%9A%E6%8B%9F%E6%9C%BA/07%20%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/">
+				<h2 class="index-title">
+					07 类加载机制
+				</h2>
+				<div class="index-brief">
+					1 类加载时机
+1.1 生命周期
+类从被虚拟机加载到内存，到卸载出内存为止，类的整个生命周期：加载、连接（验证、准备、解析）、初始化、使用和卸载；
+
+1.2 加载时机
+虚拟机规范没有强制约束类加载的时机，但严格规定了有且只有 5 种情况必须立即对类进行初始化
+
+遇到 new、getstatic、pu
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-02-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/">05 Java</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/01-Java-虚拟机/">01 Java 虚拟机</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2020/02/24/15%20%E6%9C%8D%E5%8A%A1%E5%99%A8/4%20Nginx/1%20Nginx%20%E7%AC%94%E8%AE%B0/">
+				<h2 class="index-title">
+					1 Nginx 笔记
+				</h2>
+				<div class="index-brief">
+					一、nginx架构
+
+1. 进程模型
+Nginx 分一个master进程和多个worker进程。
+
+master进程：读取和评估配置，并管理worker进程。接收来外界信号，向worker进程发送信号，监控worker进程运行状态，当worker进程异常退出后，会自动重新启动新的worker进程。
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-02-24</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/15-服务器/">15 服务器</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/15-服务器/4-Nginx/">4 Nginx</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
 	
 		<div class="index-li">
 			<a href="/2020/02/24/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/3%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/1%20%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">
@@ -4993,107 +5107,6 @@ volatile 不会引起线程上下文切换或线程调度，但不能用于构�
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/01-数据结构与算法/数据结构/04-排序/">04 排序</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2020/02/19/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/04%20%E6%8E%92%E5%BA%8F/5%20%E5%88%86%E9%85%8D%E6%8E%92%E5%BA%8F/">
-				<h2 class="index-title">
-					5 分配排序
-				</h2>
-				<div class="index-brief">
-					1 计数排序
-计数排序的核心在于将输入的数据值转化为键存储在额外开辟的数组空间中。作为一种线性时间复杂度的排序，计数排序要求输入的数据必须是有确定范围的整数。
-当输入的元素是 n 个 0 到 k 之间的整数时，它的运行时间是 O(n + k)。计数排序不是比较排序，排序的速度快于任何比较排序算法。
-
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-02-19</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/">01 数据结构与算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/">数据结构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/04-排序/">04 排序</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2020/02/19/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/6%20%E5%BA%94%E7%94%A8%E5%B1%82/1%20%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F%20DNS/">
-				<h2 class="index-title">
-					1 域名系统 DNS
-				</h2>
-				<div class="index-brief">
-					1 域名系统概述
-
-
-域名系统（DNS）
-
-分布式数据库：由层次化的许多域名服务器实现，提供了主机名和 IP 地址之间相互转换的服务。
-应用层协议：主机、路由器、名字服务器通信以解析名字 (地址/名字转换)
-
-注意：因特网核心功能，作为应用层协议实现
-
-
-
-
-
-DNS 服务
-
-主机名到 IP 地址的
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-02-19</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/6-应用层/">6 应用层</a>
 										
                                     </span>
                                 

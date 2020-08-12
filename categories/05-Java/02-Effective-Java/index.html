@@ -2657,6 +2657,15 @@ var _hmt = _hmt || [];
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2020/08/11/06%20Spring/08%20Log/3%20%E8%BE%93%E5%87%BA%20sout%20%E5%88%B0%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/">
+										3 输出 sout 到日志文件
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -4507,6 +4516,26 @@ var _hmt = _hmt || [];
 									</a>
 									
 							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1 Json
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/10/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Json/Jackson%20%E5%B8%B8%E7%94%A8%E8%AE%B0%E5%BD%95/">
+										Jackson 常用记录
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
 								<li class="file">
 									<a href="/2019/12/25/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
 										1 Lombok消除Java冗长
@@ -4668,6 +4697,56 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/01%20%E5%88%9B%E5%BB%BA%E5%92%8C%E9%94%80%E6%AF%81%E5%AF%B9%E8%B1%A1%EF%BC%881-9%EF%BC%89/">
+				<h2 class="index-title">
+					01 创建和销毁对象（1-9）
+				</h2>
+				<div class="index-brief">
+					第 1 条：考虑用静态工厂方法代替构造器
+工厂方法优势：
+
+有名称，更易读
+可选，不必每次创建新对象
+可以返回子类型
+创建参数化类型实例时，更简洁
+可以返回非公有类
+
+工厂方法缺点：
+
+类如果不含有他的公有或者受保护的构造器，就不能被子类化。
+与其他静态方法没区别，不易识别
+
+常用的静态工厂名称：v
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-01-02</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/">05 Java</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/07%20%E6%96%B9%E6%B3%95%EF%BC%8849-56%EF%BC%89/">
 				<h2 class="index-title">
 					07 方法（49-56）
@@ -4707,26 +4786,14 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/01%20%E5%88%9B%E5%BB%BA%E5%92%8C%E9%94%80%E6%AF%81%E5%AF%B9%E8%B1%A1%EF%BC%881-9%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/09%20%E5%BC%82%E5%B8%B8%EF%BC%8869-77%EF%BC%89/">
 				<h2 class="index-title">
-					01 创建和销毁对象（1-9）
+					09 异常（69-77）
 				</h2>
 				<div class="index-brief">
-					第 1 条：考虑用静态工厂方法代替构造器
-工厂方法优势：
-
-有名称，更易读
-可选，不必每次创建新对象
-可以返回子类型
-创建参数化类型实例时，更简洁
-可以返回非公有类
-
-工厂方法缺点：
-
-类如果不含有他的公有或者受保护的构造器，就不能被子类化。
-与其他静态方法没区别，不易识别
-
-常用的静态工厂名称：v
+					第 69 条：只针对异常的情况才使用异常
+如果在 try、catch、finally 块中都抛出了异常，只是只有一个异常可被传播到外界。
+请不要在 try 块中发出对 return、break 或 continue 的调用，万一无法避免，一定要确保 finally 的存在不会改变函数的返回值（比如说
 					...
 				</div>
 			</a>
@@ -4798,14 +4865,15 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/09%20%E5%BC%82%E5%B8%B8%EF%BC%8869-77%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/04%20%E6%B3%9B%E5%9E%8B%EF%BC%8826-33%EF%BC%89/">
 				<h2 class="index-title">
-					09 异常（69-77）
+					04 泛型（26-33）
 				</h2>
 				<div class="index-brief">
-					第 69 条：只针对异常的情况才使用异常
-如果在 try、catch、finally 块中都抛出了异常，只是只有一个异常可被传播到外界。
-请不要在 try 块中发出对 return、break 或 continue 的调用，万一无法避免，一定要确保 finally 的存在不会改变函数的返回值（比如说
+					第 26 条：请不要在新代码中使用原生态类型
+原生态类型只为了与引入泛型之前的遗留代码进行兼容和互用而提供的。
+第 27 条：消除非受检警告
+如果无法消除警告，同时可以证明引起警告的代码是类型安全的，只有在这种情况下才可以用一个 @SuppressWarnings(“unchecked”) 注解来禁
 					...
 				</div>
 			</a>
@@ -4847,45 +4915,6 @@ var _hmt = _hmt || [];
 对称性 - 任何两个对象对于它们是否相等的问题都必须保持一致，Timestamp 违反了，不值得效仿
 传递性 - 如果对象 A 等于B，B 等于 C，那么 A 一定等于 C
 一致性 - 相等的对象永远相等，不相等的
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-01-02</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/">05 Java</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/04%20%E6%B3%9B%E5%9E%8B%EF%BC%8826-33%EF%BC%89/">
-				<h2 class="index-title">
-					04 泛型（26-33）
-				</h2>
-				<div class="index-brief">
-					第 26 条：请不要在新代码中使用原生态类型
-原生态类型只为了与引入泛型之前的遗留代码进行兼容和互用而提供的。
-第 27 条：消除非受检警告
-如果无法消除警告，同时可以证明引起警告的代码是类型安全的，只有在这种情况下才可以用一个 @SuppressWarnings(“unchecked”) 注解来禁
 					...
 				</div>
 			</a>
@@ -4994,18 +5023,18 @@ lambda 没有名称和文档，如果超过三行，不要使用 lambda 表达�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/08%20%E9%80%9A%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%8857-68%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
 				<h2 class="index-title">
-					08 通用程序设计（57-68）
+					10 并发（78-84）
 				</h2>
 				<div class="index-brief">
-					第 57 条：将局部变量的作用域最小化
-第 58 条：for-each 循环优先于传统的 for 循环
-第 59 条：了解和使用标准类库
-第 60 条：如果需要精确的答案，请避免使用 float 和 double
+					第 78 条：同步访问共享的可变数据
+第 79 条：避免过度同步
+第 80 条：executor 和 task 优先于线程
 
-float 和 double 类型尤其不适合用于货币计算
-可以使用 bigDecim
+Executor.newCachedThreadPool：小程序，轻载的服务器
+Executor.newFixedThreadPool：大负载的服务器
+ThreadPoolE
 					...
 				</div>
 			</a>

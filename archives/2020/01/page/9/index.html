@@ -2657,6 +2657,15 @@ var _hmt = _hmt || [];
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2020/08/11/06%20Spring/08%20Log/3%20%E8%BE%93%E5%87%BA%20sout%20%E5%88%B0%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/">
+										3 输出 sout 到日志文件
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -4507,6 +4516,26 @@ var _hmt = _hmt || [];
 									</a>
 									
 							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1 Json
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/10/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Json/Jackson%20%E5%B8%B8%E7%94%A8%E8%AE%B0%E5%BD%95/">
+										Jackson 常用记录
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
 								<li class="file">
 									<a href="/2019/12/25/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
 										1 Lombok消除Java冗长
@@ -4626,31 +4655,16 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/1%20Java%20%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%84%9A%E6%9C%AC/">
+			<a href="/2020/01/02/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/2%20%E7%BC%96%E8%AF%91%E5%99%A8%20API/">
 				<h2 class="index-title">
-					1 Java 平台的脚本
+					2 编译器 API
 				</h2>
 				<div class="index-brief">
-					
-脚本 API：允许调用脚本语言代码
-编译器 API：应用程序内编译 Java 代码
-注解处理器：操作注解
-
-1 获取脚本引擎
-常用引擎
-
-
-
-引擎
-名字
-MIME 类型
-文件扩展
-
-
-
-
-Nashorn
-nashorn,Nashorn,js,JS,JavaScript,javascript,ECM
+					编译器 API 替代 jdk/lib/toors.jar 类库
+1 编译便捷之法
+JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+OutputStream outStream = ...;
+OutputStream errS
 					...
 				</div>
 			</a>
@@ -4691,16 +4705,31 @@ nashorn,Nashorn,js,JS,JavaScript,javascript,ECM
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/2%20%E7%BC%96%E8%AF%91%E5%99%A8%20API/">
+			<a href="/2020/01/02/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/1%20Java%20%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%84%9A%E6%9C%AC/">
 				<h2 class="index-title">
-					2 编译器 API
+					1 Java 平台的脚本
 				</h2>
 				<div class="index-brief">
-					编译器 API 替代 jdk/lib/toors.jar 类库
-1 编译便捷之法
-JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
-OutputStream outStream = ...;
-OutputStream errS
+					
+脚本 API：允许调用脚本语言代码
+编译器 API：应用程序内编译 Java 代码
+注解处理器：操作注解
+
+1 获取脚本引擎
+常用引擎
+
+
+
+引擎
+名字
+MIME 类型
+文件扩展
+
+
+
+
+Nashorn
+nashorn,Nashorn,js,JS,JavaScript,javascript,ECM
 					...
 				</div>
 			</a>
@@ -5046,15 +5075,26 @@ ava.security 包提供了很多成熟算法。
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/07%20%E6%96%B9%E6%B3%95%EF%BC%8849-56%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/01%20%E5%88%9B%E5%BB%BA%E5%92%8C%E9%94%80%E6%AF%81%E5%AF%B9%E8%B1%A1%EF%BC%881-9%EF%BC%89/">
 				<h2 class="index-title">
-					07 方法（49-56）
+					01 创建和销毁对象（1-9）
 				</h2>
 				<div class="index-brief">
-					第 49 条：检查参数的有效性
-不仅需要检查参数的有效性，还需要在函数的文档中给予明确的说明，如在参数非法的情况下，会抛出哪些异常，或导致函数返回哪些错误值等
-第 50 条：必要时进行保护性拷贝
-如果不能够容忍对象进入数据结构之后发生变，就必须对该对象进行保护性拷贝，并且让拷贝之后的对象而不是原始对
+					第 1 条：考虑用静态工厂方法代替构造器
+工厂方法优势：
+
+有名称，更易读
+可选，不必每次创建新对象
+可以返回子类型
+创建参数化类型实例时，更简洁
+可以返回非公有类
+
+工厂方法缺点：
+
+类如果不含有他的公有或者受保护的构造器，就不能被子类化。
+与其他静态方法没区别，不易识别
+
+常用的静态工厂名称：v
 					...
 				</div>
 			</a>
@@ -5085,26 +5125,15 @@ ava.security 包提供了很多成熟算法。
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/01%20%E5%88%9B%E5%BB%BA%E5%92%8C%E9%94%80%E6%AF%81%E5%AF%B9%E8%B1%A1%EF%BC%881-9%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/07%20%E6%96%B9%E6%B3%95%EF%BC%8849-56%EF%BC%89/">
 				<h2 class="index-title">
-					01 创建和销毁对象（1-9）
+					07 方法（49-56）
 				</h2>
 				<div class="index-brief">
-					第 1 条：考虑用静态工厂方法代替构造器
-工厂方法优势：
-
-有名称，更易读
-可选，不必每次创建新对象
-可以返回子类型
-创建参数化类型实例时，更简洁
-可以返回非公有类
-
-工厂方法缺点：
-
-类如果不含有他的公有或者受保护的构造器，就不能被子类化。
-与其他静态方法没区别，不易识别
-
-常用的静态工厂名称：v
+					第 49 条：检查参数的有效性
+不仅需要检查参数的有效性，还需要在函数的文档中给予明确的说明，如在参数非法的情况下，会抛出哪些异常，或导致函数返回哪些错误值等
+第 50 条：必要时进行保护性拷贝
+如果不能够容忍对象进入数据结构之后发生变，就必须对该对象进行保护性拷贝，并且让拷贝之后的对象而不是原始对
 					...
 				</div>
 			</a>

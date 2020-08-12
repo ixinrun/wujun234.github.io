@@ -2657,6 +2657,15 @@ var _hmt = _hmt || [];
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2020/08/11/06%20Spring/08%20Log/3%20%E8%BE%93%E5%87%BA%20sout%20%E5%88%B0%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/">
+										3 输出 sout 到日志文件
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -4507,6 +4516,26 @@ var _hmt = _hmt || [];
 									</a>
 									
 							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1 Json
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/10/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Json/Jackson%20%E5%B8%B8%E7%94%A8%E8%AE%B0%E5%BD%95/">
+										Jackson 常用记录
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
 								<li class="file">
 									<a href="/2019/12/25/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
 										1 Lombok消除Java冗长
@@ -4626,26 +4655,16 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/25/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/4%20%E4%B8%B2%EF%BC%88string%EF%BC%89/">
+			<a href="/2019/12/25/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/03%20%E6%9F%A5%E6%89%BE/5%20%E6%95%A3%E5%88%97(Hash)%E8%A1%A8/">
 				<h2 class="index-title">
-					4 串（string）
+					5 散列(Hash)表
 				</h2>
 				<div class="index-brief">
-					1 基本概念
+					1 散列表查找定义
 
-串：是由零个或多个字符组成的优先序列，又名叫字符串。
-本质是一种线性表的扩展，但更多的是关注子串的应用问题
-子串在主串中的位置就是子串的第一个字符在主串中的序号。
-
-字符编码
-
-ASCII：7位
-拓展 ASCII：8位
-Unicode：16位
-
-串的比较
-
-挨个比较字符，以第一个不同
+散列技术：是在记录的存储位置和它的关键字之间建立一个确定的对应关系 f，使得每个关键字 key 对应一个存储位置 f (key)。
+散列函数：对应关系 f 。又称为哈希 (Hash) 函数。
+散列表：采用散列技术存储记录的一块连续的存储空间。又称为哈希表 (Hash table
 					...
 				</div>
 			</a>
@@ -4676,7 +4695,7 @@ Unicode：16位
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/01-数据结构/">01 数据结构</a>
+                                        <a href="/categories/01-数据结构与算法/数据结构/03-查找/">03 查找</a>
 										
                                     </span>
                                 
@@ -4686,16 +4705,15 @@ Unicode：16位
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/25/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/7%20%E7%BA%A2%E9%BB%91%E6%A0%91/">
+			<a href="/2019/12/25/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/04%20%E6%8E%92%E5%BA%8F/6%20%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/">
 				<h2 class="index-title">
-					7 红黑树
+					6 外部排序
 				</h2>
 				<div class="index-brief">
-					1、红黑树定义
-红黑树是一种近似平衡的二叉查找树，它能够确保任何一个节点的左右子树的高度差不会超过二者中较低那个的一陪。可以在 O(logn) 时间内做查找，插入和删除。红黑树相对于AVL树来说，牺牲了部分平衡性以换取插入/删除操作时少量的旋转操作，整体来说性能要优于AVL树。
-满足如下条件：
+					外部排序的基本思想就是归并排序。
+1 二路平衡归并
 
-每
+按照内存大小，将大文件分成若干长度为 l 的子文件（l 应小于内存的可使用容量），然后将各个子文件依次读入内存，使用适当的内部排序算法对其进行排序（排好序的子文件统称为“归并段”或者“顺段”），将排好序的归并段重新写入外存，为下一个子文件排序腾出
 					...
 				</div>
 			</a>
@@ -4726,60 +4744,7 @@ Unicode：16位
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/01-数据结构/">01 数据结构</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/25/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/6%20%E5%9B%BE/">
-				<h2 class="index-title">
-					6 图
-				</h2>
-				<div class="index-brief">
-					一、图的基本概念
-图：由顶点的有穷非空集合和顶点之间边的集合组成，通常表示为: G(V,E)，其中，G 表示一个图，V 是图 G 中顶点的集合。E 是图 G 中边的集合。
-1、各种图定义
-
-
-无向边：若顶点 $V_i$ 到 $V_j$，之间的边没有方向，则称这条边为无向边(Edge)。
-
-用无序偶对
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/">01 数据结构与算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/">数据结构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/01-数据结构/">01 数据结构</a>
+                                        <a href="/categories/01-数据结构与算法/数据结构/04-排序/">04 排序</a>
 										
                                     </span>
                                 
@@ -4893,18 +4858,17 @@ namespace java com.xxxx.auto.
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/25/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/1%20%E9%80%9A%E7%94%A8%E8%AE%BE%E8%AE%A1/03%20%E7%9F%AD%E9%93%BE%E6%8E%A5/">
+			<a href="/2019/12/25/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/03%20%E6%9F%A5%E6%89%BE/4%20%E5%A4%9A%E8%B7%AF%E6%9F%A5%E6%89%BE%E6%A0%91(B%20%E6%A0%91)/">
 				<h2 class="index-title">
-					03 短链接
+					4 多路查找树(B 树)
 				</h2>
 				<div class="index-brief">
-					短链接URL系统是怎么设计的？
-实现一个自增发号器，每个长地址，发个短号，存储长短关系，请求短号时返回对应长号。
-在[0-9]的10进制与[0-9a-zA-Z]的62进制之间转换。可以使号码很小。
-大并发高可用？
-并发量大还可以搞分布式。类似 snowflake。
-一长对多短？还是一对一？
-如有需要
+					多路查找树：每一个结点的孩子数可以多于两个，且每一个结点处可以存储多个元素。
+1、2-3 树
+
+2-3 树：每一个结点都具有两个孩子 (2 结点) 或三个孩子 (3 结点) 的多路查找树
+2 结点：包含一个元素和两个孩子(或没有孩子) ，左小右大。
+3 结点：包含一小一大两个元素和三个孩子(或没有孩
 					...
 				</div>
 			</a>
@@ -4915,7 +4879,7 @@ namespace java com.xxxx.auto.
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/">08 系统设计</a>
+                                        <a href="/categories/01-数据结构与算法/">01 数据结构与算法</a>
 										
 											>
 										
@@ -4925,7 +4889,136 @@ namespace java com.xxxx.auto.
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/1-通用设计/">1 通用设计</a>
+                                        <a href="/categories/01-数据结构与算法/数据结构/">数据结构</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/01-数据结构与算法/数据结构/03-查找/">03 查找</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/25/07%20%E6%95%B0%E6%8D%AE%E5%BA%93/02%20MyBatis/02%20MyBatis%20Generator/">
+				<h2 class="index-title">
+					02 MyBatis Generator
+				</h2>
+				<div class="index-brief">
+					MyBatis Generator
+
+一、在pom.xml中添加plugin
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;
+        &lt;artifactId&gt;myb
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/07-数据库/">07 数据库</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/07-数据库/02-MyBatis/">02 MyBatis</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/25/07%20%E6%95%B0%E6%8D%AE%E5%BA%93/02%20MyBatis/03%20CDDATA%E5%9D%97/">
+				<h2 class="index-title">
+					03 CDDATA块
+				</h2>
+				<div class="index-brief">
+					&quot;script&quot;里才需要转换 CDDATA 块！
+
+
+
+符号
+转换
+
+
+
+
+&amp;
+&amp;amp;
+
+
+&lt;
+&amp;lt;
+
+
+&gt;
+&amp;gt;
+
+
+&quot;
+&amp;quot;
+
+
+'
+&amp;apos;
+
+
+
+
+
+
+-
+-
+-
+-
+
+
+
+
+小
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/07-数据库/">07 数据库</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/07-数据库/02-MyBatis/">02 MyBatis</a>
 										
                                     </span>
                                 
@@ -4979,36 +5072,18 @@ namespace java com.xxxx.auto.
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/25/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/2%20%E4%B8%9A%E5%8A%A1%E8%AE%BE%E8%AE%A1/01%20%E5%8D%B3%E5%88%BB-%E9%93%BE%E6%8E%A5%E8%A7%A3%E6%9E%90-%E5%88%86%E6%9E%90/">
+			<a href="/2019/12/25/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/1%20%E9%80%9A%E7%94%A8%E8%AE%BE%E8%AE%A1/03%20%E7%9F%AD%E9%93%BE%E6%8E%A5/">
 				<h2 class="index-title">
-					01 即刻-链接解析-分析
+					03 短链接
 				</h2>
 				<div class="index-brief">
-					一、结果分析
-1 判断
-添加链接时，客户端本地判断，是否为合法链接
-2 解析
-添加链接之后请求后台解析
-POST https://app.jike.ruguoapp.com/1.0/readability/extract
-参数
-
-
-
-字段
-含义
-必传
-
-
-
-
-link
-请求解析链接
-√
-
-
-
-返回
-
+					短链接URL系统是怎么设计的？
+实现一个自增发号器，每个长地址，发个短号，存储长短关系，请求短号时返回对应长号。
+在[0-9]的10进制与[0-9a-zA-Z]的62进制之间转换。可以使号码很小。
+大并发高可用？
+并发量大还可以搞分布式。类似 snowflake。
+一长对多短？还是一对一？
+如有需要
 					...
 				</div>
 			</a>
@@ -5029,7 +5104,7 @@ link
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/2-业务设计/">2 业务设计</a>
+                                        <a href="/categories/08-系统设计/1-通用设计/">1 通用设计</a>
 										
                                     </span>
                                 
@@ -5039,18 +5114,19 @@ link
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/25/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/2%20%E4%B8%9A%E5%8A%A1%E8%AE%BE%E8%AE%A1/04%20%E5%85%B3%E6%B3%A8%E6%B5%81%E8%AE%BE%E8%AE%A1/">
+			<a href="/2019/12/25/07%20%E6%95%B0%E6%8D%AE%E5%BA%93/02%20MyBatis/01%20MyBatis+Spring%20Boot/">
 				<h2 class="index-title">
-					04 关注流设计
+					01 MyBatis+Spring Boot
 				</h2>
 				<div class="index-brief">
-					一、需求分析
-1.1、数据现状
+					简介
 
-每个media可发布不同类型（微头条、文章、视频）的状态。
-每种类型都是从独立的系统发布，数据存在不同的数据库，且都未分表分库。
-当前media主页只展示了微头条动态。用户关注feed也只加载了media的微头条动态。
-media共有12.6w 个，其中有 297 
+
+MyBatis
+传统方法使用 MyBatis ，有  MyBatis 官网中文文档 。
+Generator
+传统方法比较繁琐，因而 MyBatis 推出了 MyBatis Generator 工具，可自动生成实体类、配置文件和dao层代码，以减轻一部分开发量。
+Spring Boot + 
 					...
 				</div>
 			</a>
@@ -5061,7 +5137,7 @@ media共有12.6w 个，其中有 297
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/">08 系统设计</a>
+                                        <a href="/categories/07-数据库/">07 数据库</a>
 										
 											>
 										
@@ -5071,59 +5147,7 @@ media共有12.6w 个，其中有 297
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/2-业务设计/">2 业务设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/25/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/2%20%E4%B8%9A%E5%8A%A1%E8%AE%BE%E8%AE%A1/02%20%E6%B6%88%E6%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">
-				<h2 class="index-title">
-					02 消息系统设计
-				</h2>
-				<div class="index-brief">
-					一、消息类型
-
-分析需求，将消息分为三类
-1.提醒(Remind)
-
-谁对一样属于谁的事物做了什么操作
-
-
-sender：触发者
-target：事物
-action：触发操作
-targetOwner：事物所有者（通过订阅维护）
-
-节省资源，适合Pull
-2.私信(Message)
-
-谁对谁发送什么内容
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/">08 系统设计</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/2-业务设计/">2 业务设计</a>
+                                        <a href="/categories/07-数据库/02-MyBatis/">02 MyBatis</a>
 										
                                     </span>
                                 

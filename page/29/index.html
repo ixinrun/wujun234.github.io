@@ -2657,6 +2657,15 @@ var _hmt = _hmt || [];
 								<div class="article-toc" style="display: none;"></div>
 							</ul>
 			
+							<ul>
+								<li class="file">
+									<a href="/2020/08/11/06%20Spring/08%20Log/3%20%E8%BE%93%E5%87%BA%20sout%20%E5%88%B0%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/">
+										3 输出 sout 到日志文件
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
 								</li>
 								
 							</ul>
@@ -4507,6 +4516,26 @@ var _hmt = _hmt || [];
 									</a>
 									
 							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1 Json
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/10/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Json/Jackson%20%E5%B8%B8%E7%94%A8%E8%AE%B0%E5%BD%95/">
+										Jackson 常用记录
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
 								<li class="file">
 									<a href="/2019/12/25/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
 										1 Lombok消除Java冗长
@@ -4626,21 +4655,240 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2019/12/25/12%20%E6%B5%8B%E8%AF%95/2%20http_load/1%20http_load%20-%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/">
+			<a href="/2019/12/25/09%20DevOps/1%20Git/1%20%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93/">
 				<h2 class="index-title">
-					1 http_load - 压力测试
+					1 创建版本库
 				</h2>
 				<div class="index-brief">
-					1.http_load简介
-http_load官网
-http_load是一款基于Linux平台的web服务器性能测试工具，以并行复用的方式运行，用于测试web服务器的吞吐量与负载，web页面的性能。
-优点：
+					Git全局设置
+git config --global user.name &quot;wujun234&quot;
+git config --global user.email &quot;wujun234@gmail.com&quot;
 
-基于命令行，简单、易于上手。
-小巧轻便，解压缩后不到100k。
-开源，免费。
+一、创建本地版本库
+1 进入项目文件夹
+cd exist
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/1-Git/">1 Git</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/25/09%20DevOps/1%20Git/2%20%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/">
+				<h2 class="index-title">
+					2 版本管理
+				</h2>
+				<div class="index-brief">
+					状态查看
 
-缺点：
+git status：查看状态
+git diff：查看修改内容
+
+版本回退
+
+HEAD：指向当前版本
+
+上一个版本就是HEAD^
+上上一个版本就是HEAD^^
+版本数多就写成HEAD~100
+
+
+git reset --hard commit_id：跳转到指定版本
+git log：可以查
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/1-Git/">1 Git</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/25/09%20DevOps/1%20Git/6%20%E5%85%B6%E4%BB%96/">
+				<h2 class="index-title">
+					6 其他
+				</h2>
+				<div class="index-brief">
+					忽略特殊文件
+
+忽略某些文件时，需要编写.gitignore；
+.gitignore文件本身要放到版本库里，并且可以对.gitignore做版本管理！
+
+GitHub已经为我们准备了各种.gitignore配置文件：https://github.com/github/gitignore
+配置别名
+给
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/1-Git/">1 Git</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/25/09%20DevOps/1%20Git/5%20%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/">
+				<h2 class="index-title">
+					5 标签管理
+				</h2>
+				<div class="index-brief">
+					tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。
+创建标签
+
+git tag ：新建一个标签，默认为HEAD，也可以指定一个commit id
+git tag -a  -m “blablabla…”：指定标签信息
+git tag -s  -m “blablabla…”：用PG
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/1-Git/">1 Git</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/25/09%20DevOps/1%20Git/4%20%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86/">
+				<h2 class="index-title">
+					4 分支管理
+				</h2>
+				<div class="index-brief">
+					创建与合并分支
+Git鼓励大量使用分支：
+
+git branch：查看分支
+git branch ：创建分支
+git checkout ：切换分支
+git checkout -b ：创建+切换分支
+git branch -d ：删除本地分支
+git merge ：合并某分支到当前分支
+git reb
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/1-Git/">1 Git</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/25/09%20DevOps/2%20SVN/1%20%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D/">
+				<h2 class="index-title">
+					1 基础介绍
+				</h2>
+				<div class="index-brief">
+					工作副本
+check out-在本地创建特定版本的工作副本
+
+SVN版本号
+全局版本号
+每提交一次就会产生一个唯一的版本号
+TortoiseSVN 图标
 
 
 					...
@@ -4653,7 +4901,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/">12 测试</a>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
 										
 											>
 										
@@ -4663,7 +4911,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/2-http-load/">2 http_load</a>
+                                        <a href="/categories/09-DevOps/2-SVN/">2 SVN</a>
 										
                                     </span>
                                 
@@ -4673,29 +4921,108 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/25/12%20%E6%B5%8B%E8%AF%95/4%20JUnit/1%20JUnit%205%20%E7%AE%80%E4%BB%8B/">
+			<a href="/2019/12/25/09%20DevOps/2%20SVN/3%20%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/">
 				<h2 class="index-title">
-					1 JUnit 5 简介
+					3 版本管理
+				</h2>
+				<div class="index-brief">
+					1 版本管理类
+
+创建分支/标签（Branch/tag）
+创建补丁（Create patch）
+合并文件（Merge）
+解决冲突（Resolved）
+切换工作区（Switch）
+撤销操作（Revert）
+迁移资源库（Relocate）
+
+2 创建分支
+在版本库中创建(Create branch/ta
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/2-SVN/">2 SVN</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/25/09%20DevOps/2%20SVN/2%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+				<h2 class="index-title">
+					2 基本操作
+				</h2>
+				<div class="index-brief">
+					1 TortoiseSVN 基本操作
+
+浏览版本库（ Repo-browser ）
+检出文件（Checkout）
+更新最新文件（Update）
+增加文件（Add）
+删除文件（Delete）
+提交文件（Commit）
+修改文件（modify&amp;commit）
+放弃修改（Revert）
+导入/导出
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/2-SVN/">2 SVN</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/2019/12/25/09%20DevOps/2%20SVN/5%20%E5%BC%80%E5%8F%91%E5%91%A8%E6%9C%9F/">
+				<h2 class="index-title">
+					5 开发周期
 				</h2>
 				<div class="index-brief">
 					
-
-一、JUnit 5 的架构
-
-使用 JUnit Jupiter 编写测试内容
-使用 JUnit Platform 运行测试
-后向兼容性：JUnit Vintage
-
-
-二、使用 JUnit Jupiter 编写测试
-
-注解
-断言
-前置条件
-嵌套测试
-
-
-三、使用 JUnit Platform 运
+truck：是用来做主方向开发的，新功能的开发应放在主线中，当模块开发完成后，需要修改，就用branch。
+branch：分支开发和主线开发是可以同时进行的，也就是并行开发，分支通常用于修复bug时使用
+tag：用于标记某个可用的版本，可以标记已经上线发布的版本，也可以标记正在测试的版本，通常是只
 					...
 				</div>
 			</a>
@@ -4706,7 +5033,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/">12 测试</a>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
 										
 											>
 										
@@ -4716,7 +5043,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/4-JUnit/">4 JUnit</a>
+                                        <a href="/categories/09-DevOps/2-SVN/">2 SVN</a>
 										
                                     </span>
                                 
@@ -4726,25 +5053,22 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2019/12/25/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/01%20%E9%87%8D%E6%9E%84%EF%BC%8C%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%A1%88%E4%BE%8B/">
+			<a href="/2019/12/25/09%20DevOps/3%20IDEA/1%20IDEA%20%E5%BF%AB%E6%8D%B7%E9%94%AE/">
 				<h2 class="index-title">
-					01 重构，第一个案例
+					1 IDEA 快捷键
 				</h2>
 				<div class="index-brief">
-					1 起点
-重构前的程序
+					可以在Settrings–Keymaps中修改快捷键
+快捷操作
 
-无法复用
-很难扩展
-很难修改
-很容易引入bug
+psvm：快捷创建main函数
+fori：快捷创建for循环
+sout：快速打出System.out.println()
+St：快速打出String
+todo：快速打出//Todo: 日期
 
-2 重构的第一步
-重构前，先检查自己是否有一套可靠的测试环境。这些测试环境必须有自我检验能力。
-3 分解并重组statement()
+更多的提示可以CTRL + j 可以查看
 
-代码块愈小，代码的功能就愈容易管理，代码的处理和移动也就愈轻松。
-任何不会被修改的变量都
 					...
 				</div>
 			</a>
@@ -4755,7 +5079,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
 										
 											>
 										
@@ -4765,320 +5089,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/25/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/04%20%E6%9E%84%E7%AD%91%E6%B5%8B%E8%AF%95%E4%BD%93%E7%B3%BB/">
-				<h2 class="index-title">
-					04 构筑测试体系
-				</h2>
-				<div class="index-brief">
-					编写优良的测试程序，可以极大地提高变成速度，即使不进行重构也一样如此。
-1 自测试代码的价值
-
-程序员时间消耗：编写代码占据很少一部分，大部分时间用来调试。
-确保所有测试都完全自动化，让它们检查自己的测试结果。
-撰写测试代码的最有用时机是在开始编程之前。当需要添加新特性得时候，先写测试代码。
-
-2 
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/25/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/05%20%E9%87%8D%E6%9E%84%E5%88%97%E8%A1%A8/">
-				<h2 class="index-title">
-					05 重构列表
-				</h2>
-				<div class="index-brief">
-					1 重构的记录格式
-采用一个标准格式，每个重构手法都有如下五个部分：
-
-名称
-简短概要
-动机
-做法
-范例
-
-2 寻找引用点
-
-不要盲目替换。检查每一个引用点，确定它指向想要替换得东西。
-使用编译器帮助寻找引用点。
-
-使用编译器查找，要注意的问题：
-
-被删除的部分在继承体系中声明不止一次，编译器也会迷
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/25/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/02%20%E9%87%8D%E6%9E%84%E7%9A%84%E5%8E%9F%E5%88%99/">
-				<h2 class="index-title">
-					02 重构的原则
-				</h2>
-				<div class="index-brief">
-					1 何为重构
-重构: 在不改变软件可观察行为的前提下改善其内部结构
-2 为何重构
-重构可以提高代码质量
-3 何时重构
-事不过三，三则重构。
-重构应该是在开发过程中实时的、渐进的演化过程：
-
-添加新功能时重构
-修补错误时重构
-复审代码时重构
-
-4 怎么对经理说
-为了质量 or 不要告诉
-5 重构的难题
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/25/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/07%20%E5%9C%A8%E5%AF%B9%E8%B1%A1%E4%B9%8B%E9%97%B4%E6%90%AC%E7%A7%BB%E7%89%B9%E6%80%A7/">
-				<h2 class="index-title">
-					07 在对象之间搬移特性
-				</h2>
-				<div class="index-brief">
-					
-
-1 Move Method （搬移函数）
-2 Move Field （搬移字段）
-3 Extract Class （提炼类）
-4 Inline Class （将类内联化）
-5 Hide Delegate （隐藏“委托关系”）
-6 Remove Middle Man （移除中间人）
-7 Intro
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/25/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/06%20%E9%87%8D%E6%96%B0%E7%BB%84%E7%BB%87%E5%87%BD%E6%95%B0/">
-				<h2 class="index-title">
-					06 重新组织函数
-				</h2>
-				<div class="index-brief">
-					
-
-1 Extract Method （提炼函数）
-2 Inline Method （内联函数）
-3 Inline Temp （内联临时变量）
-4 Replace Temp with Query （以查询取代临时变量）
-5 Introduce Explaining Variable （引入解释性变量
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/25/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/08%20%E9%87%8D%E6%96%B0%E7%BB%84%E7%BB%87%E6%95%B0%E6%8D%AE/">
-				<h2 class="index-title">
-					08 重新组织数据
-				</h2>
-				<div class="index-brief">
-					
-
-1 Self Encapsulate Filed 自封装字段
-2 Replace Data Value with Object 以对象取代数据值
-3 Change Value to Reference 将值对象改为引用对象
-4 Change Reference to Value 将引用对象改为值
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2019/12/25/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/09%20%E7%AE%80%E5%8C%96%E6%9D%A1%E4%BB%B6%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-				<h2 class="index-title">
-					09 简化条件表达式
-				</h2>
-				<div class="index-brief">
-					
-
-1 Decompose Conditional （分解条件表达式）
-2 Consolidate Conditional Expression （合并条件表达式）
-3 Consolidate Duplicate Conditional Fragments （合并重复的条件片段）
-4 Remove 
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
+                                        <a href="/categories/09-DevOps/3-IDEA/">3 IDEA</a>
 										
                                     </span>
                                 
