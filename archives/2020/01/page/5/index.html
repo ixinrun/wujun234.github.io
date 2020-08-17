@@ -5033,16 +5033,32 @@ JredisConnectionFacto
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/10/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
+			<a href="/2020/01/10/06%20Spring/05%20Data.md/8%20Transaction/">
 				<h2 class="index-title">
-					7 Dynamic DataSource
+					8 Transaction
 				</h2>
 				<div class="index-brief">
-					一、AOP 实现
-AOP 实现多数据源，可读写分离
-1 配置文件
-dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
-dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
+					Spring 事务的本质是数据库对事务的支持。
+@EnableTransactionManagement 开启对事务注解的解析
+1 声明式事务
+1.1 @Transactional 注解
+
+
+
+属性
+类型
+描述
+
+
+
+
+value
+String
+事务管理器
+
+
+propagation
+Propaga
 					...
 				</div>
 			</a>

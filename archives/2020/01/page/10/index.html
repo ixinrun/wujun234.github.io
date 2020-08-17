@@ -4655,14 +4655,17 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/09%20%E5%BC%82%E5%B8%B8%EF%BC%8869-77%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/11%20%E5%BA%8F%E5%88%97%E5%8C%96%EF%BC%8885-90%EF%BC%89/">
 				<h2 class="index-title">
-					09 异常（69-77）
+					11 序列化（85-90）
 				</h2>
 				<div class="index-brief">
-					第 69 条：只针对异常的情况才使用异常
-如果在 try、catch、finally 块中都抛出了异常，只是只有一个异常可被传播到外界。
-请不要在 try 块中发出对 return、break 或 continue 的调用，万一无法避免，一定要确保 finally 的存在不会改变函数的返回值（比如说
+					第 85 条: 首选 Java 序列化的替代品
+序列化是危险的，反序列化有漏洞，应该避免。
+使用跨平台的结构化数据替代，例如 JSON 或 protobuf。
+或者不反序列化不受信任的数据。
+如果必须反序列化，使用对象反序列化过滤，并避免编写可序列化的类。
+第 86 条：谨慎地实现 Serializ
 					...
 				</div>
 			</a>
@@ -4693,17 +4696,14 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/11%20%E5%BA%8F%E5%88%97%E5%8C%96%EF%BC%8885-90%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/09%20%E5%BC%82%E5%B8%B8%EF%BC%8869-77%EF%BC%89/">
 				<h2 class="index-title">
-					11 序列化（85-90）
+					09 异常（69-77）
 				</h2>
 				<div class="index-brief">
-					第 85 条: 首选 Java 序列化的替代品
-序列化是危险的，反序列化有漏洞，应该避免。
-使用跨平台的结构化数据替代，例如 JSON 或 protobuf。
-或者不反序列化不受信任的数据。
-如果必须反序列化，使用对象反序列化过滤，并避免编写可序列化的类。
-第 86 条：谨慎地实现 Serializ
+					第 69 条：只针对异常的情况才使用异常
+如果在 try、catch、finally 块中都抛出了异常，只是只有一个异常可被传播到外界。
+请不要在 try 块中发出对 return、break 或 continue 的调用，万一无法避免，一定要确保 finally 的存在不会改变函数的返回值（比如说
 					...
 				</div>
 			</a>
@@ -4995,18 +4995,18 @@ lambda 没有名称和文档，如果超过三行，不要使用 lambda 表达�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/08%20%E9%80%9A%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%8857-68%EF%BC%89/">
 				<h2 class="index-title">
-					10 并发（78-84）
+					08 通用程序设计（57-68）
 				</h2>
 				<div class="index-brief">
-					第 78 条：同步访问共享的可变数据
-第 79 条：避免过度同步
-第 80 条：executor 和 task 优先于线程
+					第 57 条：将局部变量的作用域最小化
+第 58 条：for-each 循环优先于传统的 for 循环
+第 59 条：了解和使用标准类库
+第 60 条：如果需要精确的答案，请避免使用 float 和 double
 
-Executor.newCachedThreadPool：小程序，轻载的服务器
-Executor.newFixedThreadPool：大负载的服务器
-ThreadPoolE
+float 和 double 类型尤其不适合用于货币计算
+可以使用 bigDecim
 					...
 				</div>
 			</a>
@@ -5037,18 +5037,18 @@ ThreadPoolE
 		</div>	
 	
 		<div class="index-li">
-			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/08%20%E9%80%9A%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%8857-68%EF%BC%89/">
+			<a href="/2020/01/02/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
 				<h2 class="index-title">
-					08 通用程序设计（57-68）
+					10 并发（78-84）
 				</h2>
 				<div class="index-brief">
-					第 57 条：将局部变量的作用域最小化
-第 58 条：for-each 循环优先于传统的 for 循环
-第 59 条：了解和使用标准类库
-第 60 条：如果需要精确的答案，请避免使用 float 和 double
+					第 78 条：同步访问共享的可变数据
+第 79 条：避免过度同步
+第 80 条：executor 和 task 优先于线程
 
-float 和 double 类型尤其不适合用于货币计算
-可以使用 bigDecim
+Executor.newCachedThreadPool：小程序，轻载的服务器
+Executor.newFixedThreadPool：大负载的服务器
+ThreadPoolE
 					...
 				</div>
 			</a>
