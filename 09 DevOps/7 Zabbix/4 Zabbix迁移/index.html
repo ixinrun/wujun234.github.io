@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4717,16 +4730,16 @@ var _hmt = _hmt || [];
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/09%20DevOps/6%20Linux/2%20Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+              <a href="/09%20DevOps/7%20Zabbix/3%20zabbix%E4%B8%BB%E5%8A%A8%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A2%AB%E5%8A%A8%E6%A8%A1%E5%BC%8F/">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  2 Linux 常用命令
+                  3 zabbix主动模式、被动模式
               </a>
             
         </div>
         <div class="item right">
             
-              <a href="/12%20%E6%B5%8B%E8%AF%95/2%20http_load/1%20http_load%20-%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/">
-                1 http_load - 压力测试
+              <a href="/09%20DevOps/6%20Linux/2%20Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+                2 Linux 常用命令
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

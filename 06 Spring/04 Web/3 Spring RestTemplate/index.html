@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4987,6 +5000,60 @@ RestTemplate restTemplate(){
     RestTemplate restTemplate = new RestTemplate(requestFactory);
     return restTemplate;
 }
+</code></pre>
+<pre><code>@Slf4j
+@Configuration
+public class RestClientConfig {
+
+    @Value(&quot;${httpClient.maxTotal:400}&quot;)
+    private Integer maxTotal;
+    @Value(&quot;${httpClient.defaultMaxPerRoute:400}&quot;)
+    private Integer defaultMaxPerRoute;
+    @Value(&quot;${httpClient.timeout:20000}&quot;)
+    private Integer timeout;
+
+    @Value(&quot;${proxy.enabled}&quot;)
+    Boolean proxyEnable;
+
+    @Bean
+    public RestTemplate restTemplate() {
+        ClientHttpRequestFactory requestFactory = new HttpComponentsClientHttpRequestFactory(httpClient());
+        return new RestTemplate(requestFactory);
+    }
+
+    @Bean
+    public HttpClient httpClient() {
+        Registry&lt;ConnectionSocketFactory&gt; registry = RegistryBuilder.&lt;ConnectionSocketFactory&gt;create()
+                .register(&quot;http&quot;, PlainConnectionSocketFactory.getSocketFactory())
+                .register(&quot;https&quot;, SSLConnectionSocketFactory.getSocketFactory())
+                .build();
+        PoolingHttpClientConnectionManager connectionManager = new PoolingHttpClientConnectionManager(registry);
+        connectionManager.setMaxTotal(maxTotal);
+        connectionManager.setDefaultMaxPerRoute(defaultMaxPerRoute);
+
+        RequestConfig requestConfig = RequestConfig.custom()
+                .setSocketTimeout(timeout)
+                .setConnectTimeout(timeout)
+                .setConnectionRequestTimeout(timeout)
+                .build();
+
+        HttpClientBuilder httpClientBuilder = HttpClientBuilder.create()
+                .setDefaultRequestConfig(requestConfig)
+                .setConnectionManager(connectionManager)
+                .setConnectionManagerShared(true);
+
+        log.info(&quot;proxyEnable: &quot; + proxyEnable);
+        if (proxyEnable) {
+            //设置代理
+            HttpHost proxy = new HttpHost(&quot;web-proxy.oa.com&quot;, 8080);
+            httpClientBuilder.setProxy(proxy);
+        }
+
+        return httpClientBuilder.build();
+    }
+
+}
+
 </code></pre>
 <h5 id="System-properties"><a class="header-anchor" href="#System-properties"></a>System properties</h5>
 <pre><code>Properties props = System.getProperties();

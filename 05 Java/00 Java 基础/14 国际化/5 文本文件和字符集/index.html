@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4737,8 +4750,8 @@ var _hmt = _hmt || [];
         </div>
         <div class="item right">
             
-              <a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/3%20%E6%8E%92%E5%BA%8F%E5%92%8C%E8%8C%83%E5%8C%96/">
-                3 排序和范化
+              <a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/2%20%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%92%8C%E8%A7%A3%E6%9E%90/">
+                2 格式化和解析
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

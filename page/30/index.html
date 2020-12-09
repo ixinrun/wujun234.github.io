@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,22 +4668,22 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/2%20SVN/2%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+			<a href="/09%20DevOps/3%20IDEA/1%20IDEA%20%E5%BF%AB%E6%8D%B7%E9%94%AE/">
 				<h2 class="index-title">
-					2 基本操作
+					1 IDEA 快捷键
 				</h2>
 				<div class="index-brief">
-					1 TortoiseSVN 基本操作
+					可以在Settrings–Keymaps中修改快捷键
+快捷操作
 
-浏览版本库（ Repo-browser ）
-检出文件（Checkout）
-更新最新文件（Update）
-增加文件（Add）
-删除文件（Delete）
-提交文件（Commit）
-修改文件（modify&amp;commit）
-放弃修改（Revert）
-导入/导出
+psvm：快捷创建main函数
+fori：快捷创建for循环
+sout：快速打出System.out.println()
+St：快速打出String
+todo：快速打出//Todo: 日期
+
+更多的提示可以CTRL + j 可以查看
+
 					...
 				</div>
 			</a>
@@ -4691,7 +4704,7 @@ var _hmt = _hmt || [];
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/2-SVN/">2 SVN</a>
+                                        <a href="/categories/09-DevOps/3-IDEA/">3 IDEA</a>
 										
                                     </span>
                                 
@@ -4715,85 +4728,6 @@ var _hmt = _hmt || [];
 3.1 添加 M2_HOME 和 MAVEN_HOME 到环境变量，指向 Maven 文件夹
 3.2 添加 Maven bin 文件夹到 PATH 变量
 3.3 需要时设置MAVEN_OPTS环境变量，-Xms128m -
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/4-Maven/">4 Maven</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/09%20DevOps/2%20SVN/5%20%E5%BC%80%E5%8F%91%E5%91%A8%E6%9C%9F/">
-				<h2 class="index-title">
-					5 开发周期
-				</h2>
-				<div class="index-brief">
-					
-truck：是用来做主方向开发的，新功能的开发应放在主线中，当模块开发完成后，需要修改，就用branch。
-branch：分支开发和主线开发是可以同时进行的，也就是并行开发，分支通常用于修复bug时使用
-tag：用于标记某个可用的版本，可以标记已经上线发布的版本，也可以标记正在测试的版本，通常是只
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/2-SVN/">2 SVN</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/09%20DevOps/4%20Maven/2%20Maven%20%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/">
-				<h2 class="index-title">
-					2 Maven 冲突解决
-				</h2>
-				<div class="index-brief">
-					原文地址：https://www.jianshu.com/p/bbd5b0abcad1
-主要目的是升级现有的jar包，排除传递依赖引起的冲突
-1 maven 命令
-1.1 mvn dependency tree
-mvn dependency:tree命令可以查看当前项目的依赖关系。可以将当前POM的
 					...
 				</div>
 			</a>
@@ -4863,46 +4797,6 @@ Gradle 同时拥有 Ant 和 Maven 的优点，具有 Ant 的强大和灵活，�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/7%20Zabbix/2%20zabbix%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">
-				<h2 class="index-title">
-					2 zabbix中文乱码
-				</h2>
-				<div class="index-brief">
-					Zabbix中文界面下，图形页面会有乱码，是因为字体格式不一致导致
-
-
-从C:\Windows\Fonts找到 中文字体上传至zabbix的fonts目录/usr/share/zabbix/fonts
-修改include下的defines.inc.php中字体的配置，将里面关于字体设置从graphf
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/09%20DevOps/5%20Gradle/2%20maven%E8%BF%81%E7%A7%BB%E5%88%B0gradle/">
 				<h2 class="index-title">
 					2 maven迁移到gradle
@@ -4946,16 +4840,16 @@ Gradle 同时拥有 Ant 和 Maven 的优点，具有 Ant 的强大和灵活，�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/8%20ELK/1%20ElasticStack/">
+			<a href="/09%20DevOps/4%20Maven/2%20Maven%20%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/">
 				<h2 class="index-title">
-					1 ElasticStack
+					2 Maven 冲突解决
 				</h2>
 				<div class="index-brief">
-					ElasticStack 最初的核心是 ELK (Elasticsearch, Logstash, Kibana) ，后又新增了一个FileBeat。
-ELK架构
-
-Elasticsearch ：分布式搜索引擎。基于 Lucene，可用于全文检索、结构化检索和分析。
-Logstash ：数据收集处理
+					原文地址：https://www.jianshu.com/p/bbd5b0abcad1
+主要目的是升级现有的jar包，排除传递依赖引起的冲突
+1 maven 命令
+1.1 mvn dependency tree
+mvn dependency:tree命令可以查看当前项目的依赖关系。可以将当前POM的
 					...
 				</div>
 			</a>
@@ -4976,7 +4870,47 @@ Logstash ：数据收集处理
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/8-ELK/">8 ELK</a>
+                                        <a href="/categories/09-DevOps/4-Maven/">4 Maven</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/09%20DevOps/7%20Zabbix/2%20zabbix%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">
+				<h2 class="index-title">
+					2 zabbix中文乱码
+				</h2>
+				<div class="index-brief">
+					Zabbix中文界面下，图形页面会有乱码，是因为字体格式不一致导致
+
+
+从C:\Windows\Fonts找到 中文字体上传至zabbix的fonts目录/usr/share/zabbix/fonts
+修改include下的defines.inc.php中字体的配置，将里面关于字体设置从graphf
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
 										
                                     </span>
                                 
@@ -5025,6 +4959,48 @@ Logstash ：数据收集处理
 		</div>	
 	
 		<div class="index-li">
+			<a href="/09%20DevOps/7%20Zabbix/4%20Zabbix%E8%BF%81%E7%A7%BB/">
+				<h2 class="index-title">
+					4 Zabbix迁移
+				</h2>
+				<div class="index-brief">
+					zabbix的前端所有的操作都存在zabbix数据库里。
+如果迁移要求历史数据不丢失，对zabbix库中相应的表进行导出导入即可。
+若是对历史数据不要求，那么只迁移配置信息即可。
+安装
+
+根据zabbix手册新安装zabbix服务端，如果需要保留历史数据，务必使用相同版本。
+安装好后访问/setup
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/09%20DevOps/6%20Linux/2%20Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 				<h2 class="index-title">
 					2 Linux 常用命令
@@ -5043,6 +5019,53 @@ ls：列出目录内容
 -r：反序显示
 -S：按文件大小排序
 -t： 按修改时间排
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/09%20DevOps/6%20Linux/3%20Shell%20%E8%84%9A%E6%9C%AC/">
+				<h2 class="index-title">
+					3 Shell 脚本
+				</h2>
+				<div class="index-brief">
+					开始
+约定文件第一行必须以 “#!”开始，指明脚本执行的解释器
+运行
+chmod +x filename
+变量
+变量无需声明
+赋值：变量名和等号之间不能有空格
+使用：前加$符号，可选加{}帮解释器识别变量的边界
+删除：unset
+字符串：单引号中变量失效
+数组：括号表示数组，空格分割
+传递参数：$0
 					...
 				</div>
 			</a>

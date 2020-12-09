@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4806,26 +4819,15 @@ HBase vs Cassandra – Which One Is Better (Infographics)[Feb 16, 20
 		</div>	
 	
 		<div class="index-li">
-			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/5%20HBase/">
+			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/2%20HDFS/">
 				<h2 class="index-title">
-					5 HBase
+					2 HDFS
 				</h2>
 				<div class="index-brief">
-					HBASE官网
-参考：
-HBase 深入浅出
-1 HBase 简介
-
-HBase（Hadoop Database）是Bigtable的开源实现
-稀疏的，面向列
-基于HDFS，高可靠，可伸缩
-利用Zookeeper进行协同服务
-适合大数据随机和实时读写
-
-2 HBASE架构
-
-1）Client
-可以通
+					HDFS官网
+1 简介
+HDFS 是 GFS（Google File System）的克隆版本。
+HDFS（Hadoop Distributed File System）是Hadoop项目的核心子项目，是分布式计算中数据存储管理的基础，是基于流数据模式访问和处理超大文件的需求而开发的，可以运行于廉价
 					...
 				</div>
 			</a>
@@ -4856,15 +4858,26 @@ HBase（Hadoop Database）是Bigtable的开源实现
 		</div>	
 	
 		<div class="index-li">
-			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/2%20HDFS/">
+			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/5%20HBase/">
 				<h2 class="index-title">
-					2 HDFS
+					5 HBase
 				</h2>
 				<div class="index-brief">
-					HDFS官网
-1 简介
-HDFS 是 GFS（Google File System）的克隆版本。
-HDFS（Hadoop Distributed File System）是Hadoop项目的核心子项目，是分布式计算中数据存储管理的基础，是基于流数据模式访问和处理超大文件的需求而开发的，可以运行于廉价
+					HBASE官网
+参考：
+HBase 深入浅出
+1 HBase 简介
+
+HBase（Hadoop Database）是Bigtable的开源实现
+稀疏的，面向列
+基于HDFS，高可靠，可伸缩
+利用Zookeeper进行协同服务
+适合大数据随机和实时读写
+
+2 HBASE架构
+
+1）Client
+可以通
 					...
 				</div>
 			</a>

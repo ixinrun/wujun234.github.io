@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -5010,8 +5023,8 @@ hystrix.command.[CommandKey].execution.isolation.thread.timeoutInMilliseconds �
         </div>
         <div class="item right">
             
-              <a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/4%20%E6%B6%88%E6%81%AF%E7%BB%84%E4%BB%B6/01%20Spring%20Cloud%20Bus/">
-                01 Spring Cloud Bus
+              <a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/1%20%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8/01%20Spring%20Cloud%20Ribbon/">
+                01 Spring Cloud Ribbon
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

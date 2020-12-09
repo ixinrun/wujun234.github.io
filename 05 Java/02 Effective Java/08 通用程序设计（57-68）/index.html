@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4715,16 +4728,16 @@ var _hmt = _hmt || [];
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
+              <a href="/05%20Java/02%20Effective%20Java/06%20Lambdas%20%E4%B8%8E%20Streams%EF%BC%8842-48%EF%BC%89/">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  10 并发（78-84）
+                  06 Lambdas 与 Streams（42-48）
               </a>
             
         </div>
         <div class="item right">
             
-              <a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/11%20%E7%BD%91%E7%BB%9C/2%20%E8%8E%B7%E5%8F%96%20URL%20%E6%95%B0%E6%8D%AE/">
-                11 网络
+              <a href="/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
+                10 并发（78-84）
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

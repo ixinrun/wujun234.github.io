@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4807,16 +4820,16 @@ POM中：<build>中<plugins>元素下，<configuration>元素全局配置，<exe
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/09%20DevOps/2%20SVN/2%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+              <a href="/09%20DevOps/3%20IDEA/1%20IDEA%20%E5%BF%AB%E6%8D%B7%E9%94%AE/">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  2 基本操作
+                  1 IDEA 快捷键
               </a>
             
         </div>
         <div class="item right">
             
-              <a href="/09%20DevOps/2%20SVN/5%20%E5%BC%80%E5%8F%91%E5%91%A8%E6%9C%9F/">
-                5 开发周期
+              <a href="/09%20DevOps/5%20Gradle/1%20Gradle%20%E6%A6%82%E8%BF%B0/">
+                1 Gradle 概述
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

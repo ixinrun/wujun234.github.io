@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,18 +4668,18 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/08%20%E9%80%9A%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%8857-68%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
 				<h2 class="index-title">
-					08 通用程序设计（57-68）
+					10 并发（78-84）
 				</h2>
 				<div class="index-brief">
-					第 57 条：将局部变量的作用域最小化
-第 58 条：for-each 循环优先于传统的 for 循环
-第 59 条：了解和使用标准类库
-第 60 条：如果需要精确的答案，请避免使用 float 和 double
+					第 78 条：同步访问共享的可变数据
+第 79 条：避免过度同步
+第 80 条：executor 和 task 优先于线程
 
-float 和 double 类型尤其不适合用于货币计算
-可以使用 bigDecim
+Executor.newCachedThreadPool：小程序，轻载的服务器
+Executor.newFixedThreadPool：大负载的服务器
+ThreadPoolE
 					...
 				</div>
 			</a>
@@ -4899,19 +4912,18 @@ XSLT = XSL 转换，是一种用于将 XML 文档转换为 XHTML 文档或其他
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/1%20XML%20%E6%A6%82%E8%BF%B0/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/3%20%E9%AA%8C%E8%AF%81%20XML%20%E6%96%87%E6%A1%A3/">
 				<h2 class="index-title">
-					1 XML 概述
+					3 验证 XML 文档
 				</h2>
 				<div class="index-brief">
-					XML 指可扩展标记语言（eXtensible Markup Language），标签自定义，作用是：
+					如果要指定文档结构，可以提供一个文档类型定义（DTD）或一个 XML Schema 定义。
+1 DTD
+文档类型定义（DTD）可定义合法的 XML 文档构建模块。它使用一系列合法的元素来定义文档的结构。
+1.1 内部的 DOCTYPE 声明
+&lt;!DOCTYPE 根元素 [元素声明]&gt;
 
-程序之间的数据传输通讯
-配置文件
-存储数据，充当小型数据库
 
-与 HTML 一样从标准通用标记语言（SGML）衍生，区别是XML语法要求严格，大小写敏感，标签必须闭合，属性必须引号括起来。
-1 
 					...
 				</div>
 			</a>
@@ -4952,18 +4964,19 @@ XSLT = XSL 转换，是一种用于将 XML 文档转换为 XHTML 文档或其他
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/3%20%E9%AA%8C%E8%AF%81%20XML%20%E6%96%87%E6%A1%A3/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/1%20XML%20%E6%A6%82%E8%BF%B0/">
 				<h2 class="index-title">
-					3 验证 XML 文档
+					1 XML 概述
 				</h2>
 				<div class="index-brief">
-					如果要指定文档结构，可以提供一个文档类型定义（DTD）或一个 XML Schema 定义。
-1 DTD
-文档类型定义（DTD）可定义合法的 XML 文档构建模块。它使用一系列合法的元素来定义文档的结构。
-1.1 内部的 DOCTYPE 声明
-&lt;!DOCTYPE 根元素 [元素声明]&gt;
+					XML 指可扩展标记语言（eXtensible Markup Language），标签自定义，作用是：
 
+程序之间的数据传输通讯
+配置文件
+存储数据，充当小型数据库
 
+与 HTML 一样从标准通用标记语言（SGML）衍生，区别是XML语法要求严格，大小写敏感，标签必须闭合，属性必须引号括起来。
+1 
 					...
 				</div>
 			</a>
@@ -5054,15 +5067,15 @@ DOM 解析器一次性把整个xml文档加载进内存，然后在内存中构�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/08%20Java%20SE%208%20%E7%9A%84%E6%B5%81%E5%BA%93/2%20Optional/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/08%20Java%20SE%208%20%E7%9A%84%E6%B5%81%E5%BA%93/1%20Stream/">
 				<h2 class="index-title">
-					2 Optional
+					1 Stream
 				</h2>
 				<div class="index-brief">
-					@since 1.8
-为了解决空指针异常，受到 Google Guava 的启发，Optional 类已经成为 Java 8 类库的一部分。
-Optional 实际上是个容器：它可以保存类型T的值，或者仅仅保存 null。Optional 提供很多有用的方法，这样就不用显式进行空值检测。
-1 初始化
+					Java 8 中的 Stream 是对集合对象功能的增强，像一个高级版本的Iterator，专注于对集合对象进行各种非常便利、高效的聚合操作，或者大批量数据操作。
+Stream 单向，不可往复，数据源本身可以是无限的。
+所有 Stream 的操作必须以 lambda 表达式为参数。
+1 Stream
 					...
 				</div>
 			</a>
@@ -5103,15 +5116,15 @@ Optional 实际上是个容器：它可以保存类型T的值，或者仅仅保�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/08%20Java%20SE%208%20%E7%9A%84%E6%B5%81%E5%BA%93/1%20Stream/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/08%20Java%20SE%208%20%E7%9A%84%E6%B5%81%E5%BA%93/2%20Optional/">
 				<h2 class="index-title">
-					1 Stream
+					2 Optional
 				</h2>
 				<div class="index-brief">
-					Java 8 中的 Stream 是对集合对象功能的增强，像一个高级版本的Iterator，专注于对集合对象进行各种非常便利、高效的聚合操作，或者大批量数据操作。
-Stream 单向，不可往复，数据源本身可以是无限的。
-所有 Stream 的操作必须以 lambda 表达式为参数。
-1 Stream
+					@since 1.8
+为了解决空指针异常，受到 Google Guava 的启发，Optional 类已经成为 Java 8 类库的一部分。
+Optional 实际上是个容器：它可以保存类型T的值，或者仅仅保存 null。Optional 提供很多有用的方法，这样就不用显式进行空值检测。
+1 初始化
 					...
 				</div>
 			</a>

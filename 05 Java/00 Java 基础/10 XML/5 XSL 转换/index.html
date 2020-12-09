@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4931,8 +4944,8 @@ result = path.evaluate(expression, node);
         </div>
         <div class="item right">
             
-              <a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/1%20XML%20%E6%A6%82%E8%BF%B0/">
-                1 XML 概述
+              <a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/10%20XML/3%20%E9%AA%8C%E8%AF%81%20XML%20%E6%96%87%E6%A1%A3/">
+                3 验证 XML 文档
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

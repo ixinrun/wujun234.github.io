@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4810,18 +4823,22 @@ SecurityManager 安全管理器是一个负责控制具体操作是否允许执�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/3%20%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/4%20%E6%95%B0%E6%8D%AE%E7%AD%BE%E5%90%8D/">
 				<h2 class="index-title">
-					3 用户认证
+					4 数据签名
 				</h2>
 				<div class="index-brief">
-					认证负责确认使用者身份。
-1 JAAS 框架
-Java 认证和授权服务，是一个可插拔的 API。
-com.sun.security 包下。
-2 JAAS 登陆模块
-…
+					要确定一份代码是否安全，首先要搞清楚两个问题：
 
+这份代码来自哪里
+这份代码是否被篡改过
+
+ava.security 包提供了很多成熟算法。
+1 消息摘要
+消息摘要(Message Digest)是数据块的数据指纹。具有两个基本属性：
+
+如果数据改变了，消息摘要也会改变
+拥有给定消息的伪造者不能创建
 					...
 				</div>
 			</a>
@@ -4862,22 +4879,18 @@ com.sun.security 包下。
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/4%20%E6%95%B0%E6%8D%AE%E7%AD%BE%E5%90%8D/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/3%20%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/">
 				<h2 class="index-title">
-					4 数据签名
+					3 用户认证
 				</h2>
 				<div class="index-brief">
-					要确定一份代码是否安全，首先要搞清楚两个问题：
+					认证负责确认使用者身份。
+1 JAAS 框架
+Java 认证和授权服务，是一个可插拔的 API。
+com.sun.security 包下。
+2 JAAS 登陆模块
+…
 
-这份代码来自哪里
-这份代码是否被篡改过
-
-ava.security 包提供了很多成熟算法。
-1 消息摘要
-消息摘要(Message Digest)是数据块的数据指纹。具有两个基本属性：
-
-如果数据改变了，消息摘要也会改变
-拥有给定消息的伪造者不能创建
 					...
 				</div>
 			</a>

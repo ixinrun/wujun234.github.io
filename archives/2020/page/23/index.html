@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,15 +4668,14 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/07%20%E6%96%B9%E6%B3%95%EF%BC%8849-56%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/09%20%E5%BC%82%E5%B8%B8%EF%BC%8869-77%EF%BC%89/">
 				<h2 class="index-title">
-					07 方法（49-56）
+					09 异常（69-77）
 				</h2>
 				<div class="index-brief">
-					第 49 条：检查参数的有效性
-不仅需要检查参数的有效性，还需要在函数的文档中给予明确的说明，如在参数非法的情况下，会抛出哪些异常，或导致函数返回哪些错误值等
-第 50 条：必要时进行保护性拷贝
-如果不能够容忍对象进入数据结构之后发生变，就必须对该对象进行保护性拷贝，并且让拷贝之后的对象而不是原始对
+					第 69 条：只针对异常的情况才使用异常
+如果在 try、catch、finally 块中都抛出了异常，只是只有一个异常可被传播到外界。
+请不要在 try 块中发出对 return、break 或 continue 的调用，万一无法避免，一定要确保 finally 的存在不会改变函数的返回值（比如说
 					...
 				</div>
 			</a>
@@ -4735,15 +4747,20 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/17%20%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95/2%20%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/17%20%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95/1%20%E8%B0%83%E7%94%A8%20C%20%E5%87%BD%E6%95%B0/">
 				<h2 class="index-title">
-					2 参数与返回
+					1 调用 C 函数
 				</h2>
 				<div class="index-brief">
-					1 数值参数与返回
-为了对应 c 和 Java 的数据类型，Java 本地接口定义了 jint、jlong 等类型，在头文件中被 typedef 语句声明为等价类型。
-2 字符串参数
-JNI 有两组操作字符串的函数，一组把 Java 字符串转为 “改良的UTF-8”字节序列，另一组转为 UTF-16
+					建议只在必需的时候才使用本地代码
+
+应用需要访问的系统特性和设备通过 Java 无法实现
+已有了大量的测试过和调试过的另一种语言的代码，并知道如何将其导出到所有平台
+经过基准测试，发现 Java 比其他语言的等价代码慢得多
+
+Java 本地接口（JNI）
+1 在 Java 声明本地方法
+Java 使
 					...
 				</div>
 			</a>
@@ -4784,20 +4801,15 @@ JNI 有两组操作字符串的函数，一组把 Java 字符串转为 “改良
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/17%20%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95/1%20%E8%B0%83%E7%94%A8%20C%20%E5%87%BD%E6%95%B0/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/17%20%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95/2%20%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E/">
 				<h2 class="index-title">
-					1 调用 C 函数
+					2 参数与返回
 				</h2>
 				<div class="index-brief">
-					建议只在必需的时候才使用本地代码
-
-应用需要访问的系统特性和设备通过 Java 无法实现
-已有了大量的测试过和调试过的另一种语言的代码，并知道如何将其导出到所有平台
-经过基准测试，发现 Java 比其他语言的等价代码慢得多
-
-Java 本地接口（JNI）
-1 在 Java 声明本地方法
-Java 使
+					1 数值参数与返回
+为了对应 c 和 Java 的数据类型，Java 本地接口定义了 jint、jlong 等类型，在头文件中被 typedef 语句声明为等价类型。
+2 字符串参数
+JNI 有两组操作字符串的函数，一组把 Java 字符串转为 “改良的UTF-8”字节序列，另一组转为 UTF-16
 					...
 				</div>
 			</a>
@@ -4879,15 +4891,15 @@ Java 使
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/05%20%E6%9E%9A%E4%B8%BE%E5%92%8C%E6%B3%A8%E8%A7%A3%EF%BC%8834-41%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/04%20%E6%B3%9B%E5%9E%8B%EF%BC%8826-33%EF%BC%89/">
 				<h2 class="index-title">
-					05 枚举和注解（34-41）
+					04 泛型（26-33）
 				</h2>
 				<div class="index-brief">
-					第 34 条：用 enum 代替 int 常量
-当需要一组固定常量的时候，应该使用 enum 代替 int 常量。
-第 35 条：用实例域代替序数
-应该给 enum 添加 int 域，而不是使用 ordinal() 方法来导出与枚举关联的序数值。(几乎不应使用 ordinal() 方法，除非在编写像
+					第 26 条：请不要在新代码中使用原生态类型
+原生态类型只为了与引入泛型之前的遗留代码进行兼容和互用而提供的。
+第 27 条：消除非受检警告
+如果无法消除警告，同时可以证明引起警告的代码是类型安全的，只有在这种情况下才可以用一个 @SuppressWarnings(“unchecked”) 注解来禁
 					...
 				</div>
 			</a>
@@ -4918,15 +4930,15 @@ Java 使
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/04%20%E6%B3%9B%E5%9E%8B%EF%BC%8826-33%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/05%20%E6%9E%9A%E4%B8%BE%E5%92%8C%E6%B3%A8%E8%A7%A3%EF%BC%8834-41%EF%BC%89/">
 				<h2 class="index-title">
-					04 泛型（26-33）
+					05 枚举和注解（34-41）
 				</h2>
 				<div class="index-brief">
-					第 26 条：请不要在新代码中使用原生态类型
-原生态类型只为了与引入泛型之前的遗留代码进行兼容和互用而提供的。
-第 27 条：消除非受检警告
-如果无法消除警告，同时可以证明引起警告的代码是类型安全的，只有在这种情况下才可以用一个 @SuppressWarnings(“unchecked”) 注解来禁
+					第 34 条：用 enum 代替 int 常量
+当需要一组固定常量的时候，应该使用 enum 代替 int 常量。
+第 35 条：用实例域代替序数
+应该给 enum 添加 int 域，而不是使用 ordinal() 方法来导出与枚举关联的序数值。(几乎不应使用 ordinal() 方法，除非在编写像
 					...
 				</div>
 			</a>
@@ -4996,18 +5008,18 @@ lambda 没有名称和文档，如果超过三行，不要使用 lambda 表达�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/08%20%E9%80%9A%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%8857-68%EF%BC%89/">
 				<h2 class="index-title">
-					10 并发（78-84）
+					08 通用程序设计（57-68）
 				</h2>
 				<div class="index-brief">
-					第 78 条：同步访问共享的可变数据
-第 79 条：避免过度同步
-第 80 条：executor 和 task 优先于线程
+					第 57 条：将局部变量的作用域最小化
+第 58 条：for-each 循环优先于传统的 for 循环
+第 59 条：了解和使用标准类库
+第 60 条：如果需要精确的答案，请避免使用 float 和 double
 
-Executor.newCachedThreadPool：小程序，轻载的服务器
-Executor.newFixedThreadPool：大负载的服务器
-ThreadPoolE
+float 和 double 类型尤其不适合用于货币计算
+可以使用 bigDecim
 					...
 				</div>
 			</a>
@@ -5038,18 +5050,18 @@ ThreadPoolE
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/08%20%E9%80%9A%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%8857-68%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
 				<h2 class="index-title">
-					08 通用程序设计（57-68）
+					10 并发（78-84）
 				</h2>
 				<div class="index-brief">
-					第 57 条：将局部变量的作用域最小化
-第 58 条：for-each 循环优先于传统的 for 循环
-第 59 条：了解和使用标准类库
-第 60 条：如果需要精确的答案，请避免使用 float 和 double
+					第 78 条：同步访问共享的可变数据
+第 79 条：避免过度同步
+第 80 条：executor 和 task 优先于线程
 
-float 和 double 类型尤其不适合用于货币计算
-可以使用 bigDecim
+Executor.newCachedThreadPool：小程序，轻载的服务器
+Executor.newFixedThreadPool：大负载的服务器
+ThreadPoolE
 					...
 				</div>
 			</a>

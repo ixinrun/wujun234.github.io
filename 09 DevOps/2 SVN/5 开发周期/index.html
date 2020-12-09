@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4786,16 +4799,16 @@ var _hmt = _hmt || [];
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/09%20DevOps/4%20Maven/1%20Maven%20%E7%AC%94%E8%AE%B0/">
+              <a href="/09%20DevOps/2%20SVN/3%20%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  1 Maven 笔记
+                  3 版本管理
               </a>
             
         </div>
         <div class="item right">
             
-              <a href="/09%20DevOps/4%20Maven/2%20Maven%20%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/">
-                2 Maven 冲突解决
+              <a href="/09%20DevOps/2%20SVN/4%20%E5%86%B2%E7%AA%81%E5%8F%8A%E8%A7%A3%E5%86%B3/">
+                4 冲突及解决
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

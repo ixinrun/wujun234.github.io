@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4912,18 +4925,16 @@ Path 表示的是一个目录名序列，其后还可以跟着一个文件名。
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/2%20%E6%93%8D%E4%BD%9C%E5%AD%97%E7%AC%A6/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/3%20%E6%93%8D%E4%BD%9C%E5%AD%97%E8%8A%82/">
 				<h2 class="index-title">
-					2 操作字符
+					3 操作字节
 				</h2>
 				<div class="index-brief">
-					存储文本字符串时，需要考虑字符编码方式。
-
-OutputStreamWriter 类：将使用选定的字符编码方式，把 Unicode 码元的输出流转换为字节流。
-InputStreamReader 类：将包含字节的输入流转换为可以产生 Unicode 码元的读入器。
-
-1 文本输出
-文本输出使用 Pr
+					1 DataInput 和 DataOutput 接口
+1.1 DataInput 接口
+DataInput接口 write* 方法写二进制格式数据
+DataInputStream 类实现了 DataInput 接口
+DataInputStream in = new DataInputStream(
 					...
 				</div>
 			</a>
@@ -4964,16 +4975,18 @@ InputStreamReader 类：将包含字节的输入流转换为可以产生 Unicode
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/3%20%E6%93%8D%E4%BD%9C%E5%AD%97%E8%8A%82/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/2%20%E6%93%8D%E4%BD%9C%E5%AD%97%E7%AC%A6/">
 				<h2 class="index-title">
-					3 操作字节
+					2 操作字符
 				</h2>
 				<div class="index-brief">
-					1 DataInput 和 DataOutput 接口
-1.1 DataInput 接口
-DataInput接口 write* 方法写二进制格式数据
-DataInputStream 类实现了 DataInput 接口
-DataInputStream in = new DataInputStream(
+					存储文本字符串时，需要考虑字符编码方式。
+
+OutputStreamWriter 类：将使用选定的字符编码方式，把 Unicode 码元的输出流转换为字节流。
+InputStreamReader 类：将包含字节的输入流转换为可以产生 Unicode 码元的读入器。
+
+1 文本输出
+文本输出使用 Pr
 					...
 				</div>
 			</a>

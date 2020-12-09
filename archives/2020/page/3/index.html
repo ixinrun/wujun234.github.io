@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4753,56 +4766,6 @@ HBase vs Cassandra – Which One Is Better (Infographics)[Feb 16, 20
 		</div>	
 	
 		<div class="index-li">
-			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/5%20HBase/">
-				<h2 class="index-title">
-					5 HBase
-				</h2>
-				<div class="index-brief">
-					HBASE官网
-参考：
-HBase 深入浅出
-1 HBase 简介
-
-HBase（Hadoop Database）是Bigtable的开源实现
-稀疏的，面向列
-基于HDFS，高可靠，可伸缩
-利用Zookeeper进行协同服务
-适合大数据随机和实时读写
-
-2 HBASE架构
-
-1）Client
-可以通
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-03-14</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/11-分布式/">11 分布式</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/11-分布式/03-分布式存储/">03 分布式存储</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/02%20%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/3%20MapReduce/">
 				<h2 class="index-title">
 					3 MapReduce
@@ -4886,6 +4849,56 @@ HDFS（Hadoop Distributed File System）是Hadoop项目的核心子项目，是�
 		</div>	
 	
 		<div class="index-li">
+			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/5%20HBase/">
+				<h2 class="index-title">
+					5 HBase
+				</h2>
+				<div class="index-brief">
+					HBASE官网
+参考：
+HBase 深入浅出
+1 HBase 简介
+
+HBase（Hadoop Database）是Bigtable的开源实现
+稀疏的，面向列
+基于HDFS，高可靠，可伸缩
+利用Zookeeper进行协同服务
+适合大数据随机和实时读写
+
+2 HBASE架构
+
+1）Client
+可以通
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-03-14</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/11-分布式/">11 分布式</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/11-分布式/03-分布式存储/">03 分布式存储</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/05%20MongoDB/03%20MongoDB%20%E7%AE%A1%E7%90%86/">
 				<h2 class="index-title">
 					03 MongoDB 管理
@@ -4935,18 +4948,16 @@ HDFS（Hadoop Distributed File System）是Hadoop项目的核心子项目，是�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/7%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/4%20%E9%89%B4%E5%88%AB/">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/7%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/5%20%E5%AF%86%E9%92%A5%E5%88%86%E9%85%8D/">
 				<h2 class="index-title">
-					4 鉴别
+					5 密钥分配
 				</h2>
 				<div class="index-brief">
-					
-鉴别和加密是不相同的概念。鉴别是要验证通信的对方的确是自己所要通信的对象，而不是其他的冒充者，并且所传送的报文是完整的，没有被他人篡改过。
-鉴别与授权也是不同的概念。授权涉及的问题是：所进行的过程是否被允许（如是否可以对某文件进行读或写）。
-
-鉴别可细分为两种。
-
-报文鉴别：鉴别所收到的报文的确是
+					由于密码算法是公开的，网络的安全性就完全基于密钥的安全保护上。
+密钥管理包括：密钥的产生、分配、注入、验证和使用。
+1 对称密钥的分配
+1.1 密钥分配中心 KDC
+密钥分配中心 KDC (Key Distribution Center)的任务就是给需要进行秘密通信的用户临时分配一个会话密钥（仅使用
 					...
 				</div>
 			</a>
@@ -4977,16 +4988,18 @@ HDFS（Hadoop Distributed File System）是Hadoop项目的核心子项目，是�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/7%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/5%20%E5%AF%86%E9%92%A5%E5%88%86%E9%85%8D/">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/7%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/4%20%E9%89%B4%E5%88%AB/">
 				<h2 class="index-title">
-					5 密钥分配
+					4 鉴别
 				</h2>
 				<div class="index-brief">
-					由于密码算法是公开的，网络的安全性就完全基于密钥的安全保护上。
-密钥管理包括：密钥的产生、分配、注入、验证和使用。
-1 对称密钥的分配
-1.1 密钥分配中心 KDC
-密钥分配中心 KDC (Key Distribution Center)的任务就是给需要进行秘密通信的用户临时分配一个会话密钥（仅使用
+					
+鉴别和加密是不相同的概念。鉴别是要验证通信的对方的确是自己所要通信的对象，而不是其他的冒充者，并且所传送的报文是完整的，没有被他人篡改过。
+鉴别与授权也是不同的概念。授权涉及的问题是：所进行的过程是否被允许（如是否可以对某文件进行读或写）。
+
+鉴别可细分为两种。
+
+报文鉴别：鉴别所收到的报文的确是
 					...
 				</div>
 			</a>

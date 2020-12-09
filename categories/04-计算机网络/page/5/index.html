@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,6 +4668,138 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/1%20%E7%BD%91%E7%BB%9C%E5%B1%82%E6%8F%90%E4%BE%9B%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%9C%8D%E5%8A%A1/">
+				<h2 class="index-title">
+					1 网络层提供的两种服务
+				</h2>
+				<div class="index-brief">
+					
+虚电路服务：通信时先建立连接，以预留双方通信所需的一切网络资源。
+数据报服务：网络层向上只提供简单灵活的、无连接的、尽最大努力交付的数据报（分组）服务。网络层不提供服务质量的承诺。
+
+TCP/IP 体系的网络层提供的是数据报服务。
+
+
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/4-网络层/">4 网络层</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/3%20%E5%88%92%E5%88%86%E5%AD%90%E7%BD%91%E5%92%8C%E6%9E%84%E9%80%A0%E8%B6%85%E7%BD%91/">
+				<h2 class="index-title">
+					3 划分子网和构造超网
+				</h2>
+				<div class="index-brief">
+					1 划分子网
+1）从两级 IP 地址到三级 IP 地址
+两级 IP 地址存在一些问题：
+
+利用率有时很低
+路由表变得太大，破坏性能
+不够灵活
+
+三级IP地址新增了一个子网号字段，称为划分子网(subnetting)，又称为子网寻址或子网路由选择
+
+IP地址 ::= {&lt;网络号&gt;, &lt
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/4-网络层/">4 网络层</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/7%20IP%20%E5%A4%9A%E6%92%AD/">
+				<h2 class="index-title">
+					7 IP 多播
+				</h2>
+				<div class="index-brief">
+					
+1 IP多播的基本概念
+
+在互联网上进行多播就叫做IP多播。
+IP多播所传送的分组需要使用多播IP地址。
+在多播数据报的目的地址写入的是多播组的标识符，然后设法让加入到这个多播组的主机的IP地址与多播组的标识符关联起来；
+多播组的标识符就是IP地址中的D类地址。
+多播地址只能用于目的地址，而不能用
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/4-网络层/">4 网络层</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/9%20%E5%A4%9A%E5%8D%8F%E8%AE%AE%E6%A0%87%E8%AE%B0%E4%BA%A4%E6%8D%A2%20MPLS/">
 				<h2 class="index-title">
 					9 多协议标记交换 MPLS
@@ -4665,6 +4810,50 @@ MPLS利用面向连接技术，使每个分组携带一个叫做标记的小整�
 MPLS具有以下三个方面的特点：
 
 (1)支
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/4-网络层/">4 网络层</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/8%20%E8%99%9A%E6%8B%9F%E4%B8%93%E7%94%A8%E7%BD%91%20VPN%20%E5%92%8C%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%20NAT/">
+				<h2 class="index-title">
+					8 虚拟专用网 VPN 和网络地址转换 NAT
+				</h2>
+				<div class="index-brief">
+					1 虚拟专用网 VPN
+互联网中的路由器，对目的地址是专用地址的数据报一律不进行转发。
+有三个专用地址块：
+
+10.0.0.0 ~ 10.255.255.255
+172.16.0.0 ~ 172.31.255.255
+192.168.0.0 ~ 192.168.255.255
+
+如果专用网不同网点之
 					...
 				</div>
 			</a>
@@ -4724,174 +4913,6 @@ IP 网是虚拟的，因为从网络层上看，IP网就是一个统一的、抽
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/04-计算机网络/4-网络层/">4 网络层</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3%20%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/4%20%E6%89%A9%E5%B1%95%E7%9A%84%E4%BB%A5%E5%A4%AA%E7%BD%91/">
-				<h2 class="index-title">
-					4 扩展的以太网
-				</h2>
-				<div class="index-brief">
-					1. 在物理层扩展以太网
-
-使用光纤扩展主机和集线器之间的距离
-通过一个主干集线器把各级系以太网连接起来，实现覆盖更大范围的多级星型结构的以太网
-
-由于碰撞域合并，最大吞吐量仍然是其中一级的最大吞吐量
-不能用集线器将使用不同的以太网技术的系互连起来
-
-
-
-2. 在数据链路层扩展以太网
-最初使用网桥(
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/3-数据链路层/">3 数据链路层</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3%20%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/2%20%E7%82%B9%E5%AF%B9%E7%82%B9%E5%8D%8F%E8%AE%AE%20PPP/">
-				<h2 class="index-title">
-					2 点对点协议 PPP
-				</h2>
-				<div class="index-brief">
-					点对点协议PPP(point-to-point protocol)是最常用的数据链路层协议
-PPP 协议是用户计算机和 ISP 进行通信所使用的数据链路层协议。
-1 PPP协议的特点
-1）PPP 协议应满足的需求
-
-(1)简单：数据链路层没有必要提供比IP协议更多的功能。接收方每收到一个帧，就进行C
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/3-数据链路层/">3 数据链路层</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3%20%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E7%9A%84%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/">
-				<h2 class="index-title">
-					数据链路层的重要概念
-				</h2>
-				<div class="index-brief">
-					
-链路是从一个结点到相邻结点的一段物理线路，数据链路则是在链路的基础上增加了一些必要的硬件（如网络适配器）和软件（如协议的实现）
-数据链路层使用的信道主要有点对点信道和广播信道两种
-数据链路层传送的协议数据单元是帧。数据链路层的三个基本问题：封装成帧、透明传输和差错检测。
-循环冗余检验 CRC 是一
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/3-数据链路层/">3 数据链路层</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3%20%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/5%20%E9%AB%98%E9%80%9F%E4%BB%A5%E5%A4%AA%E7%BD%91/">
-				<h2 class="index-title">
-					5 高速以太网
-				</h2>
-				<div class="index-brief">
-					1 100BASE-T 以太网
-
-100BASE-T 是在双绞线上传送 100Mb/s 基带信号的星型拓扑以太网，使用CSMA/CD协议，又称为快速以太网
-使用交换式集线器提供很好地服务质量，可以在全双工方式下工作而无碰撞发生，此时无需 CSMA/CD 协议
-从细缆以太网升级到快速以太网的用户必须重
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/3-数据链路层/">3 数据链路层</a>
 										
                                     </span>
                                 

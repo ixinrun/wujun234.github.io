@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,16 +4668,15 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/8%20ELK/1%20ElasticStack/">
+			<a href="/09%20DevOps/7%20Zabbix/3%20zabbix%E4%B8%BB%E5%8A%A8%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A2%AB%E5%8A%A8%E6%A8%A1%E5%BC%8F/">
 				<h2 class="index-title">
-					1 ElasticStack
+					3 zabbix主动模式、被动模式
 				</h2>
 				<div class="index-brief">
-					ElasticStack 最初的核心是 ELK (Elasticsearch, Logstash, Kibana) ，后又新增了一个FileBeat。
-ELK架构
+					zabbix agent检测分为主动（agent active）和被动（agent）两种形式，主动与被动的说法均是相对于agent来讨论的。
 
-Elasticsearch ：分布式搜索引擎。基于 Lucene，可用于全文检索、结构化检索和分析。
-Logstash ：数据收集处理
+主动：agent请求server获取主动的监控项列表，并主动将监控项内需要检测的数据提交给server/proxy
+被动：server向agent请求获取监
 					...
 				</div>
 			</a>
@@ -4685,7 +4697,7 @@ Logstash ：数据收集处理
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/8-ELK/">8 ELK</a>
+                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
 										
                                     </span>
                                 
@@ -4695,15 +4707,18 @@ Logstash ：数据收集处理
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/7%20Zabbix/3%20zabbix%E4%B8%BB%E5%8A%A8%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A2%AB%E5%8A%A8%E6%A8%A1%E5%BC%8F/">
+			<a href="/09%20DevOps/7%20Zabbix/4%20Zabbix%E8%BF%81%E7%A7%BB/">
 				<h2 class="index-title">
-					3 zabbix主动模式、被动模式
+					4 Zabbix迁移
 				</h2>
 				<div class="index-brief">
-					zabbix agent检测分为主动（agent active）和被动（agent）两种形式，主动与被动的说法均是相对于agent来讨论的。
+					zabbix的前端所有的操作都存在zabbix数据库里。
+如果迁移要求历史数据不丢失，对zabbix库中相应的表进行导出导入即可。
+若是对历史数据不要求，那么只迁移配置信息即可。
+安装
 
-主动：agent请求server获取主动的监控项列表，并主动将监控项内需要检测的数据提交给server/proxy
-被动：server向agent请求获取监
+根据zabbix手册新安装zabbix服务端，如果需要保留历史数据，务必使用相同版本。
+安装好后访问/setup
 					...
 				</div>
 			</a>
@@ -4773,48 +4788,6 @@ ls：列出目录内容
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/09%20DevOps/7%20Zabbix/4%20Zabbix%E8%BF%81%E7%A7%BB/">
-				<h2 class="index-title">
-					4 Zabbix迁移
-				</h2>
-				<div class="index-brief">
-					zabbix的前端所有的操作都存在zabbix数据库里。
-如果迁移要求历史数据不丢失，对zabbix库中相应的表进行导出导入即可。
-若是对历史数据不要求，那么只迁移配置信息即可。
-安装
-
-根据zabbix手册新安装zabbix服务端，如果需要保留历史数据，务必使用相同版本。
-安装好后访问/setup
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
 										
                                     </span>
                                 
@@ -4900,6 +4873,46 @@ chmod +x filename
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/09%20DevOps/8%20ELK/1%20ElasticStack/">
+				<h2 class="index-title">
+					1 ElasticStack
+				</h2>
+				<div class="index-brief">
+					ElasticStack 最初的核心是 ELK (Elasticsearch, Logstash, Kibana) ，后又新增了一个FileBeat。
+ELK架构
+
+Elasticsearch ：分布式搜索引擎。基于 Lucene，可用于全文检索、结构化检索和分析。
+Logstash ：数据收集处理
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/8-ELK/">8 ELK</a>
 										
                                     </span>
                                 

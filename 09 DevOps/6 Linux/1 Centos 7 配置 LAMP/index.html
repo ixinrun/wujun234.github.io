@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4753,8 +4766,8 @@ phpinfo();
         </div>
         <div class="item right">
             
-              <a href="/12%20%E6%B5%8B%E8%AF%95/1%20EasyMock/1%20EasyMock%20-%20%E6%A8%A1%E6%8B%9F%E5%AF%B9%E8%B1%A1%E6%B5%8B%E8%AF%95/">
-                1 EasyMock - 模拟对象测试
+              <a href="/09%20DevOps/8%20ELK/1%20ElasticStack/">
+                1 ElasticStack
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

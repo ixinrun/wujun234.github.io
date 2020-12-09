@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4729,16 +4742,16 @@ var _hmt = _hmt || [];
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/09%20DevOps/1%20Git/2%20%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/">
+              <a href="/09%20DevOps/1%20Git/3%20%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  2 版本管理
+                  3 远程仓库
               </a>
             
         </div>
         <div class="item right">
             
-              <a href="/09%20DevOps/3%20IDEA/1%20IDEA%20%E5%BF%AB%E6%8D%B7%E9%94%AE/">
-                1 IDEA 快捷键
+              <a href="/09%20DevOps/1%20Git/5%20%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/">
+                5 标签管理
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

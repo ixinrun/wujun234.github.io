@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4844,16 +4857,16 @@ fis.match('/test/**/*', {
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/08%20%E9%87%8D%E6%96%B0%E7%BB%84%E7%BB%87%E6%95%B0%E6%8D%AE/">
+              <a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/12%20%E5%A4%A7%E5%9E%8B%E9%87%8D%E6%9E%84/">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  08 重新组织数据
+                  12 大型重构
               </a>
             
         </div>
         <div class="item right">
             
-              <a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/11%20%E5%A4%84%E7%90%86%E6%A6%82%E6%8B%AC%E5%85%B3%E7%B3%BB/">
-                11 处理概括关系
+              <a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/1%20Apache%20Commons%20-%20%E6%80%BB%E8%A7%88/">
+                1 Apache Commons - 总览
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

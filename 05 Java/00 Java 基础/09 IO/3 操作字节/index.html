@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4764,16 +4777,16 @@ zout.close();
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/2%20%E6%93%8D%E4%BD%9C%E5%AD%97%E7%AC%A6/">
+              <a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/4%20%E5%BA%8F%E5%88%97%E5%8C%96/">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  2 操作字符
+                  4 序列化
               </a>
             
         </div>
         <div class="item right">
             
-              <a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/6%20%E8%B5%84%E6%BA%90%E5%8C%85/">
-                6 资源包
+              <a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/2%20%E6%93%8D%E4%BD%9C%E5%AD%97%E7%AC%A6/">
+                2 操作字符
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

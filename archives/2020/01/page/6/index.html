@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,16 +4668,15 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
+			<a href="/06%20Spring/05%20Data.md/6%20Spring%20Cache/">
 				<h2 class="index-title">
-					7 Dynamic DataSource
+					6 Spring Cache
 				</h2>
 				<div class="index-brief">
-					一、AOP 实现
-AOP 实现多数据源，可读写分离
-1 配置文件
-dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
-dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
+					Spring 自身并没有实现缓存解决方案， 但是它对缓存功能提供了声明式的支持， 能够与多种流行的缓存实现进行集成。
+Spring 的缓存抽象在很大程度上是围绕切面构建的。 在 Spring 中启用缓存时，会创建一个切面， 它触发一个或更多的 Spring 的缓存注解。
+1 启用对缓存的支持
+配置类
 					...
 				</div>
 			</a>
@@ -4695,15 +4707,16 @@ dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/6%20Spring%20Cache/">
+			<a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
 				<h2 class="index-title">
-					6 Spring Cache
+					7 Dynamic DataSource
 				</h2>
 				<div class="index-brief">
-					Spring 自身并没有实现缓存解决方案， 但是它对缓存功能提供了声明式的支持， 能够与多种流行的缓存实现进行集成。
-Spring 的缓存抽象在很大程度上是围绕切面构建的。 在 Spring 中启用缓存时，会创建一个切面， 它触发一个或更多的 Spring 的缓存注解。
-1 启用对缓存的支持
-配置类
+					一、AOP 实现
+AOP 实现多数据源，可读写分离
+1 配置文件
+dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
+dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
 					...
 				</div>
 			</a>

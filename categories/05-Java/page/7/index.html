@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,68 +4668,15 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/5%20%E6%A0%87%E5%87%86%E6%B3%A8%E8%A7%A3/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/6%20%E6%BA%90%E7%A0%81%E7%BA%A7%E6%B3%A8%E8%A7%A3%E5%A4%84%E7%90%86/">
 				<h2 class="index-title">
-					5 标准注解
+					6 源码级注解处理
 				</h2>
 				<div class="index-brief">
-					Java SE 在 java.lang、java.lang.annotation 和 javax.annotation 包中定义了大量注解接口
-1 用于编译的注解
-
-@Deprecated：不再鼓励使用
-@SuppressWarnings：阻止特定警告
-@Override：覆盖超类方法
-@Gener
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-01-02</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/">05 Java</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/00-Java-基础/">00 Java 基础</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/00-Java-基础/15-脚本、编译、注解/">15 脚本、编译、注解</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/2%20%E7%BC%96%E8%AF%91%E5%99%A8%20API/">
-				<h2 class="index-title">
-					2 编译器 API
-				</h2>
-				<div class="index-brief">
-					编译器 API 替代 jdk/lib/toors.jar 类库
-1 编译便捷之法
-JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
-OutputStream outStream = ...;
-OutputStream errS
+					1 注解处理
+编译器会定位源文件中的注解。每个注解处理器会依次执行。如果某个注解处理器产生了新的源文件，则重复处理。没有新文件产生后，就编译所有源文件。
+注解处理器通常扩展 AbstractProcessor 类实现 Processor 接口。
+@SupportedAnnotationTypes(&
 					...
 				</div>
 			</a>
@@ -4782,6 +4742,56 @@ MIME 类型
 
 Nashorn
 nashorn,Nashorn,js,JS,JavaScript,javascript,ECM
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-01-02</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/">05 Java</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/00-Java-基础/">00 Java 基础</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/00-Java-基础/15-脚本、编译、注解/">15 脚本、编译、注解</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/2%20%E7%BC%96%E8%AF%91%E5%99%A8%20API/">
+				<h2 class="index-title">
+					2 编译器 API
+				</h2>
+				<div class="index-brief">
+					编译器 API 替代 jdk/lib/toors.jar 类库
+1 编译便捷之法
+JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+OutputStream outStream = ...;
+OutputStream errS
 					...
 				</div>
 			</a>
@@ -4977,18 +4987,22 @@ SecurityManager 安全管理器是一个负责控制具体操作是否允许执�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/3%20%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/4%20%E6%95%B0%E6%8D%AE%E7%AD%BE%E5%90%8D/">
 				<h2 class="index-title">
-					3 用户认证
+					4 数据签名
 				</h2>
 				<div class="index-brief">
-					认证负责确认使用者身份。
-1 JAAS 框架
-Java 认证和授权服务，是一个可插拔的 API。
-com.sun.security 包下。
-2 JAAS 登陆模块
-…
+					要确定一份代码是否安全，首先要搞清楚两个问题：
 
+这份代码来自哪里
+这份代码是否被篡改过
+
+ava.security 包提供了很多成熟算法。
+1 消息摘要
+消息摘要(Message Digest)是数据块的数据指纹。具有两个基本属性：
+
+如果数据改变了，消息摘要也会改变
+拥有给定消息的伪造者不能创建
 					...
 				</div>
 			</a>
@@ -5029,22 +5043,18 @@ com.sun.security 包下。
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/4%20%E6%95%B0%E6%8D%AE%E7%AD%BE%E5%90%8D/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/3%20%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/">
 				<h2 class="index-title">
-					4 数据签名
+					3 用户认证
 				</h2>
 				<div class="index-brief">
-					要确定一份代码是否安全，首先要搞清楚两个问题：
+					认证负责确认使用者身份。
+1 JAAS 框架
+Java 认证和授权服务，是一个可插拔的 API。
+com.sun.security 包下。
+2 JAAS 登陆模块
+…
 
-这份代码来自哪里
-这份代码是否被篡改过
-
-ava.security 包提供了很多成熟算法。
-1 消息摘要
-消息摘要(Message Digest)是数据块的数据指纹。具有两个基本属性：
-
-如果数据改变了，消息摘要也会改变
-拥有给定消息的伪造者不能创建
 					...
 				</div>
 			</a>

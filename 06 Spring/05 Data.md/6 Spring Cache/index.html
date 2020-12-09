@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4864,16 +4877,16 @@ void remove(long spittleId);
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
+              <a href="/06%20Spring/05%20Data.md/8%20Transaction/">
                   <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  7 Dynamic DataSource
+                  8 Transaction
               </a>
             
         </div>
         <div class="item right">
             
-              <a href="/06%20Spring/05%20Data.md/9%20Spring%20Cache%20+%20Caffeine/">
-                9 Spring Cache + Caffeine
+              <a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
+                7 Dynamic DataSource
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             

@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4757,20 +4770,21 @@ publ
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/04%20%E5%BC%82%E5%B8%B8%E3%80%81%E6%96%AD%E8%A8%80%E3%80%81%E6%97%A5%E5%BF%97/3%20%E6%97%A5%E5%BF%97/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/04%20%E5%BC%82%E5%B8%B8%E3%80%81%E6%96%AD%E8%A8%80%E3%80%81%E6%97%A5%E5%BF%97/2%20%E6%96%AD%E8%A8%80/">
 				<h2 class="index-title">
-					3 日志
+					2 断言
 				</h2>
 				<div class="index-brief">
-					java.util.logging.Logger
-1 日志记录器
-1.1 全局日志记录器
-Logger.getGlobal()
-Logger.getGlobal().info(&quot;&quot;);
+					断言用在开发、测试期间。
+当代码发布时，这些插入的检测语句将会被自动地移走。
+1 表达形式
+1.1 assert 条件
+assert x &gt;= 0;
 
-1.2 自定义日志记录器
-Logger.getLogger()
-Logger myLogge
+1.2 assert 条件:表达式
+assert x &gt;= 0 : x;
+
+对条件进行检测，如果为 false，则抛出一个 Assert
 					...
 				</div>
 			</a>
@@ -4811,21 +4825,20 @@ Logger myLogge
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/04%20%E5%BC%82%E5%B8%B8%E3%80%81%E6%96%AD%E8%A8%80%E3%80%81%E6%97%A5%E5%BF%97/2%20%E6%96%AD%E8%A8%80/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/04%20%E5%BC%82%E5%B8%B8%E3%80%81%E6%96%AD%E8%A8%80%E3%80%81%E6%97%A5%E5%BF%97/3%20%E6%97%A5%E5%BF%97/">
 				<h2 class="index-title">
-					2 断言
+					3 日志
 				</h2>
 				<div class="index-brief">
-					断言用在开发、测试期间。
-当代码发布时，这些插入的检测语句将会被自动地移走。
-1 表达形式
-1.1 assert 条件
-assert x &gt;= 0;
+					java.util.logging.Logger
+1 日志记录器
+1.1 全局日志记录器
+Logger.getGlobal()
+Logger.getGlobal().info(&quot;&quot;);
 
-1.2 assert 条件:表达式
-assert x &gt;= 0 : x;
-
-对条件进行检测，如果为 false，则抛出一个 Assert
+1.2 自定义日志记录器
+Logger.getLogger()
+Logger myLogge
 					...
 				</div>
 			</a>
@@ -5034,18 +5047,16 @@ javadoc 从下面几个特性中抽取信息：
 		</div>	
 	
 		<div class="index-li">
-			<a href="/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/3%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/2%20%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">
+			<a href="/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/3%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/3%20%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">
 				<h2 class="index-title">
-					2 结构型模式
+					3 行为型模式
 				</h2>
 				<div class="index-brief">
-					1. Adapter（适配器）
-将一个接口转换成客户希望的另一个接口，适配器模式使接口不兼容的那些类可以一起工作，别名包装器(Wrapper)。
-如非必要，可以重构
-模式应用
-
-Enumeration 接口转化为 Iterator 接口
-Java I/O中 InputStreamReader 和 O
+					1. Chain of Responsibility（责任链）
+为请求创建了一个接收者对象的链。
+将请求的发送者和请求的处理者解耦，每个接收者都包含对另一个接收者的引用。如果一个对象不能处理该请求，那么它会把相同的请求传给下一个接收者，依此类推。
+应用实例
+JAVA WEB 中 Apache Tom
 					...
 				</div>
 			</a>
@@ -5076,16 +5087,18 @@ Java I/O中 InputStreamReader 和 O
 		</div>	
 	
 		<div class="index-li">
-			<a href="/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/3%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/3%20%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/">
+			<a href="/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/3%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/2%20%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/">
 				<h2 class="index-title">
-					3 行为型模式
+					2 结构型模式
 				</h2>
 				<div class="index-brief">
-					1. Chain of Responsibility（责任链）
-为请求创建了一个接收者对象的链。
-将请求的发送者和请求的处理者解耦，每个接收者都包含对另一个接收者的引用。如果一个对象不能处理该请求，那么它会把相同的请求传给下一个接收者，依此类推。
-应用实例
-JAVA WEB 中 Apache Tom
+					1. Adapter（适配器）
+将一个接口转换成客户希望的另一个接口，适配器模式使接口不兼容的那些类可以一起工作，别名包装器(Wrapper)。
+如非必要，可以重构
+模式应用
+
+Enumeration 接口转化为 Iterator 接口
+Java I/O中 InputStreamReader 和 O
 					...
 				</div>
 			</a>

@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,63 +4668,6 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/7%20Apache%20Commons%20Text/">
-				<h2 class="index-title">
-					7 Apache Commons Text
-				</h2>
-				<div class="index-brief">
-					Apache Commons Text官网
-文本处理
-包结构
-
-
-
-
-Package
-Description
-
-
-
-
-org.apache.commons.text
-文本处理基础类
-
-
-org.apache.commons.text.diff
-提供比较字符串差异的算法
-
-
-org.apache.co
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/">16 辅助工具类</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/1-Apache-Commons/">1 Apache Commons</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/2%20Apache%20Commons%20BeanUtils/">
 				<h2 class="index-title">
 					2 Apache Commons BeanUtils
@@ -4764,19 +4720,16 @@ org.apache.commons.beanutils.conve
 		</div>	
 	
 		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/5%20Apache%20Commons%20Lang/">
 				<h2 class="index-title">
-					1 Lombok消除Java冗长
+					5 Apache Commons Lang
 				</h2>
 				<div class="index-brief">
-					官方网址、
-github地址
-简介
-Lombok采取注解声明方法，注解后经编译，会自动生成注解声明的方法，减少很多重复代码的书写。比如说getter/setter/toString等方法。
-安装
-添加依赖
-&lt;dependency&gt;
-    &lt;groupId&gt;org.proje
+					 Lang 项目官网
+概览
+
+Lang 为 java.lang API 提供了大量辅助工具类，尤其是字符串操作方法，基本数值方法，对象反射，并发性，创建和序列化以及系统属性。 此外，它还包含对java.util.Date的基本增强功能以及一系列专用于帮助构建方法的工具集。
+顶层包包含各种Utils类
 					...
 				</div>
 			</a>
@@ -4797,7 +4750,7 @@ Lombok采取注解声明方法，注解后经编译，会自动生成注解声�
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/4-数据格式/">4 数据格式</a>
+                                        <a href="/categories/16-辅助工具类/1-Apache-Commons/">1 Apache Commons</a>
 										
                                     </span>
                                 
@@ -4807,13 +4760,17 @@ Lombok采取注解声明方法，注解后经编译，会自动生成注解声�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/2%20MapStruct%E5%AE%9E%E4%BD%93%E9%97%B4%E8%BD%AC%E6%8D%A2/">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/6%20Apache%20Commons%20Pool/">
 				<h2 class="index-title">
-					2 MapStruct实体间转换
+					6 Apache Commons Pool
 				</h2>
 				<div class="index-brief">
-					1 简介
-MapStruct是一个代码生成器的工具类，简化了不同的Java Bean之间映射的处理，所以映射指的就是从一个实体变化成一个实体。在实际项目中，我们经常会将PO转DTO、DTO转PO等一些实体间的转换。在转换时大部分属性都是相同的，只有少部分的不同，这时我们可以通过mapStruct的一
+					Pool项目官网
+概览
+Apache Commons Pool开源软件库是对象池技术的一种具体实现，提供了一个对象池API和许多对象池实现。简单的说就是将对象一次创建多次使用，解决频繁的创建和销毁对象带来的性能损耗问题。
+文档
+在线 API 文档：Javadoc (2.5.0 release)
+使用
 					...
 				</div>
 			</a>
@@ -4834,7 +4791,64 @@ MapStruct是一个代码生成器的工具类，简化了不同的Java Bean之�
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/4-数据格式/">4 数据格式</a>
+                                        <a href="/categories/16-辅助工具类/1-Apache-Commons/">1 Apache Commons</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/7%20Apache%20Commons%20Text/">
+				<h2 class="index-title">
+					7 Apache Commons Text
+				</h2>
+				<div class="index-brief">
+					Apache Commons Text官网
+文本处理
+包结构
+
+
+
+
+Package
+Description
+
+
+
+
+org.apache.commons.text
+文本处理基础类
+
+
+org.apache.commons.text.diff
+提供比较字符串差异的算法
+
+
+org.apache.co
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/16-辅助工具类/">16 辅助工具类</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/16-辅助工具类/1-Apache-Commons/">1 Apache Commons</a>
 										
                                     </span>
                                 

@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,16 +4668,31 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/2%20%E7%BC%96%E8%AF%91%E5%99%A8%20API/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/1%20Java%20%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%84%9A%E6%9C%AC/">
 				<h2 class="index-title">
-					2 编译器 API
+					1 Java 平台的脚本
 				</h2>
 				<div class="index-brief">
-					编译器 API 替代 jdk/lib/toors.jar 类库
-1 编译便捷之法
-JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
-OutputStream outStream = ...;
-OutputStream errS
+					
+脚本 API：允许调用脚本语言代码
+编译器 API：应用程序内编译 Java 代码
+注解处理器：操作注解
+
+1 获取脚本引擎
+常用引擎
+
+
+
+引擎
+名字
+MIME 类型
+文件扩展
+
+
+
+
+Nashorn
+nashorn,Nashorn,js,JS,JavaScript,javascript,ECM
 					...
 				</div>
 			</a>
@@ -4705,31 +4733,16 @@ OutputStream errS
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/1%20Java%20%E5%B9%B3%E5%8F%B0%E7%9A%84%E8%84%9A%E6%9C%AC/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/2%20%E7%BC%96%E8%AF%91%E5%99%A8%20API/">
 				<h2 class="index-title">
-					1 Java 平台的脚本
+					2 编译器 API
 				</h2>
 				<div class="index-brief">
-					
-脚本 API：允许调用脚本语言代码
-编译器 API：应用程序内编译 Java 代码
-注解处理器：操作注解
-
-1 获取脚本引擎
-常用引擎
-
-
-
-引擎
-名字
-MIME 类型
-文件扩展
-
-
-
-
-Nashorn
-nashorn,Nashorn,js,JS,JavaScript,javascript,ECM
+					编译器 API 替代 jdk/lib/toors.jar 类库
+1 编译便捷之法
+JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+OutputStream outStream = ...;
+OutputStream errS
 					...
 				</div>
 			</a>
@@ -4925,18 +4938,22 @@ SecurityManager 安全管理器是一个负责控制具体操作是否允许执�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/3%20%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/4%20%E6%95%B0%E6%8D%AE%E7%AD%BE%E5%90%8D/">
 				<h2 class="index-title">
-					3 用户认证
+					4 数据签名
 				</h2>
 				<div class="index-brief">
-					认证负责确认使用者身份。
-1 JAAS 框架
-Java 认证和授权服务，是一个可插拔的 API。
-com.sun.security 包下。
-2 JAAS 登陆模块
-…
+					要确定一份代码是否安全，首先要搞清楚两个问题：
 
+这份代码来自哪里
+这份代码是否被篡改过
+
+ava.security 包提供了很多成熟算法。
+1 消息摘要
+消息摘要(Message Digest)是数据块的数据指纹。具有两个基本属性：
+
+如果数据改变了，消息摘要也会改变
+拥有给定消息的伪造者不能创建
 					...
 				</div>
 			</a>
@@ -4977,22 +4994,18 @@ com.sun.security 包下。
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/4%20%E6%95%B0%E6%8D%AE%E7%AD%BE%E5%90%8D/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/16%20%E5%AE%89%E5%85%A8/3%20%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81/">
 				<h2 class="index-title">
-					4 数据签名
+					3 用户认证
 				</h2>
 				<div class="index-brief">
-					要确定一份代码是否安全，首先要搞清楚两个问题：
+					认证负责确认使用者身份。
+1 JAAS 框架
+Java 认证和授权服务，是一个可插拔的 API。
+com.sun.security 包下。
+2 JAAS 登陆模块
+…
 
-这份代码来自哪里
-这份代码是否被篡改过
-
-ava.security 包提供了很多成熟算法。
-1 消息摘要
-消息摘要(Message Digest)是数据块的数据指纹。具有两个基本属性：
-
-如果数据改变了，消息摘要也会改变
-拥有给定消息的伪造者不能创建
 					...
 				</div>
 			</a>
@@ -5125,14 +5138,15 @@ ava.security 包提供了很多成熟算法。
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/09%20%E5%BC%82%E5%B8%B8%EF%BC%8869-77%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/07%20%E6%96%B9%E6%B3%95%EF%BC%8849-56%EF%BC%89/">
 				<h2 class="index-title">
-					09 异常（69-77）
+					07 方法（49-56）
 				</h2>
 				<div class="index-brief">
-					第 69 条：只针对异常的情况才使用异常
-如果在 try、catch、finally 块中都抛出了异常，只是只有一个异常可被传播到外界。
-请不要在 try 块中发出对 return、break 或 continue 的调用，万一无法避免，一定要确保 finally 的存在不会改变函数的返回值（比如说
+					第 49 条：检查参数的有效性
+不仅需要检查参数的有效性，还需要在函数的文档中给予明确的说明，如在参数非法的情况下，会抛出哪些异常，或导致函数返回哪些错误值等
+第 50 条：必要时进行保护性拷贝
+如果不能够容忍对象进入数据结构之后发生变，就必须对该对象进行保护性拷贝，并且让拷贝之后的对象而不是原始对
 					...
 				</div>
 			</a>

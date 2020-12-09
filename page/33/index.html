@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,6 +4668,47 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/14%20%E5%89%8D%E7%AB%AF/4%20FIS/1%20FIS%203%E6%8E%A5%E5%8F%A3%E9%80%9F%E6%9F%A5/">
+				<h2 class="index-title">
+					1 FIS 3接口速查
+				</h2>
+				<div class="index-brief">
+					FIS 构建工具 前端工具框架
+官方文档：http://fis.baidu.com/fis3/docs/beginning/intro.html
+默认配置文件为 fis-conf.js，有此文件的目录被看做是项目根目
+配置接口
+
+fis.set(key, value)：设置一些配置，如系统内置属性。
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/14-前端/">14 前端</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/14-前端/4-FIS/">4 FIS</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/1%20Apache%20Commons%20-%20%E6%80%BB%E8%A7%88/">
 				<h2 class="index-title">
 					1 Apache Commons - 总览
@@ -4749,6 +4803,43 @@ org.apache.commons.co
 		</div>	
 	
 		<div class="index-li">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/2%20MapStruct%E5%AE%9E%E4%BD%93%E9%97%B4%E8%BD%AC%E6%8D%A2/">
+				<h2 class="index-title">
+					2 MapStruct实体间转换
+				</h2>
+				<div class="index-brief">
+					1 简介
+MapStruct是一个代码生成器的工具类，简化了不同的Java Bean之间映射的处理，所以映射指的就是从一个实体变化成一个实体。在实际项目中，我们经常会将PO转DTO、DTO转PO等一些实体间的转换。在转换时大部分属性都是相同的，只有少部分的不同，这时我们可以通过mapStruct的一
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/16-辅助工具类/">16 辅助工具类</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/16-辅助工具类/4-数据格式/">4 数据格式</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/4%20Apache%20Commons%20Collections/">
 				<h2 class="index-title">
 					4 Apache Commons Collections
@@ -4758,6 +4849,58 @@ org.apache.commons.co
 ###概览
 Java集合框架是JDK 1.2添加的主要功能。它增加了许多强大的数据结构，加速了许多的重大Java应用的开发。从那时起就成为了Java中处理集合的公认标准。
 Commons-Collections试图通过提供新的接口，实现和工具来构建JD
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/16-辅助工具类/">16 辅助工具类</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/16-辅助工具类/1-Apache-Commons/">1 Apache Commons</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/2%20Apache%20Commons%20BeanUtils/">
+				<h2 class="index-title">
+					2 Apache Commons BeanUtils
+				</h2>
+				<div class="index-brief">
+					Commons BeanUtils官网
+包结构
+
+
+
+
+Package
+Description
+
+
+
+
+org.apache.commons.beanutils
+提供底层工具类，获取Bean属性值，动态定义和访问Bean属性。
+
+
+org.apache.commons.beanutils.conve
 					...
 				</div>
 			</a>
@@ -4926,151 +5069,23 @@ org.apache.co
 		</div>	
 	
 		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/2%20Apache%20Commons%20BeanUtils/">
+			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3%20%E6%95%B0%E7%BB%84%E5%92%8C%E5%B9%BF%E4%B9%89%E8%A1%A8/">
 				<h2 class="index-title">
-					2 Apache Commons BeanUtils
+					3 数组和广义表
 				</h2>
 				<div class="index-brief">
-					Commons BeanUtils官网
-包结构
+					1 数组的概念、多维数组的实现
+1）数组的概念
 
+数组的特点：元素数目固定；下标有界。
+数组的操作：按照下标进行读写。
 
-
-
-Package
-Description
-
-
-
-
-org.apache.commons.beanutils
-提供底层工具类，获取Bean属性值，动态定义和访问Bean属性。
-
-
-org.apache.commons.beanutils.conve
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/">16 辅助工具类</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/1-Apache-Commons/">1 Apache Commons</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
-				<h2 class="index-title">
-					1 Lombok消除Java冗长
-				</h2>
-				<div class="index-brief">
-					官方网址、
-github地址
-简介
-Lombok采取注解声明方法，注解后经编译，会自动生成注解声明的方法，减少很多重复代码的书写。比如说getter/setter/toString等方法。
-安装
-添加依赖
-&lt;dependency&gt;
-    &lt;groupId&gt;org.proje
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/">16 辅助工具类</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/4-数据格式/">4 数据格式</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/2%20MapStruct%E5%AE%9E%E4%BD%93%E9%97%B4%E8%BD%AC%E6%8D%A2/">
-				<h2 class="index-title">
-					2 MapStruct实体间转换
-				</h2>
-				<div class="index-brief">
-					1 简介
-MapStruct是一个代码生成器的工具类，简化了不同的Java Bean之间映射的处理，所以映射指的就是从一个实体变化成一个实体。在实际项目中，我们经常会将PO转DTO、DTO转PO等一些实体间的转换。在转换时大部分属性都是相同的，只有少部分的不同，这时我们可以通过mapStruct的一
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/">16 辅助工具类</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/4-数据格式/">4 数据格式</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/03%20%E6%9F%A5%E6%89%BE/0%20%E6%9F%A5%E6%89%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
-				<h2 class="index-title">
-					0 查找的基本概念
-				</h2>
-				<div class="index-brief">
-					
-查找：就是根据给定的某个值，在查找表中确定一个其关键字等于给定值的数据元素 （或记录）。
-查找表：是由同一类型的数据元素（或记录）构成的集合。
-关键字：是数据元素中某个数据项的值
-主关键字：可以唯一地标识一个记录的关键字
-次关键字：可以识别多个数据元素(或记录)的关键字
-
-查找表按照操作方式来分有
+2）多维数组的实现
+行优先顺序
+存储时先按行从小到大的顺序存储，在每一行中按列号从小到大存储。
+列优先顺序
+存储时先按列从小到大的顺序存储，在每一列中按行号从小到大存储。
+2 矩
 					...
 				</div>
 			</a>
@@ -5101,7 +5116,7 @@ MapStruct是一个代码生成器的工具类，简化了不同的Java Bean之�
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/03-查找/">03 查找</a>
+                                        <a href="/categories/01-数据结构与算法/数据结构/01-数据结构/">01 数据结构</a>
 										
                                     </span>
                                 

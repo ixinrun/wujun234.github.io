@@ -25,7 +25,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,7 +94,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4810,10 +4823,16 @@ final LocalDateTime datetimeFromClock =
 ZonedDateTime zonedDatetimeFromZone = ZonedDateTime.now( ZoneId.of(&quot;America/Los_Angeles&quot;) );//2014-04-12T08:47:01.017-07:00[America/Los_Angeles]
 
 ZonedDateTime apollolaunch = ZonedDateTime.of(1969, 7, 16, 9, 32, 0, 0,ZoneId.of(&quot;America/New_York&quot;));
+
+
 </code></pre>
 <h4 id="2）时刻转换"><a class="header-anchor" href="#2）时刻转换"></a>2）时刻转换</h4>
 <pre><code>Instant instant = apollolaunch.toInstant();
 ZonedDateTime z = Instant.atZone(ZoneId.of(&quot;UTC&quot;))
+</code></pre>
+<pre><code>LocalDate yesterday = LocalDate.now().plusDays(-1);
+ZonedDateTime zdt = yesterday.atStartOfDay(ZoneId.of(&quot;Asia/Shanghai&quot;));
+Date yesterdayDate = Date.from(zdt.toInstant());
 </code></pre>
 
 </div>

@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4737,19 +4750,17 @@ public inte
 		</div>	
 	
 		<div class="index-li">
-			<a href="/07%20%E6%95%B0%E6%8D%AE%E5%BA%93/02%20MyBatis/01%20MyBatis+Spring%20Boot/">
+			<a href="/07%20%E6%95%B0%E6%8D%AE%E5%BA%93/02%20MyBatis/02%20MyBatis%20Generator/">
 				<h2 class="index-title">
-					01 MyBatis+Spring Boot
+					02 MyBatis Generator
 				</h2>
 				<div class="index-brief">
-					简介
+					MyBatis Generator
 
-
-MyBatis
-传统方法使用 MyBatis ，有  MyBatis 官网中文文档 。
-Generator
-传统方法比较繁琐，因而 MyBatis 推出了 MyBatis Generator 工具，可自动生成实体类、配置文件和dao层代码，以减轻一部分开发量。
-Spring Boot + 
+一、在pom.xml中添加plugin
+      &lt;plugin&gt;
+        &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;
+        &lt;artifactId&gt;myb
 					...
 				</div>
 			</a>
@@ -4780,17 +4791,19 @@ Spring Boot +
 		</div>	
 	
 		<div class="index-li">
-			<a href="/07%20%E6%95%B0%E6%8D%AE%E5%BA%93/02%20MyBatis/02%20MyBatis%20Generator/">
+			<a href="/07%20%E6%95%B0%E6%8D%AE%E5%BA%93/02%20MyBatis/01%20MyBatis+Spring%20Boot/">
 				<h2 class="index-title">
-					02 MyBatis Generator
+					01 MyBatis+Spring Boot
 				</h2>
 				<div class="index-brief">
-					MyBatis Generator
+					简介
 
-一、在pom.xml中添加plugin
-      &lt;plugin&gt;
-        &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;
-        &lt;artifactId&gt;myb
+
+MyBatis
+传统方法使用 MyBatis ，有  MyBatis 官网中文文档 。
+Generator
+传统方法比较繁琐，因而 MyBatis 推出了 MyBatis Generator 工具，可自动生成实体类、配置文件和dao层代码，以减轻一部分开发量。
+Spring Boot + 
 					...
 				</div>
 			</a>

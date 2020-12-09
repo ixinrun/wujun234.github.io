@@ -23,7 +23,20 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	
-  
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "wujun234.github.io";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
 
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -79,7 +92,7 @@ var _hmt = _hmt || [];
 	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
 	
 	<div id="site-toc">
-		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
 		<div id="tree">
 			
 
@@ -4655,23 +4668,15 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/12%20%E6%B5%8B%E8%AF%95/2%20http_load/1%20http_load%20-%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/">
+			<a href="/12%20%E6%B5%8B%E8%AF%95/3%20JMeter/1%20JMeter%20-%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">
 				<h2 class="index-title">
-					1 http_load - 压力测试
+					1 JMeter - 性能测试
 				</h2>
 				<div class="index-brief">
-					1.http_load简介
-http_load官网
-http_load是一款基于Linux平台的web服务器性能测试工具，以并行复用的方式运行，用于测试web服务器的吞吐量与负载，web页面的性能。
-优点：
-
-基于命令行，简单、易于上手。
-小巧轻便，解压缩后不到100k。
-开源，免费。
-
-缺点：
-
-
+					JMeter是开源软件Apache基金会下的一个性能测试工具，用来测试部署在服务器端的应用程序的性能。
+官网下载，下载解压后，运行 %JMETER_HOME%\bin\ApacheJMeter.jar 即可。
+1 添加虚拟用户组
+JMeter使用一个Java线程来模拟一个用户，线程组就是一组虚拟用户
 					...
 				</div>
 			</a>
@@ -4692,7 +4697,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/2-http-load/">2 http_load</a>
+                                        <a href="/categories/12-测试/3-JMeter/">3 JMeter</a>
 										
                                     </span>
                                 
@@ -4734,50 +4739,6 @@ m
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/12-测试/1-EasyMock/">1 EasyMock</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/12%20%E6%B5%8B%E8%AF%95/5%20MockMvc/1%20MockMvc/">
-				<h2 class="index-title">
-					1 MockMvc
-				</h2>
-				<div class="index-brief">
-					测试controller
-初始化
-SpringBoot 中很方便
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureMockMvc
-public class HelloWorldControlerTests {
-
-    @Auto
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/">12 测试</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/5-MockMvc/">5 MockMvc</a>
 										
                                     </span>
                                 
@@ -4840,15 +4801,23 @@ public class HelloWorldControlerTests {
 		</div>	
 	
 		<div class="index-li">
-			<a href="/12%20%E6%B5%8B%E8%AF%95/3%20JMeter/1%20JMeter%20-%20%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">
+			<a href="/12%20%E6%B5%8B%E8%AF%95/2%20http_load/1%20http_load%20-%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/">
 				<h2 class="index-title">
-					1 JMeter - 性能测试
+					1 http_load - 压力测试
 				</h2>
 				<div class="index-brief">
-					JMeter是开源软件Apache基金会下的一个性能测试工具，用来测试部署在服务器端的应用程序的性能。
-官网下载，下载解压后，运行 %JMETER_HOME%\bin\ApacheJMeter.jar 即可。
-1 添加虚拟用户组
-JMeter使用一个Java线程来模拟一个用户，线程组就是一组虚拟用户
+					1.http_load简介
+http_load官网
+http_load是一款基于Linux平台的web服务器性能测试工具，以并行复用的方式运行，用于测试web服务器的吞吐量与负载，web页面的性能。
+优点：
+
+基于命令行，简单、易于上手。
+小巧轻便，解压缩后不到100k。
+开源，免费。
+
+缺点：
+
+
 					...
 				</div>
 			</a>
@@ -4869,7 +4838,51 @@ JMeter使用一个Java线程来模拟一个用户，线程组就是一组虚拟�
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/3-JMeter/">3 JMeter</a>
+                                        <a href="/categories/12-测试/2-http-load/">2 http_load</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/12%20%E6%B5%8B%E8%AF%95/5%20MockMvc/1%20MockMvc/">
+				<h2 class="index-title">
+					1 MockMvc
+				</h2>
+				<div class="index-brief">
+					测试controller
+初始化
+SpringBoot 中很方便
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@AutoConfigureMockMvc
+public class HelloWorldControlerTests {
+
+    @Auto
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/12-测试/">12 测试</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/12-测试/5-MockMvc/">5 MockMvc</a>
 										
                                     </span>
                                 
