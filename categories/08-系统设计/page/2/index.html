@@ -41,7 +41,9 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
@@ -4708,6 +4710,92 @@ Controller（控制器） - 控制器作用于模型和视图上。它控制数�
 		</div>	
 	
 		<div class="index-li">
+			<a href="/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/1%20%E9%80%9A%E7%94%A8%E8%AE%BE%E8%AE%A1/02%20%E8%B7%A8%E5%BA%93%E5%88%86%E9%A1%B5/">
+				<h2 class="index-title">
+					02 跨库分页
+				</h2>
+				<div class="index-brief">
+					原文：https://mp.weixin.qq.com/s/cMAXYBxmevFV_fwysZqP8w
+需求缘起
+分页需求
+分页拉取需求有这样一些特点：
+
+有一个业务主键id
+分页排序是按照非业务主键id来排序的，业务中经常按照时间time来排序order by
+
+在数据量不大时，可以通过在排序字
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/08-系统设计/">08 系统设计</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/08-系统设计/1-通用设计/">1 通用设计</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/1%20%E9%80%9A%E7%94%A8%E8%AE%BE%E8%AE%A1/03%20%E7%9F%AD%E9%93%BE%E6%8E%A5/">
+				<h2 class="index-title">
+					03 短链接
+				</h2>
+				<div class="index-brief">
+					短链接URL系统是怎么设计的？
+实现一个自增发号器，每个长地址，发个短号，存储长短关系，请求短号时返回对应长号。
+在[0-9]的10进制与[0-9a-zA-Z]的62进制之间转换。可以使号码很小。
+大并发高可用？
+并发量大还可以搞分布式。类似 snowflake。
+一长对多短？还是一对一？
+如有需要
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/08-系统设计/">08 系统设计</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/08-系统设计/1-通用设计/">1 通用设计</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/2%20%E4%B8%9A%E5%8A%A1%E8%AE%BE%E8%AE%A1/02%20%E6%B6%88%E6%81%AF%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/">
 				<h2 class="index-title">
 					02 消息系统设计
@@ -4853,92 +4941,6 @@ media共有12.6w 个，其中有 297
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/08-系统设计/2-业务设计/">2 业务设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/1%20%E9%80%9A%E7%94%A8%E8%AE%BE%E8%AE%A1/02%20%E8%B7%A8%E5%BA%93%E5%88%86%E9%A1%B5/">
-				<h2 class="index-title">
-					02 跨库分页
-				</h2>
-				<div class="index-brief">
-					原文：https://mp.weixin.qq.com/s/cMAXYBxmevFV_fwysZqP8w
-需求缘起
-分页需求
-分页拉取需求有这样一些特点：
-
-有一个业务主键id
-分页排序是按照非业务主键id来排序的，业务中经常按照时间time来排序order by
-
-在数据量不大时，可以通过在排序字
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/">08 系统设计</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/1-通用设计/">1 通用设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/08%20%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/1%20%E9%80%9A%E7%94%A8%E8%AE%BE%E8%AE%A1/03%20%E7%9F%AD%E9%93%BE%E6%8E%A5/">
-				<h2 class="index-title">
-					03 短链接
-				</h2>
-				<div class="index-brief">
-					短链接URL系统是怎么设计的？
-实现一个自增发号器，每个长地址，发个短号，存储长短关系，请求短号时返回对应长号。
-在[0-9]的10进制与[0-9a-zA-Z]的62进制之间转换。可以使号码很小。
-大并发高可用？
-并发量大还可以搞分布式。类似 snowflake。
-一长对多短？还是一对一？
-如有需要
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/">08 系统设计</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/08-系统设计/1-通用设计/">1 通用设计</a>
 										
                                     </span>
                                 

@@ -41,7 +41,9 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
@@ -4844,25 +4846,26 @@ UDP的主要特点是：
 		</div>	
 	
 		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/2%20%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE%20IP/">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/5%20%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E8%B7%AF%E7%94%B1%E9%80%89%E6%8B%A9%E5%8D%8F%E8%AE%AE/">
 				<h2 class="index-title">
-					2 网际协议 IP
+					5 互联网的路由选择协议
 				</h2>
 				<div class="index-brief">
-					与 IP 协议配套使用的三个协议：
+					1 基本概念
+路由选择协议的核心就是路由算法：即需要何种算法来获得路由表中的各项目。
+1）理想的路由算法
 
-地址解析协议 ARP
-网际控制报文协议 ICMP
-网际组管理协议 IGMP
+算法必须是正确和完整的
+算法在计算上应该简单
+要有自适应性
+应具有稳定性
+算法应是公平的
+算法应是最佳的
 
-1 虚拟互连网络
-没有一种单一的网络能够适应所有用户的需求。将网络互连起来需要使用一些中间设备：
+2）分层次的路由选择协议
+采用分层次的路由选择协议的原因：
 
-转发器（物理层）
-网桥或桥接器（数据链路层）
-路由器（网络层）
-网关（网络层以上）
-
+互联网规模比较大，不可
 					...
 				</div>
 			</a>
@@ -4893,26 +4896,25 @@ UDP的主要特点是：
 		</div>	
 	
 		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/5%20%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E8%B7%AF%E7%94%B1%E9%80%89%E6%8B%A9%E5%8D%8F%E8%AE%AE/">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/2%20%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE%20IP/">
 				<h2 class="index-title">
-					5 互联网的路由选择协议
+					2 网际协议 IP
 				</h2>
 				<div class="index-brief">
-					1 基本概念
-路由选择协议的核心就是路由算法：即需要何种算法来获得路由表中的各项目。
-1）理想的路由算法
+					与 IP 协议配套使用的三个协议：
 
-算法必须是正确和完整的
-算法在计算上应该简单
-要有自适应性
-应具有稳定性
-算法应是公平的
-算法应是最佳的
+地址解析协议 ARP
+网际控制报文协议 ICMP
+网际组管理协议 IGMP
 
-2）分层次的路由选择协议
-采用分层次的路由选择协议的原因：
+1 虚拟互连网络
+没有一种单一的网络能够适应所有用户的需求。将网络互连起来需要使用一些中间设备：
 
-互联网规模比较大，不可
+转发器（物理层）
+网桥或桥接器（数据链路层）
+路由器（网络层）
+网关（网络层以上）
+
 					...
 				</div>
 			</a>

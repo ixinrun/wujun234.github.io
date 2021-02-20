@@ -41,7 +41,9 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
@@ -4997,15 +4999,18 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/06%20Lambdas%20%E4%B8%8E%20Streams%EF%BC%8842-48%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
 				<h2 class="index-title">
-					06 Lambdas 与 Streams（42-48）
+					10 并发（78-84）
 				</h2>
 				<div class="index-brief">
-					第 42 条：lambdas 优于匿名类
-从 Java 8 开始，lambda 是迄今为止表示小函数对象的最佳方式。 除非必须创建非函数式接口类型的实例，否则不要使用匿名类作为函数对象。
-lambda 没有名称和文档，如果超过三行，不要使用 lambda 表达式。
-第 43 条: 方法引用优于 la
+					第 78 条：同步访问共享的可变数据
+第 79 条：避免过度同步
+第 80 条：executor 和 task 优先于线程
+
+Executor.newCachedThreadPool：小程序，轻载的服务器
+Executor.newFixedThreadPool：大负载的服务器
+ThreadPoolE
 					...
 				</div>
 			</a>
@@ -5036,18 +5041,15 @@ lambda 没有名称和文档，如果超过三行，不要使用 lambda 表达�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/08%20%E9%80%9A%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%8857-68%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/06%20Lambdas%20%E4%B8%8E%20Streams%EF%BC%8842-48%EF%BC%89/">
 				<h2 class="index-title">
-					08 通用程序设计（57-68）
+					06 Lambdas 与 Streams（42-48）
 				</h2>
 				<div class="index-brief">
-					第 57 条：将局部变量的作用域最小化
-第 58 条：for-each 循环优先于传统的 for 循环
-第 59 条：了解和使用标准类库
-第 60 条：如果需要精确的答案，请避免使用 float 和 double
-
-float 和 double 类型尤其不适合用于货币计算
-可以使用 bigDecim
+					第 42 条：lambdas 优于匿名类
+从 Java 8 开始，lambda 是迄今为止表示小函数对象的最佳方式。 除非必须创建非函数式接口类型的实例，否则不要使用匿名类作为函数对象。
+lambda 没有名称和文档，如果超过三行，不要使用 lambda 表达式。
+第 43 条: 方法引用优于 la
 					...
 				</div>
 			</a>

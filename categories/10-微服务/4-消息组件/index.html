@@ -41,7 +41,9 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
@@ -4668,14 +4670,19 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/4%20%E6%B6%88%E6%81%AF%E7%BB%84%E4%BB%B6/01%20Spring%20Cloud%20Bus/">
+			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/4%20%E6%B6%88%E6%81%AF%E7%BB%84%E4%BB%B6/02%20Spring%20Cloud%20Stream/">
 				<h2 class="index-title">
-					01 Spring Cloud Bus
+					02 Spring Cloud Stream
 				</h2>
 				<div class="index-brief">
-					消息总线是一种通信工具，可以在机器之间互相传输消息、文件等。消息总线扮演着一种消息路由的角色，拥有一套完备的路由机制来决定消息传输方向。发送段只需要向消息总线发出消息而不用管消息被如何转发。
-原理
-spring cloud bus整合 java的事件处理机制和消息中间件消息的发送和接受，主要由发送端
+					Spring Cloud Stream整合了Spring Boot和Spring Integration，实现了一套轻量级的消息驱动的微服务框架。目前为止只支持RabbitMQ和Kafka的自动化配置。
+快速入门
+以RabbitMQ为例
+
+引入依赖
+
+    &lt;dependency&gt;
+ 
 					...
 				</div>
 			</a>
@@ -4706,19 +4713,14 @@ spring cloud bus整合 java的事件处理机制和消息中间件消息的发�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/4%20%E6%B6%88%E6%81%AF%E7%BB%84%E4%BB%B6/02%20Spring%20Cloud%20Stream/">
+			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/4%20%E6%B6%88%E6%81%AF%E7%BB%84%E4%BB%B6/01%20Spring%20Cloud%20Bus/">
 				<h2 class="index-title">
-					02 Spring Cloud Stream
+					01 Spring Cloud Bus
 				</h2>
 				<div class="index-brief">
-					Spring Cloud Stream整合了Spring Boot和Spring Integration，实现了一套轻量级的消息驱动的微服务框架。目前为止只支持RabbitMQ和Kafka的自动化配置。
-快速入门
-以RabbitMQ为例
-
-引入依赖
-
-    &lt;dependency&gt;
- 
+					消息总线是一种通信工具，可以在机器之间互相传输消息、文件等。消息总线扮演着一种消息路由的角色，拥有一套完备的路由机制来决定消息传输方向。发送段只需要向消息总线发出消息而不用管消息被如何转发。
+原理
+spring cloud bus整合 java的事件处理机制和消息中间件消息的发送和接受，主要由发送端
 					...
 				</div>
 			</a>

@@ -41,7 +41,9 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
@@ -4668,135 +4670,6 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/7%20Zabbix/3%20zabbix%E4%B8%BB%E5%8A%A8%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A2%AB%E5%8A%A8%E6%A8%A1%E5%BC%8F/">
-				<h2 class="index-title">
-					3 zabbix主动模式、被动模式
-				</h2>
-				<div class="index-brief">
-					zabbix agent检测分为主动（agent active）和被动（agent）两种形式，主动与被动的说法均是相对于agent来讨论的。
-
-主动：agent请求server获取主动的监控项列表，并主动将监控项内需要检测的数据提交给server/proxy
-被动：server向agent请求获取监
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/09%20DevOps/7%20Zabbix/4%20Zabbix%E8%BF%81%E7%A7%BB/">
-				<h2 class="index-title">
-					4 Zabbix迁移
-				</h2>
-				<div class="index-brief">
-					zabbix的前端所有的操作都存在zabbix数据库里。
-如果迁移要求历史数据不丢失，对zabbix库中相应的表进行导出导入即可。
-若是对历史数据不要求，那么只迁移配置信息即可。
-安装
-
-根据zabbix手册新安装zabbix服务端，如果需要保留历史数据，务必使用相同版本。
-安装好后访问/setup
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/09%20DevOps/6%20Linux/2%20Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-				<h2 class="index-title">
-					2 Linux 常用命令
-				</h2>
-				<div class="index-brief">
-					1、文件相关
-1.1文件跳转
-
-pwd：打印当前目录名
-ls：列出目录内容
--a：列出所有文件，包括“.”开头的隐藏文件
--d：通常，指定目录名
--F：名字后面加指示符
--h：以人们可读的格式而非字节数，显示文件大小
--l：以长格式显示结果
--r：反序显示
--S：按文件大小排序
--t： 按修改时间排
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/09%20DevOps/6%20Linux/3%20Shell%20%E8%84%9A%E6%9C%AC/">
 				<h2 class="index-title">
 					3 Shell 脚本
@@ -4882,6 +4755,85 @@ chmod +x filename
 		</div>	
 	
 		<div class="index-li">
+			<a href="/09%20DevOps/7%20Zabbix/2%20zabbix%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">
+				<h2 class="index-title">
+					2 zabbix中文乱码
+				</h2>
+				<div class="index-brief">
+					Zabbix中文界面下，图形页面会有乱码，是因为字体格式不一致导致
+
+
+从C:\Windows\Fonts找到 中文字体上传至zabbix的fonts目录/usr/share/zabbix/fonts
+修改include下的defines.inc.php中字体的配置，将里面关于字体设置从graphf
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/09%20DevOps/7%20Zabbix/3%20zabbix%E4%B8%BB%E5%8A%A8%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A2%AB%E5%8A%A8%E6%A8%A1%E5%BC%8F/">
+				<h2 class="index-title">
+					3 zabbix主动模式、被动模式
+				</h2>
+				<div class="index-brief">
+					zabbix agent检测分为主动（agent active）和被动（agent）两种形式，主动与被动的说法均是相对于agent来讨论的。
+
+主动：agent请求server获取主动的监控项列表，并主动将监控项内需要检测的数据提交给server/proxy
+被动：server向agent请求获取监
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/09%20DevOps/8%20ELK/1%20ElasticStack/">
 				<h2 class="index-title">
 					1 ElasticStack
@@ -4913,6 +4865,48 @@ Logstash ：数据收集处理
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/09-DevOps/8-ELK/">8 ELK</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/09%20DevOps/7%20Zabbix/4%20Zabbix%E8%BF%81%E7%A7%BB/">
+				<h2 class="index-title">
+					4 Zabbix迁移
+				</h2>
+				<div class="index-brief">
+					zabbix的前端所有的操作都存在zabbix数据库里。
+如果迁移要求历史数据不丢失，对zabbix库中相应的表进行导出导入即可。
+若是对历史数据不要求，那么只迁移配置信息即可。
+安装
+
+根据zabbix手册新安装zabbix服务端，如果需要保留历史数据，务必使用相同版本。
+安装好后访问/setup
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
 										
                                     </span>
                                 
