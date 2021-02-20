@@ -4670,16 +4670,16 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/9%20Spring%20Cache%20+%20Caffeine/">
+			<a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
 				<h2 class="index-title">
-					9 Spring Cache + Caffeine
+					7 Dynamic DataSource
 				</h2>
 				<div class="index-brief">
-					Caffeine 是使用 Java8 对 Guava 缓存的重写版本，在 Spring Boot 2.0 中取代 Guava。
-1 引入依赖
-&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-
+					一、AOP 实现
+AOP 实现多数据源，可读写分离
+1 配置文件
+dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
+dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
 					...
 				</div>
 			</a>
@@ -4710,16 +4710,16 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
+			<a href="/06%20Spring/05%20Data.md/9%20Spring%20Cache%20+%20Caffeine/">
 				<h2 class="index-title">
-					7 Dynamic DataSource
+					9 Spring Cache + Caffeine
 				</h2>
 				<div class="index-brief">
-					一、AOP 实现
-AOP 实现多数据源，可读写分离
-1 配置文件
-dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
-dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
+					Caffeine 是使用 Java8 对 Guava 缓存的重写版本，在 Spring Boot 2.0 中取代 Guava。
+1 引入依赖
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+
 					...
 				</div>
 			</a>

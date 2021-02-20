@@ -4670,56 +4670,15 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/03%20%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3%EF%BC%8815-25%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/07%20%E6%96%B9%E6%B3%95%EF%BC%8849-56%EF%BC%89/">
 				<h2 class="index-title">
-					03 类和接口（15-25）
+					07 方法（49-56）
 				</h2>
 				<div class="index-brief">
-					第 15 条：使类和成员的可访问性最小化
-公有静态 final 域暴露常量，要么包含基本类型值，要么包含指向不可变对象的引用
-第 16 条：在公有类中使用访问方法而非公有域
-
-公有类不应该暴露可变域，因为其客户端代码遍布各处，将来极难改变内部表示法
-公有类暴露不可变域危害较小，事实上也不应该
-包级私
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-01-02</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/">05 Java</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/09%20%E5%BC%82%E5%B8%B8%EF%BC%8869-77%EF%BC%89/">
-				<h2 class="index-title">
-					09 异常（69-77）
-				</h2>
-				<div class="index-brief">
-					第 69 条：只针对异常的情况才使用异常
-如果在 try、catch、finally 块中都抛出了异常，只是只有一个异常可被传播到外界。
-请不要在 try 块中发出对 return、break 或 continue 的调用，万一无法避免，一定要确保 finally 的存在不会改变函数的返回值（比如说
+					第 49 条：检查参数的有效性
+不仅需要检查参数的有效性，还需要在函数的文档中给予明确的说明，如在参数非法的情况下，会抛出哪些异常，或导致函数返回哪些错误值等
+第 50 条：必要时进行保护性拷贝
+如果不能够容忍对象进入数据结构之后发生变，就必须对该对象进行保护性拷贝，并且让拷贝之后的对象而不是原始对
 					...
 				</div>
 			</a>
@@ -4761,6 +4720,44 @@ var _hmt = _hmt || [];
 或者不反序列化不受信任的数据。
 如果必须反序列化，使用对象反序列化过滤，并避免编写可序列化的类。
 第 86 条：谨慎地实现 Serializ
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-01-02</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/">05 Java</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/05%20Java/02%20Effective%20Java/09%20%E5%BC%82%E5%B8%B8%EF%BC%8869-77%EF%BC%89/">
+				<h2 class="index-title">
+					09 异常（69-77）
+				</h2>
+				<div class="index-brief">
+					第 69 条：只针对异常的情况才使用异常
+如果在 try、catch、finally 块中都抛出了异常，只是只有一个异常可被传播到外界。
+请不要在 try 块中发出对 return、break 或 continue 的调用，万一无法避免，一定要确保 finally 的存在不会改变函数的返回值（比如说
 					...
 				</div>
 			</a>
@@ -4894,6 +4891,47 @@ JNI 有两组操作字符串的函数，一组把 Java 字符串转为 “改良
 		</div>	
 	
 		<div class="index-li">
+			<a href="/05%20Java/02%20Effective%20Java/02%20%E5%AF%B9%E4%BA%8E%E6%89%80%E6%9C%89%E5%AF%B9%E8%B1%A1%E9%83%BD%E9%80%9A%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8810-14%EF%BC%89/">
+				<h2 class="index-title">
+					02 对于所有对象都通用的方法（10-14）
+				</h2>
+				<div class="index-brief">
+					第 10 条：覆盖 equals 时请遵守通用约定
+
+自反性 - 对象必须等于其自身
+对称性 - 任何两个对象对于它们是否相等的问题都必须保持一致，Timestamp 违反了，不值得效仿
+传递性 - 如果对象 A 等于B，B 等于 C，那么 A 一定等于 C
+一致性 - 相等的对象永远相等，不相等的
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-01-02</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/">05 Java</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/05%20Java/02%20Effective%20Java/04%20%E6%B3%9B%E5%9E%8B%EF%BC%8826-33%EF%BC%89/">
 				<h2 class="index-title">
 					04 泛型（26-33）
@@ -4972,89 +5010,6 @@ JNI 有两组操作字符串的函数，一组把 Java 字符串转为 “改良
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/02%20%E5%AF%B9%E4%BA%8E%E6%89%80%E6%9C%89%E5%AF%B9%E8%B1%A1%E9%83%BD%E9%80%9A%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8810-14%EF%BC%89/">
-				<h2 class="index-title">
-					02 对于所有对象都通用的方法（10-14）
-				</h2>
-				<div class="index-brief">
-					第 10 条：覆盖 equals 时请遵守通用约定
-
-自反性 - 对象必须等于其自身
-对称性 - 任何两个对象对于它们是否相等的问题都必须保持一致，Timestamp 违反了，不值得效仿
-传递性 - 如果对象 A 等于B，B 等于 C，那么 A 一定等于 C
-一致性 - 相等的对象永远相等，不相等的
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-01-02</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/">05 Java</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/10%20%E5%B9%B6%E5%8F%91%EF%BC%8878-84%EF%BC%89/">
-				<h2 class="index-title">
-					10 并发（78-84）
-				</h2>
-				<div class="index-brief">
-					第 78 条：同步访问共享的可变数据
-第 79 条：避免过度同步
-第 80 条：executor 和 task 优先于线程
-
-Executor.newCachedThreadPool：小程序，轻载的服务器
-Executor.newFixedThreadPool：大负载的服务器
-ThreadPoolE
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-01-02</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/">05 Java</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/05%20Java/02%20Effective%20Java/06%20Lambdas%20%E4%B8%8E%20Streams%EF%BC%8842-48%EF%BC%89/">
 				<h2 class="index-title">
 					06 Lambdas 与 Streams（42-48）
@@ -5064,6 +5019,48 @@ ThreadPoolE
 从 Java 8 开始，lambda 是迄今为止表示小函数对象的最佳方式。 除非必须创建非函数式接口类型的实例，否则不要使用匿名类作为函数对象。
 lambda 没有名称和文档，如果超过三行，不要使用 lambda 表达式。
 第 43 条: 方法引用优于 la
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-01-02</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/">05 Java</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/05%20Java/02%20Effective%20Java/08%20%E9%80%9A%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%8857-68%EF%BC%89/">
+				<h2 class="index-title">
+					08 通用程序设计（57-68）
+				</h2>
+				<div class="index-brief">
+					第 57 条：将局部变量的作用域最小化
+第 58 条：for-each 循环优先于传统的 for 循环
+第 59 条：了解和使用标准类库
+第 60 条：如果需要精确的答案，请避免使用 float 和 double
+
+float 和 double 类型尤其不适合用于货币计算
+可以使用 bigDecim
 					...
 				</div>
 			</a>

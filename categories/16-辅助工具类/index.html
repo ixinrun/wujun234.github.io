@@ -4758,16 +4758,19 @@ YAML（发音 /ˈjæməl/ ）是&quot;YAML Ain’t a Markup Language&quot;的递
 		</div>	
 	
 		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/3%20%E6%97%A5%E5%B8%B8%E5%B0%8F%E5%B7%A5%E5%85%B7/2%20%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AF%BB%E5%8F%96%20GZIP%20%E5%8E%8B%E7%BC%A9%E7%9A%84%20CSV%20%E6%96%87%E4%BB%B6/">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/3%20%E6%97%A5%E5%B8%B8%E5%B0%8F%E5%B7%A5%E5%85%B7/1%20%E4%BD%BF%E7%94%A8%20Java%20%E8%87%AA%E5%B8%A6%20MessageDigest%20%E5%AE%9E%E7%8E%B0%E5%8A%A0%E5%AF%86%EF%BC%88MD5%20%E5%92%8C%20SHA%EF%BC%89/">
 				<h2 class="index-title">
-					2 一次性读取 GZIP 压缩的 CSV 文件
+					1 使用 Java 自带 MessageDigest 实现加密（MD5 和 SHA）
 				</h2>
 				<div class="index-brief">
-					1 读取文件
-先获取文件 InputStream，以 url 为例
-URL url = new URL(destUrl);
-HttpURLConnection httpUrl = (HttpURLConnection) url.openConnection();
-httpUrl.connect();
+					使用 Java 自带 MessageDigest 实现加密（MD5 和 SHA）
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+/**
+* 加密工具类
+*
+* @author w
 					...
 				</div>
 			</a>
@@ -4798,19 +4801,16 @@ httpUrl.connect();
 		</div>	
 	
 		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/3%20%E6%97%A5%E5%B8%B8%E5%B0%8F%E5%B7%A5%E5%85%B7/1%20%E4%BD%BF%E7%94%A8%20Java%20%E8%87%AA%E5%B8%A6%20MessageDigest%20%E5%AE%9E%E7%8E%B0%E5%8A%A0%E5%AF%86%EF%BC%88MD5%20%E5%92%8C%20SHA%EF%BC%89/">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/3%20%E6%97%A5%E5%B8%B8%E5%B0%8F%E5%B7%A5%E5%85%B7/2%20%E4%B8%80%E6%AC%A1%E6%80%A7%E8%AF%BB%E5%8F%96%20GZIP%20%E5%8E%8B%E7%BC%A9%E7%9A%84%20CSV%20%E6%96%87%E4%BB%B6/">
 				<h2 class="index-title">
-					1 使用 Java 自带 MessageDigest 实现加密（MD5 和 SHA）
+					2 一次性读取 GZIP 压缩的 CSV 文件
 				</h2>
 				<div class="index-brief">
-					使用 Java 自带 MessageDigest 实现加密（MD5 和 SHA）
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
-/**
-* 加密工具类
-*
-* @author w
+					1 读取文件
+先获取文件 InputStream，以 url 为例
+URL url = new URL(destUrl);
+HttpURLConnection httpUrl = (HttpURLConnection) url.openConnection();
+httpUrl.connect();
 					...
 				</div>
 			</a>
@@ -4871,49 +4871,6 @@ public class HttpUtil {
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/16-辅助工具类/3-日常小工具/">3 日常小工具</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
-				<h2 class="index-title">
-					1 Lombok消除Java冗长
-				</h2>
-				<div class="index-brief">
-					官方网址、
-github地址
-简介
-Lombok采取注解声明方法，注解后经编译，会自动生成注解声明的方法，减少很多重复代码的书写。比如说getter/setter/toString等方法。
-安装
-添加依赖
-&lt;dependency&gt;
-    &lt;groupId&gt;org.proje
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/">16 辅助工具类</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/4-数据格式/">4 数据格式</a>
 										
                                     </span>
                                 
@@ -5017,13 +4974,28 @@ org.apache.commons.co
 		</div>	
 	
 		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/2%20MapStruct%E5%AE%9E%E4%BD%93%E9%97%B4%E8%BD%AC%E6%8D%A2/">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/2%20Apache%20Commons%20BeanUtils/">
 				<h2 class="index-title">
-					2 MapStruct实体间转换
+					2 Apache Commons BeanUtils
 				</h2>
 				<div class="index-brief">
-					1 简介
-MapStruct是一个代码生成器的工具类，简化了不同的Java Bean之间映射的处理，所以映射指的就是从一个实体变化成一个实体。在实际项目中，我们经常会将PO转DTO、DTO转PO等一些实体间的转换。在转换时大部分属性都是相同的，只有少部分的不同，这时我们可以通过mapStruct的一
+					Commons BeanUtils官网
+包结构
+
+
+
+
+Package
+Description
+
+
+
+
+org.apache.commons.beanutils
+提供底层工具类，获取Bean属性值，动态定义和访问Bean属性。
+
+
+org.apache.commons.beanutils.conve
 					...
 				</div>
 			</a>
@@ -5044,7 +5016,64 @@ MapStruct是一个代码生成器的工具类，简化了不同的Java Bean之�
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/4-数据格式/">4 数据格式</a>
+                                        <a href="/categories/16-辅助工具类/1-Apache-Commons/">1 Apache Commons</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/7%20Apache%20Commons%20Text/">
+				<h2 class="index-title">
+					7 Apache Commons Text
+				</h2>
+				<div class="index-brief">
+					Apache Commons Text官网
+文本处理
+包结构
+
+
+
+
+Package
+Description
+
+
+
+
+org.apache.commons.text
+文本处理基础类
+
+
+org.apache.commons.text.diff
+提供比较字符串差异的算法
+
+
+org.apache.co
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/16-辅助工具类/">16 辅助工具类</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/16-辅助工具类/1-Apache-Commons/">1 Apache Commons</a>
 										
                                     </span>
                                 

@@ -4670,18 +4670,16 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/2%20%E6%93%8D%E4%BD%9C%E5%AD%97%E7%AC%A6/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/3%20%E6%93%8D%E4%BD%9C%E5%AD%97%E8%8A%82/">
 				<h2 class="index-title">
-					2 操作字符
+					3 操作字节
 				</h2>
 				<div class="index-brief">
-					存储文本字符串时，需要考虑字符编码方式。
-
-OutputStreamWriter 类：将使用选定的字符编码方式，把 Unicode 码元的输出流转换为字节流。
-InputStreamReader 类：将包含字节的输入流转换为可以产生 Unicode 码元的读入器。
-
-1 文本输出
-文本输出使用 Pr
+					1 DataInput 和 DataOutput 接口
+1.1 DataInput 接口
+DataInput接口 write* 方法写二进制格式数据
+DataInputStream 类实现了 DataInput 接口
+DataInputStream in = new DataInputStream(
 					...
 				</div>
 			</a>
@@ -4722,16 +4720,18 @@ InputStreamReader 类：将包含字节的输入流转换为可以产生 Unicode
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/3%20%E6%93%8D%E4%BD%9C%E5%AD%97%E8%8A%82/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/09%20IO/2%20%E6%93%8D%E4%BD%9C%E5%AD%97%E7%AC%A6/">
 				<h2 class="index-title">
-					3 操作字节
+					2 操作字符
 				</h2>
 				<div class="index-brief">
-					1 DataInput 和 DataOutput 接口
-1.1 DataInput 接口
-DataInput接口 write* 方法写二进制格式数据
-DataInputStream 类实现了 DataInput 接口
-DataInputStream in = new DataInputStream(
+					存储文本字符串时，需要考虑字符编码方式。
+
+OutputStreamWriter 类：将使用选定的字符编码方式，把 Unicode 码元的输出流转换为字节流。
+InputStreamReader 类：将包含字节的输入流转换为可以产生 Unicode 码元的读入器。
+
+1 文本输出
+文本输出使用 Pr
 					...
 				</div>
 			</a>
@@ -4880,19 +4880,29 @@ Colla
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/5%20%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/4%20%E6%B6%88%E6%81%AF%E6%A0%BC%E5%BC%8F%E5%8C%96/">
 				<h2 class="index-title">
-					5 文本文件和字符集
+					4 消息格式化
 				</h2>
 				<div class="index-brief">
-					1 文本文件
-获取平台的编码机制
-Charset platformEncoding = Charset.defalutCharset();
+					MessageFormat 格式化类似 printf，支持 Locale，可格式化数字和日期
+1 格式化数字和日期
+1.1 模式化字符串与占位符
+占位符索引后面可跟一个类型和一个风格
+1）类型
 
-2 行结束符
-Window 中，文本文件希望每行末尾使用“\r\n”，UNIX只需“\n”。
-可使用 printf 和 %n 来产生平台相关的行结束符
-out
+number
+风格
+
+intger
+currency
+percent
+数字格式模式
+
+
+time
+风格
+
 					...
 				</div>
 			</a>
@@ -4933,29 +4943,19 @@ out
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/4%20%E6%B6%88%E6%81%AF%E6%A0%BC%E5%BC%8F%E5%8C%96/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/5%20%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/">
 				<h2 class="index-title">
-					4 消息格式化
+					5 文本文件和字符集
 				</h2>
 				<div class="index-brief">
-					MessageFormat 格式化类似 printf，支持 Locale，可格式化数字和日期
-1 格式化数字和日期
-1.1 模式化字符串与占位符
-占位符索引后面可跟一个类型和一个风格
-1）类型
+					1 文本文件
+获取平台的编码机制
+Charset platformEncoding = Charset.defalutCharset();
 
-number
-风格
-
-intger
-currency
-percent
-数字格式模式
-
-
-time
-风格
-
+2 行结束符
+Window 中，文本文件希望每行末尾使用“\r\n”，UNIX只需“\n”。
+可使用 printf 和 %n 来产生平台相关的行结束符
+out
 					...
 				</div>
 			</a>

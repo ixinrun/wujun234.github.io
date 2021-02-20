@@ -4751,19 +4751,14 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/3%20Spring%20Data%20MongoDB/">
+			<a href="/06%20Spring/05%20Data.md/2%20Spring%20Data%20JPA/">
 				<h2 class="index-title">
-					3 Spring Data MongoDB
+					2 Spring Data JPA
 				</h2>
 				<div class="index-brief">
-					文档数据库适合处理没什么关联关系的独立实体
-Spring Data MongoDB 提供了三种方式在 Spring 应用中使用 MongoDB：
-
-通过注解实现对象-文档映射；
-使用 MongoTemplate 实现基于模板的数据库访问；
-自动化的运行时 Repository 生成功能。
-
-1 启用
+					Java 持久化 API（Java Persistence API， JPA）基于 POJO 的持久化机制，制定了规范，具体由厂商实现。
+只需按照约定好的【方法命名规则】编写 Repository 接口，不需要实现类，就可实现对数据库的访问和操作。
+hibernate 实现了 JPA 规范，Spri
 					...
 				</div>
 			</a>
@@ -4794,14 +4789,19 @@ Spring Data MongoDB 提供了三种方式在 Spring 应用中使用 MongoDB：
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/2%20Spring%20Data%20JPA/">
+			<a href="/06%20Spring/05%20Data.md/3%20Spring%20Data%20MongoDB/">
 				<h2 class="index-title">
-					2 Spring Data JPA
+					3 Spring Data MongoDB
 				</h2>
 				<div class="index-brief">
-					Java 持久化 API（Java Persistence API， JPA）基于 POJO 的持久化机制，制定了规范，具体由厂商实现。
-只需按照约定好的【方法命名规则】编写 Repository 接口，不需要实现类，就可实现对数据库的访问和操作。
-hibernate 实现了 JPA 规范，Spri
+					文档数据库适合处理没什么关联关系的独立实体
+Spring Data MongoDB 提供了三种方式在 Spring 应用中使用 MongoDB：
+
+通过注解实现对象-文档映射；
+使用 MongoTemplate 实现基于模板的数据库访问；
+自动化的运行时 Repository 生成功能。
+
+1 启用
 					...
 				</div>
 			</a>
@@ -4968,16 +4968,16 @@ Propaga
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/9%20Spring%20Cache%20+%20Caffeine/">
+			<a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
 				<h2 class="index-title">
-					9 Spring Cache + Caffeine
+					7 Dynamic DataSource
 				</h2>
 				<div class="index-brief">
-					Caffeine 是使用 Java8 对 Guava 缓存的重写版本，在 Spring Boot 2.0 中取代 Guava。
-1 引入依赖
-&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-
+					一、AOP 实现
+AOP 实现多数据源，可读写分离
+1 配置文件
+dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
+dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
 					...
 				</div>
 			</a>
@@ -5008,16 +5008,16 @@ Propaga
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
+			<a href="/06%20Spring/05%20Data.md/9%20Spring%20Cache%20+%20Caffeine/">
 				<h2 class="index-title">
-					7 Dynamic DataSource
+					9 Spring Cache + Caffeine
 				</h2>
 				<div class="index-brief">
-					一、AOP 实现
-AOP 实现多数据源，可读写分离
-1 配置文件
-dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
-dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
+					Caffeine 是使用 Java8 对 Guava 缓存的重写版本，在 Spring Boot 2.0 中取代 Guava。
+1 引入依赖
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+
 					...
 				</div>
 			</a>
