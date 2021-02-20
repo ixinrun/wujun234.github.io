@@ -4670,6 +4670,53 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
+			<a href="/09%20DevOps/6%20Linux/3%20Shell%20%E8%84%9A%E6%9C%AC/">
+				<h2 class="index-title">
+					3 Shell 脚本
+				</h2>
+				<div class="index-brief">
+					开始
+约定文件第一行必须以 “#!”开始，指明脚本执行的解释器
+运行
+chmod +x filename
+变量
+变量无需声明
+赋值：变量名和等号之间不能有空格
+使用：前加$符号，可选加{}帮解释器识别变量的边界
+删除：unset
+字符串：单引号中变量失效
+数组：括号表示数组，空格分割
+传递参数：$0
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/09%20DevOps/7%20Zabbix/3%20zabbix%E4%B8%BB%E5%8A%A8%E6%A8%A1%E5%BC%8F%E3%80%81%E8%A2%AB%E5%8A%A8%E6%A8%A1%E5%BC%8F/">
 				<h2 class="index-title">
 					3 zabbix主动模式、被动模式
@@ -4709,16 +4756,20 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/7%20Zabbix/2%20zabbix%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">
+			<a href="/09%20DevOps/4%20Maven/1%20Maven%20%E7%AC%94%E8%AE%B0/">
 				<h2 class="index-title">
-					2 zabbix中文乱码
+					1 Maven 笔记
 				</h2>
 				<div class="index-brief">
-					Zabbix中文界面下，图形页面会有乱码，是因为字体格式不一致导致
+					一、安装和配置
+安装
 
-
-从C:\Windows\Fonts找到 中文字体上传至zabbix的fonts目录/usr/share/zabbix/fonts
-修改include下的defines.inc.php中字体的配置，将里面关于字体设置从graphf
+准备JDK环境
+下载Maven ，解压
+配置环境变量
+3.1 添加 M2_HOME 和 MAVEN_HOME 到环境变量，指向 Maven 文件夹
+3.2 添加 Maven bin 文件夹到 PATH 变量
+3.3 需要时设置MAVEN_OPTS环境变量，-Xms128m -
 					...
 				</div>
 			</a>
@@ -4739,7 +4790,7 @@ var _hmt = _hmt || [];
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
+                                        <a href="/categories/09-DevOps/4-Maven/">4 Maven</a>
 										
                                     </span>
                                 
@@ -4791,54 +4842,6 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/6%20Linux/2%20Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-				<h2 class="index-title">
-					2 Linux 常用命令
-				</h2>
-				<div class="index-brief">
-					1、文件相关
-1.1文件跳转
-
-pwd：打印当前目录名
-ls：列出目录内容
--a：列出所有文件，包括“.”开头的隐藏文件
--d：通常，指定目录名
--F：名字后面加指示符
--h：以人们可读的格式而非字节数，显示文件大小
--l：以长格式显示结果
--r：反序显示
--S：按文件大小排序
--t： 按修改时间排
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/09%20DevOps/8%20ELK/1%20ElasticStack/">
 				<h2 class="index-title">
 					1 ElasticStack
@@ -4879,20 +4882,16 @@ Logstash ：数据收集处理
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/4%20Maven/1%20Maven%20%E7%AC%94%E8%AE%B0/">
+			<a href="/09%20DevOps/4%20Maven/2%20Maven%20%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/">
 				<h2 class="index-title">
-					1 Maven 笔记
+					2 Maven 冲突解决
 				</h2>
 				<div class="index-brief">
-					一、安装和配置
-安装
-
-准备JDK环境
-下载Maven ，解压
-配置环境变量
-3.1 添加 M2_HOME 和 MAVEN_HOME 到环境变量，指向 Maven 文件夹
-3.2 添加 Maven bin 文件夹到 PATH 变量
-3.3 需要时设置MAVEN_OPTS环境变量，-Xms128m -
+					原文地址：https://www.jianshu.com/p/bbd5b0abcad1
+主要目的是升级现有的jar包，排除传递依赖引起的冲突
+1 maven 命令
+1.1 mvn dependency tree
+mvn dependency:tree命令可以查看当前项目的依赖关系。可以将当前POM的
 					...
 				</div>
 			</a>

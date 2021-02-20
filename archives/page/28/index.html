@@ -5011,14 +5011,27 @@ IP 网是虚拟的，因为从网络层上看，IP网就是一个统一的、抽
 		</div>	
 	
 		<div class="index-li">
-			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/1%20%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8/03%20Spring%20Cloud%20Feign/">
+			<a href="/09%20DevOps/1%20Git/2%20%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/">
 				<h2 class="index-title">
-					03 Spring Cloud Feign
+					2 版本管理
 				</h2>
 				<div class="index-brief">
-					Spring Cloud Feign是一套基于Netflix Feign实现的声明式服务调用客户端，目的是让Web Service调用更加简单，使用HTTP请求远程服务时能与调用本地方法一样的编码体验。
-工作机制
-提供了HTTP请求模板，通过编写简单的接口和插入注解，就可完成对Web服务接口的绑定。
+					状态查看
+
+git status：查看状态
+git diff：查看修改内容
+
+版本回退
+
+HEAD：指向当前版本
+
+上一个版本就是HEAD^
+上上一个版本就是HEAD^^
+版本数多就写成HEAD~100
+
+
+git reset --hard commit_id：跳转到指定版本
+git log：可以查
 					...
 				</div>
 			</a>
@@ -5029,7 +5042,7 @@ IP 网是虚拟的，因为从网络层上看，IP网就是一个统一的、抽
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/10-微服务/">10 微服务</a>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
 										
 											>
 										
@@ -5039,7 +5052,7 @@ IP 网是虚拟的，因为从网络层上看，IP网就是一个统一的、抽
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/10-微服务/1-服务调用/">1 服务调用</a>
+                                        <a href="/categories/09-DevOps/1-Git/">1 Git</a>
 										
                                     </span>
                                 
@@ -5049,23 +5062,22 @@ IP 网是虚拟的，因为从网络层上看，IP网就是一个统一的、抽
 		</div>	
 	
 		<div class="index-li">
-			<a href="/12%20%E6%B5%8B%E8%AF%95/2%20http_load/1%20http_load%20-%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/">
+			<a href="/09%20DevOps/1%20Git/0%20%E6%90%AD%E5%BB%BAGit%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 				<h2 class="index-title">
-					1 http_load - 压力测试
+					0 搭建Git服务器
 				</h2>
 				<div class="index-brief">
-					1.http_load简介
-http_load官网
-http_load是一款基于Linux平台的web服务器性能测试工具，以并行复用的方式运行，用于测试web服务器的吞吐量与负载，web页面的性能。
-优点：
+					原文
 
-基于命令行，简单、易于上手。
-小巧轻便，解压缩后不到100k。
-开源，免费。
+搭建Git服务器非常简单，通常10分钟即可完成；
+要方便管理公钥，用Gitosis；
+要像SVN那样变态地控制权限，用Gitolite。
 
-缺点：
+假设你已经有sudo权限的用户账号，下面，正式开始安装。
+第一步，安装git：
+$ sudo apt-get install git
 
-
+第二步，创建一个
 					...
 				</div>
 			</a>
@@ -5076,7 +5088,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/">12 测试</a>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
 										
 											>
 										
@@ -5086,7 +5098,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/2-http-load/">2 http_load</a>
+                                        <a href="/categories/09-DevOps/1-Git/">1 Git</a>
 										
                                     </span>
                                 

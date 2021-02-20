@@ -4772,21 +4772,20 @@ publ
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/04%20%E5%BC%82%E5%B8%B8%E3%80%81%E6%96%AD%E8%A8%80%E3%80%81%E6%97%A5%E5%BF%97/2%20%E6%96%AD%E8%A8%80/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/04%20%E5%BC%82%E5%B8%B8%E3%80%81%E6%96%AD%E8%A8%80%E3%80%81%E6%97%A5%E5%BF%97/3%20%E6%97%A5%E5%BF%97/">
 				<h2 class="index-title">
-					2 断言
+					3 日志
 				</h2>
 				<div class="index-brief">
-					断言用在开发、测试期间。
-当代码发布时，这些插入的检测语句将会被自动地移走。
-1 表达形式
-1.1 assert 条件
-assert x &gt;= 0;
+					java.util.logging.Logger
+1 日志记录器
+1.1 全局日志记录器
+Logger.getGlobal()
+Logger.getGlobal().info(&quot;&quot;);
 
-1.2 assert 条件:表达式
-assert x &gt;= 0 : x;
-
-对条件进行检测，如果为 false，则抛出一个 Assert
+1.2 自定义日志记录器
+Logger.getLogger()
+Logger myLogge
 					...
 				</div>
 			</a>
@@ -4827,20 +4826,21 @@ assert x &gt;= 0 : x;
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/04%20%E5%BC%82%E5%B8%B8%E3%80%81%E6%96%AD%E8%A8%80%E3%80%81%E6%97%A5%E5%BF%97/3%20%E6%97%A5%E5%BF%97/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/04%20%E5%BC%82%E5%B8%B8%E3%80%81%E6%96%AD%E8%A8%80%E3%80%81%E6%97%A5%E5%BF%97/2%20%E6%96%AD%E8%A8%80/">
 				<h2 class="index-title">
-					3 日志
+					2 断言
 				</h2>
 				<div class="index-brief">
-					java.util.logging.Logger
-1 日志记录器
-1.1 全局日志记录器
-Logger.getGlobal()
-Logger.getGlobal().info(&quot;&quot;);
+					断言用在开发、测试期间。
+当代码发布时，这些插入的检测语句将会被自动地移走。
+1 表达形式
+1.1 assert 条件
+assert x &gt;= 0;
 
-1.2 自定义日志记录器
-Logger.getLogger()
-Logger myLogge
+1.2 assert 条件:表达式
+assert x &gt;= 0 : x;
+
+对条件进行检测，如果为 false，则抛出一个 Assert
 					...
 				</div>
 			</a>

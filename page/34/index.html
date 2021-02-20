@@ -4840,19 +4840,14 @@ Unicode：16位
 		</div>	
 	
 		<div class="index-li">
-			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/03%20%E6%9F%A5%E6%89%BE/0%20%E6%9F%A5%E6%89%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
+			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/03%20%E6%9F%A5%E6%89%BE/1%20%E9%A1%BA%E5%BA%8F%E8%A1%A8%E6%9F%A5%E6%89%BE/">
 				<h2 class="index-title">
-					0 查找的基本概念
+					1 顺序表查找
 				</h2>
 				<div class="index-brief">
-					
-查找：就是根据给定的某个值，在查找表中确定一个其关键字等于给定值的数据元素 （或记录）。
-查找表：是由同一类型的数据元素（或记录）构成的集合。
-关键字：是数据元素中某个数据项的值
-主关键字：可以唯一地标识一个记录的关键字
-次关键字：可以识别多个数据元素(或记录)的关键字
+					顺序查找：又叫线性查找，从表中第一个(或最后一个)记录开始，逐个比较。
+适合小型数据，静态查找查。
 
-查找表按照操作方式来分有
 					...
 				</div>
 			</a>
@@ -4893,14 +4888,19 @@ Unicode：16位
 		</div>	
 	
 		<div class="index-li">
-			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/03%20%E6%9F%A5%E6%89%BE/1%20%E9%A1%BA%E5%BA%8F%E8%A1%A8%E6%9F%A5%E6%89%BE/">
+			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/03%20%E6%9F%A5%E6%89%BE/0%20%E6%9F%A5%E6%89%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
 				<h2 class="index-title">
-					1 顺序表查找
+					0 查找的基本概念
 				</h2>
 				<div class="index-brief">
-					顺序查找：又叫线性查找，从表中第一个(或最后一个)记录开始，逐个比较。
-适合小型数据，静态查找查。
+					
+查找：就是根据给定的某个值，在查找表中确定一个其关键字等于给定值的数据元素 （或记录）。
+查找表：是由同一类型的数据元素（或记录）构成的集合。
+关键字：是数据元素中某个数据项的值
+主关键字：可以唯一地标识一个记录的关键字
+次关键字：可以识别多个数据元素(或记录)的关键字
 
+查找表按照操作方式来分有
 					...
 				</div>
 			</a>
@@ -5043,16 +5043,13 @@ $mid = \frac{low+high}{2}= low+\frac{1}{2}(high-low)$
 		</div>	
 	
 		<div class="index-li">
-			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/7%20%E7%BA%A2%E9%BB%91%E6%A0%91/">
+			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/04%20%E6%8E%92%E5%BA%8F/0%20%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%88%86%E7%B1%BB/">
 				<h2 class="index-title">
-					7 红黑树
+					0 排序的基本概念与分类
 				</h2>
 				<div class="index-brief">
-					1、红黑树定义
-红黑树是一种近似平衡的二叉查找树，它能够确保任何一个节点的左右子树的高度差不会超过二者中较低那个的一陪。可以在 O(logn) 时间内做查找，插入和删除。红黑树相对于AVL树来说，牺牲了部分平衡性以换取插入/删除操作时少量的旋转操作，整体来说性能要优于AVL树。
-满足如下条件：
-
-每
+					1 排序的基本概念
+假设含有 n 个记录的序列为{r1,r2,…,rn} ，其相应的关键字分别为{k1,k2,…,kn} ，需确定 1,2,…,n 的一种排列 p1,p2,…,pn，使其相应的关键字满足 kpl&lt;=kp2&lt;=…&lt;=kpn (非递减或非递增) 关系，即使得序列成为一个
 					...
 				</div>
 			</a>
@@ -5083,7 +5080,57 @@ $mid = \frac{low+high}{2}= low+\frac{1}{2}(high-low)$
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/01-数据结构/">01 数据结构</a>
+                                        <a href="/categories/01-数据结构与算法/数据结构/04-排序/">04 排序</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/03%20%E6%9F%A5%E6%89%BE/5%20%E6%95%A3%E5%88%97(Hash)%E8%A1%A8/">
+				<h2 class="index-title">
+					5 散列(Hash)表
+				</h2>
+				<div class="index-brief">
+					1 散列表查找定义
+
+散列技术：是在记录的存储位置和它的关键字之间建立一个确定的对应关系 f，使得每个关键字 key 对应一个存储位置 f (key)。
+散列函数：对应关系 f 。又称为哈希 (Hash) 函数。
+散列表：采用散列技术存储记录的一块连续的存储空间。又称为哈希表 (Hash table
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/01-数据结构与算法/">01 数据结构与算法</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/01-数据结构与算法/数据结构/">数据结构</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/01-数据结构与算法/数据结构/03-查找/">03 查找</a>
 										
                                     </span>
                                 
@@ -5135,53 +5182,6 @@ $mid = \frac{low+high}{2}= low+\frac{1}{2}(high-low)$
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/01-数据结构与算法/数据结构/03-查找/">03 查找</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/01%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/04%20%E6%8E%92%E5%BA%8F/0%20%E6%8E%92%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%88%86%E7%B1%BB/">
-				<h2 class="index-title">
-					0 排序的基本概念与分类
-				</h2>
-				<div class="index-brief">
-					1 排序的基本概念
-假设含有 n 个记录的序列为{r1,r2,…,rn} ，其相应的关键字分别为{k1,k2,…,kn} ，需确定 1,2,…,n 的一种排列 p1,p2,…,pn，使其相应的关键字满足 kpl&lt;=kp2&lt;=…&lt;=kpn (非递减或非递增) 关系，即使得序列成为一个
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/">01 数据结构与算法</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/">数据结构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/01-数据结构与算法/数据结构/04-排序/">04 排序</a>
 										
                                     </span>
                                 
