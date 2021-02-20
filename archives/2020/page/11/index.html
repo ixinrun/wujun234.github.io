@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 	<script src="/js/main.js"></script>
 	
@@ -4753,56 +4753,6 @@ UDP的主要特点是：
 		</div>	
 	
 		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/5%20%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E8%B7%AF%E7%94%B1%E9%80%89%E6%8B%A9%E5%8D%8F%E8%AE%AE/">
-				<h2 class="index-title">
-					5 互联网的路由选择协议
-				</h2>
-				<div class="index-brief">
-					1 基本概念
-路由选择协议的核心就是路由算法：即需要何种算法来获得路由表中的各项目。
-1）理想的路由算法
-
-算法必须是正确和完整的
-算法在计算上应该简单
-要有自适应性
-应具有稳定性
-算法应是公平的
-算法应是最佳的
-
-2）分层次的路由选择协议
-采用分层次的路由选择协议的原因：
-
-互联网规模比较大，不可
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-02-15</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/04-计算机网络/4-网络层/">4 网络层</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/2%20%E7%BD%91%E9%99%85%E5%8D%8F%E8%AE%AE%20IP/">
 				<h2 class="index-title">
 					2 网际协议 IP
@@ -4934,17 +4884,69 @@ IPv6 数据报由两大部分组成，即基本首部和有效载荷（净负荷
 		</div>	
 	
 		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3%20%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/1%20%E4%BD%BF%E7%94%A8%E7%82%B9%E5%AF%B9%E7%82%B9%E4%BF%A1%E9%81%93%E7%9A%84%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4%20%E7%BD%91%E7%BB%9C%E5%B1%82/5%20%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E8%B7%AF%E7%94%B1%E9%80%89%E6%8B%A9%E5%8D%8F%E8%AE%AE/">
 				<h2 class="index-title">
-					1 使用点对点信道的数据链路层
+					5 互联网的路由选择协议
 				</h2>
 				<div class="index-brief">
-					1. 数据链路和帧
-基本概念
+					1 基本概念
+路由选择协议的核心就是路由算法：即需要何种算法来获得路由表中的各项目。
+1）理想的路由算法
 
-链路(link)：指从一个结点到相邻结点的一段物理线路，中间没有任何其他的交换结点
-数据链路(data link)：在一条线路上传送数据时，需要必要的通信协议来控制数据的传输，把实现协议的硬件和软件加到链路上，构成了数据链路
-帧(frame)：点对点信道的数据链路层的
+算法必须是正确和完整的
+算法在计算上应该简单
+要有自适应性
+应具有稳定性
+算法应是公平的
+算法应是最佳的
+
+2）分层次的路由选择协议
+采用分层次的路由选择协议的原因：
+
+互联网规模比较大，不可
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-02-15</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/">04 计算机网络</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/04-计算机网络/4-网络层/">4 网络层</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3%20%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/3%20%E4%BD%BF%E7%94%A8%E5%B9%BF%E6%92%AD%E4%BF%A1%E9%81%93%E7%9A%84%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/">
+				<h2 class="index-title">
+					3 使用广播信道的数据链路层
+				</h2>
+				<div class="index-brief">
+					广播信道可以实现一对多的通信，局域网使用的是广播信道
+1. 局域网的数据链路层
+主要有以太网、令牌环网、FDDI 和 ATM 等局域网技术，目前以太网占领着有线局域网市场。
+1） 按网络拓扑分类
+
+星型网：常见的是星型以太网
+环形网：最典型的是令牌环形网
+总线网：各站直接连在总线上，常见的总线网使用
 					...
 				</div>
 			</a>
@@ -4975,19 +4977,17 @@ IPv6 数据报由两大部分组成，即基本首部和有效载荷（净负荷
 		</div>	
 	
 		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3%20%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/3%20%E4%BD%BF%E7%94%A8%E5%B9%BF%E6%92%AD%E4%BF%A1%E9%81%93%E7%9A%84%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3%20%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/1%20%E4%BD%BF%E7%94%A8%E7%82%B9%E5%AF%B9%E7%82%B9%E4%BF%A1%E9%81%93%E7%9A%84%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/">
 				<h2 class="index-title">
-					3 使用广播信道的数据链路层
+					1 使用点对点信道的数据链路层
 				</h2>
 				<div class="index-brief">
-					广播信道可以实现一对多的通信，局域网使用的是广播信道
-1. 局域网的数据链路层
-主要有以太网、令牌环网、FDDI 和 ATM 等局域网技术，目前以太网占领着有线局域网市场。
-1） 按网络拓扑分类
+					1. 数据链路和帧
+基本概念
 
-星型网：常见的是星型以太网
-环形网：最典型的是令牌环形网
-总线网：各站直接连在总线上，常见的总线网使用
+链路(link)：指从一个结点到相邻结点的一段物理线路，中间没有任何其他的交换结点
+数据链路(data link)：在一条线路上传送数据时，需要必要的通信协议来控制数据的传输，把实现协议的硬件和软件加到链路上，构成了数据链路
+帧(frame)：点对点信道的数据链路层的
 					...
 				</div>
 			</a>

@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 	<script src="/js/main.js"></script>
 	
@@ -4751,44 +4751,6 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/2%20Spring%20Data%20JPA/">
-				<h2 class="index-title">
-					2 Spring Data JPA
-				</h2>
-				<div class="index-brief">
-					Java 持久化 API（Java Persistence API， JPA）基于 POJO 的持久化机制，制定了规范，具体由厂商实现。
-只需按照约定好的【方法命名规则】编写 Repository 接口，不需要实现类，就可实现对数据库的访问和操作。
-hibernate 实现了 JPA 规范，Spri
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-01-10</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/06-Spring/">06 Spring</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/06-Spring/05-Data-md/">05 Data.md</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/06%20Spring/05%20Data.md/3%20Spring%20Data%20MongoDB/">
 				<h2 class="index-title">
 					3 Spring Data MongoDB
@@ -4832,17 +4794,14 @@ Spring Data MongoDB 提供了三种方式在 Spring 应用中使用 MongoDB：
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/5%20Spring%20Data%20Redis/">
+			<a href="/06%20Spring/05%20Data.md/2%20Spring%20Data%20JPA/">
 				<h2 class="index-title">
-					5 Spring Data Redis
+					2 Spring Data JPA
 				</h2>
 				<div class="index-brief">
-					Spring Data Redis 包含了多个模板实现， 用来完成 Redis 数据库的数据存取功能。
-1 连接到Redis
-Spring Data Redis 为四种 Redis 客户端实现提供了连接工厂：
-
-JedisConnectionFactory
-JredisConnectionFacto
+					Java 持久化 API（Java Persistence API， JPA）基于 POJO 的持久化机制，制定了规范，具体由厂商实现。
+只需按照约定好的【方法命名规则】编写 Repository 接口，不需要实现类，就可实现对数据库的访问和操作。
+hibernate 实现了 JPA 规范，Spri
 					...
 				</div>
 			</a>
@@ -4912,16 +4871,17 @@ JredisConnectionFacto
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
+			<a href="/06%20Spring/05%20Data.md/5%20Spring%20Data%20Redis/">
 				<h2 class="index-title">
-					7 Dynamic DataSource
+					5 Spring Data Redis
 				</h2>
 				<div class="index-brief">
-					一、AOP 实现
-AOP 实现多数据源，可读写分离
-1 配置文件
-dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
-dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
+					Spring Data Redis 包含了多个模板实现， 用来完成 Redis 数据库的数据存取功能。
+1 连接到Redis
+Spring Data Redis 为四种 Redis 客户端实现提供了连接工厂：
+
+JedisConnectionFactory
+JredisConnectionFacto
 					...
 				</div>
 			</a>
@@ -5008,15 +4968,16 @@ Propaga
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/6%20Spring%20Cache/">
+			<a href="/06%20Spring/05%20Data.md/9%20Spring%20Cache%20+%20Caffeine/">
 				<h2 class="index-title">
-					6 Spring Cache
+					9 Spring Cache + Caffeine
 				</h2>
 				<div class="index-brief">
-					Spring 自身并没有实现缓存解决方案， 但是它对缓存功能提供了声明式的支持， 能够与多种流行的缓存实现进行集成。
-Spring 的缓存抽象在很大程度上是围绕切面构建的。 在 Spring 中启用缓存时，会创建一个切面， 它触发一个或更多的 Spring 的缓存注解。
-1 启用对缓存的支持
-配置类
+					Caffeine 是使用 Java8 对 Guava 缓存的重写版本，在 Spring Boot 2.0 中取代 Guava。
+1 引入依赖
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+
 					...
 				</div>
 			</a>
@@ -5047,16 +5008,55 @@ Spring 的缓存抽象在很大程度上是围绕切面构建的。 在 Spring �
 		</div>	
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/9%20Spring%20Cache%20+%20Caffeine/">
+			<a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
 				<h2 class="index-title">
-					9 Spring Cache + Caffeine
+					7 Dynamic DataSource
 				</h2>
 				<div class="index-brief">
-					Caffeine 是使用 Java8 对 Guava 缓存的重写版本，在 Spring Boot 2.0 中取代 Guava。
-1 引入依赖
-&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-
+					一、AOP 实现
+AOP 实现多数据源，可读写分离
+1 配置文件
+dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
+dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-01-10</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/06-Spring/">06 Spring</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/06-Spring/05-Data-md/">05 Data.md</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/06%20Spring/05%20Data.md/6%20Spring%20Cache/">
+				<h2 class="index-title">
+					6 Spring Cache
+				</h2>
+				<div class="index-brief">
+					Spring 自身并没有实现缓存解决方案， 但是它对缓存功能提供了声明式的支持， 能够与多种流行的缓存实现进行集成。
+Spring 的缓存抽象在很大程度上是围绕切面构建的。 在 Spring 中启用缓存时，会创建一个切面， 它触发一个或更多的 Spring 的缓存注解。
+1 启用对缓存的支持
+配置类
 					...
 				</div>
 			</a>

@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 	<script src="/js/main.js"></script>
 	
@@ -4670,16 +4670,23 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/8%20ELK/1%20ElasticStack/">
+			<a href="/09%20DevOps/6%20Linux/3%20Shell%20%E8%84%9A%E6%9C%AC/">
 				<h2 class="index-title">
-					1 ElasticStack
+					3 Shell 脚本
 				</h2>
 				<div class="index-brief">
-					ElasticStack 最初的核心是 ELK (Elasticsearch, Logstash, Kibana) ，后又新增了一个FileBeat。
-ELK架构
-
-Elasticsearch ：分布式搜索引擎。基于 Lucene，可用于全文检索、结构化检索和分析。
-Logstash ：数据收集处理
+					开始
+约定文件第一行必须以 “#!”开始，指明脚本执行的解释器
+运行
+chmod +x filename
+变量
+变量无需声明
+赋值：变量名和等号之间不能有空格
+使用：前加$符号，可选加{}帮解释器识别变量的边界
+删除：unset
+字符串：单引号中变量失效
+数组：括号表示数组，空格分割
+传递参数：$0
 					...
 				</div>
 			</a>
@@ -4700,7 +4707,7 @@ Logstash ：数据收集处理
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/8-ELK/">8 ELK</a>
+                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
 										
                                     </span>
                                 
@@ -4710,18 +4717,14 @@ Logstash ：数据收集处理
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/7%20Zabbix/4%20Zabbix%E8%BF%81%E7%A7%BB/">
+			<a href="/09%20DevOps/6%20Linux/1%20Centos%207%20%E9%85%8D%E7%BD%AE%20LAMP/">
 				<h2 class="index-title">
-					4 Zabbix迁移
+					1 Centos 7 配置 LAMP
 				</h2>
 				<div class="index-brief">
-					zabbix的前端所有的操作都存在zabbix数据库里。
-如果迁移要求历史数据不丢失，对zabbix库中相应的表进行导出导入即可。
-若是对历史数据不要求，那么只迁移配置信息即可。
-安装
-
-根据zabbix手册新安装zabbix服务端，如果需要保留历史数据，务必使用相同版本。
-安装好后访问/setup
+					LAMP是Linux、Apache HTTP，MySQL（或MariaDB）和PHP（或Perl、Python）的首字母缩写，下面讨论如何在RHEL/CentOS/Scientific Linux 7上搭建LAMP环境。
+一、Install Apache HTTP Server
+在终端以root权限
 					...
 				</div>
 			</a>
@@ -4742,7 +4745,7 @@ Logstash ：数据收集处理
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
+                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
 										
                                     </span>
                                 
@@ -4752,14 +4755,24 @@ Logstash ：数据收集处理
 		</div>	
 	
 		<div class="index-li">
-			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/1%20%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8/03%20Spring%20Cloud%20Feign/">
+			<a href="/09%20DevOps/6%20Linux/2%20Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 				<h2 class="index-title">
-					03 Spring Cloud Feign
+					2 Linux 常用命令
 				</h2>
 				<div class="index-brief">
-					Spring Cloud Feign是一套基于Netflix Feign实现的声明式服务调用客户端，目的是让Web Service调用更加简单，使用HTTP请求远程服务时能与调用本地方法一样的编码体验。
-工作机制
-提供了HTTP请求模板，通过编写简单的接口和插入注解，就可完成对Web服务接口的绑定。
+					1、文件相关
+1.1文件跳转
+
+pwd：打印当前目录名
+ls：列出目录内容
+-a：列出所有文件，包括“.”开头的隐藏文件
+-d：通常，指定目录名
+-F：名字后面加指示符
+-h：以人们可读的格式而非字节数，显示文件大小
+-l：以长格式显示结果
+-r：反序显示
+-S：按文件大小排序
+-t： 按修改时间排
 					...
 				</div>
 			</a>
@@ -4770,7 +4783,7 @@ Logstash ：数据收集处理
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/10-微服务/">10 微服务</a>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
 										
 											>
 										
@@ -4780,7 +4793,54 @@ Logstash ：数据收集处理
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/10-微服务/1-服务调用/">1 服务调用</a>
+                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/12%20%E6%B5%8B%E8%AF%95/2%20http_load/1%20http_load%20-%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/">
+				<h2 class="index-title">
+					1 http_load - 压力测试
+				</h2>
+				<div class="index-brief">
+					1.http_load简介
+http_load官网
+http_load是一款基于Linux平台的web服务器性能测试工具，以并行复用的方式运行，用于测试web服务器的吞吐量与负载，web页面的性能。
+优点：
+
+基于命令行，简单、易于上手。
+小巧轻便，解压缩后不到100k。
+开源，免费。
+
+缺点：
+
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/12-测试/">12 测试</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/12-测试/2-http-load/">2 http_load</a>
 										
                                     </span>
                                 
@@ -4870,23 +4930,20 @@ JMeter使用一个Java线程来模拟一个用户，线程组就是一组虚拟�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/12%20%E6%B5%8B%E8%AF%95/2%20http_load/1%20http_load%20-%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/">
+			<a href="/12%20%E6%B5%8B%E8%AF%95/5%20MockMvc/1%20MockMvc/">
 				<h2 class="index-title">
-					1 http_load - 压力测试
+					1 MockMvc
 				</h2>
 				<div class="index-brief">
-					1.http_load简介
-http_load官网
-http_load是一款基于Linux平台的web服务器性能测试工具，以并行复用的方式运行，用于测试web服务器的吞吐量与负载，web页面的性能。
-优点：
+					测试controller
+初始化
+SpringBoot 中很方便
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@AutoConfigureMockMvc
+public class HelloWorldControlerTests {
 
-基于命令行，简单、易于上手。
-小巧轻便，解压缩后不到100k。
-开源，免费。
-
-缺点：
-
-
+    @Auto
 					...
 				</div>
 			</a>
@@ -4907,57 +4964,7 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/2-http-load/">2 http_load</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/02%20%E9%87%8D%E6%9E%84%E7%9A%84%E5%8E%9F%E5%88%99/">
-				<h2 class="index-title">
-					02 重构的原则
-				</h2>
-				<div class="index-brief">
-					1 何为重构
-重构: 在不改变软件可观察行为的前提下改善其内部结构
-2 为何重构
-重构可以提高代码质量
-3 何时重构
-事不过三，三则重构。
-重构应该是在开发过程中实时的、渐进的演化过程：
-
-添加新功能时重构
-修补错误时重构
-复审代码时重构
-
-4 怎么对经理说
-为了质量 or 不要告诉
-5 重构的难题
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
+                                        <a href="/categories/12-测试/5-MockMvc/">5 MockMvc</a>
 										
                                     </span>
                                 
@@ -5020,20 +5027,19 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
 		</div>	
 	
 		<div class="index-li">
-			<a href="/12%20%E6%B5%8B%E8%AF%95/5%20MockMvc/1%20MockMvc/">
+			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/04%20%E6%9E%84%E7%AD%91%E6%B5%8B%E8%AF%95%E4%BD%93%E7%B3%BB/">
 				<h2 class="index-title">
-					1 MockMvc
+					04 构筑测试体系
 				</h2>
 				<div class="index-brief">
-					测试controller
-初始化
-SpringBoot 中很方便
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureMockMvc
-public class HelloWorldControlerTests {
+					编写优良的测试程序，可以极大地提高变成速度，即使不进行重构也一样如此。
+1 自测试代码的价值
 
-    @Auto
+程序员时间消耗：编写代码占据很少一部分，大部分时间用来调试。
+确保所有测试都完全自动化，让它们检查自己的测试结果。
+撰写测试代码的最有用时机是在开始编程之前。当需要添加新特性得时候，先写测试代码。
+
+2 
 					...
 				</div>
 			</a>
@@ -5044,7 +5050,7 @@ public class HelloWorldControlerTests {
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/">12 测试</a>
+                                        <a href="/categories/13-重构/">13 重构</a>
 										
 											>
 										
@@ -5054,7 +5060,7 @@ public class HelloWorldControlerTests {
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/5-MockMvc/">5 MockMvc</a>
+                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
 										
                                     </span>
                                 
@@ -5064,28 +5070,25 @@ public class HelloWorldControlerTests {
 		</div>	
 	
 		<div class="index-li">
-			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/05%20%E9%87%8D%E6%9E%84%E5%88%97%E8%A1%A8/">
+			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/01%20%E9%87%8D%E6%9E%84%EF%BC%8C%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%A1%88%E4%BE%8B/">
 				<h2 class="index-title">
-					05 重构列表
+					01 重构，第一个案例
 				</h2>
 				<div class="index-brief">
-					1 重构的记录格式
-采用一个标准格式，每个重构手法都有如下五个部分：
+					1 起点
+重构前的程序
 
-名称
-简短概要
-动机
-做法
-范例
+无法复用
+很难扩展
+很难修改
+很容易引入bug
 
-2 寻找引用点
+2 重构的第一步
+重构前，先检查自己是否有一套可靠的测试环境。这些测试环境必须有自我检验能力。
+3 分解并重组statement()
 
-不要盲目替换。检查每一个引用点，确定它指向想要替换得东西。
-使用编译器帮助寻找引用点。
-
-使用编译器查找，要注意的问题：
-
-被删除的部分在继承体系中声明不止一次，编译器也会迷
+代码块愈小，代码的功能就愈容易管理，代码的处理和移动也就愈轻松。
+任何不会被修改的变量都
 					...
 				</div>
 			</a>

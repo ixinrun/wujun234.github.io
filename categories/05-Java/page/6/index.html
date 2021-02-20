@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 	<script src="/js/main.js"></script>
 	
@@ -5059,22 +5059,15 @@ Rowsets
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/4%20%E6%B3%A8%E8%A7%A3%E8%AF%AD%E6%B3%95/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/6%20%E6%BA%90%E7%A0%81%E7%BA%A7%E6%B3%A8%E8%A7%A3%E5%A4%84%E7%90%86/">
 				<h2 class="index-title">
-					4 注解语法
+					6 源码级注解处理
 				</h2>
 				<div class="index-brief">
-					1 注解接口
-注解是由注解接口来定义的：
-modifiers @interface AnnotationName {
-	elementDeclaration1
-	elementDeclaration2
-}
-
-注解接口隐式扩展自 Annotation 接口，无法扩展注解接口。
-元素
-元素声明
-type
+					1 注解处理
+编译器会定位源文件中的注解。每个注解处理器会依次执行。如果某个注解处理器产生了新的源文件，则重复处理。没有新文件产生后，就编译所有源文件。
+注解处理器通常扩展 AbstractProcessor 类实现 Processor 接口。
+@SupportedAnnotationTypes(&
 					...
 				</div>
 			</a>
@@ -5115,15 +5108,22 @@ type
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/6%20%E6%BA%90%E7%A0%81%E7%BA%A7%E6%B3%A8%E8%A7%A3%E5%A4%84%E7%90%86/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/15%20%E8%84%9A%E6%9C%AC%E3%80%81%E7%BC%96%E8%AF%91%E3%80%81%E6%B3%A8%E8%A7%A3/4%20%E6%B3%A8%E8%A7%A3%E8%AF%AD%E6%B3%95/">
 				<h2 class="index-title">
-					6 源码级注解处理
+					4 注解语法
 				</h2>
 				<div class="index-brief">
-					1 注解处理
-编译器会定位源文件中的注解。每个注解处理器会依次执行。如果某个注解处理器产生了新的源文件，则重复处理。没有新文件产生后，就编译所有源文件。
-注解处理器通常扩展 AbstractProcessor 类实现 Processor 接口。
-@SupportedAnnotationTypes(&
+					1 注解接口
+注解是由注解接口来定义的：
+modifiers @interface AnnotationName {
+	elementDeclaration1
+	elementDeclaration2
+}
+
+注解接口隐式扩展自 Annotation 接口，无法扩展注解接口。
+元素
+元素声明
+type
 					...
 				</div>
 			</a>

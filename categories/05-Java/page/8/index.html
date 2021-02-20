@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 	<script src="/js/main.js"></script>
 	
@@ -4670,15 +4670,18 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/07%20%E6%96%B9%E6%B3%95%EF%BC%8849-56%EF%BC%89/">
+			<a href="/05%20Java/02%20Effective%20Java/03%20%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3%EF%BC%8815-25%EF%BC%89/">
 				<h2 class="index-title">
-					07 方法（49-56）
+					03 类和接口（15-25）
 				</h2>
 				<div class="index-brief">
-					第 49 条：检查参数的有效性
-不仅需要检查参数的有效性，还需要在函数的文档中给予明确的说明，如在参数非法的情况下，会抛出哪些异常，或导致函数返回哪些错误值等
-第 50 条：必要时进行保护性拷贝
-如果不能够容忍对象进入数据结构之后发生变，就必须对该对象进行保护性拷贝，并且让拷贝之后的对象而不是原始对
+					第 15 条：使类和成员的可访问性最小化
+公有静态 final 域暴露常量，要么包含基本类型值，要么包含指向不可变对象的引用
+第 16 条：在公有类中使用访问方法而非公有域
+
+公有类不应该暴露可变域，因为其客户端代码遍布各处，将来极难改变内部表示法
+公有类暴露不可变域危害较小，事实上也不应该
+包级私
 					...
 				</div>
 			</a>
@@ -4891,47 +4894,6 @@ JNI 有两组操作字符串的函数，一组把 Java 字符串转为 “改良
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/02%20Effective%20Java/02%20%E5%AF%B9%E4%BA%8E%E6%89%80%E6%9C%89%E5%AF%B9%E8%B1%A1%E9%83%BD%E9%80%9A%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8810-14%EF%BC%89/">
-				<h2 class="index-title">
-					02 对于所有对象都通用的方法（10-14）
-				</h2>
-				<div class="index-brief">
-					第 10 条：覆盖 equals 时请遵守通用约定
-
-自反性 - 对象必须等于其自身
-对称性 - 任何两个对象对于它们是否相等的问题都必须保持一致，Timestamp 违反了，不值得效仿
-传递性 - 如果对象 A 等于B，B 等于 C，那么 A 一定等于 C
-一致性 - 相等的对象永远相等，不相等的
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-01-02</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/">05 Java</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/05%20Java/02%20Effective%20Java/04%20%E6%B3%9B%E5%9E%8B%EF%BC%8826-33%EF%BC%89/">
 				<h2 class="index-title">
 					04 泛型（26-33）
@@ -4980,6 +4942,47 @@ JNI 有两组操作字符串的函数，一组把 Java 字符串转为 “改良
 当需要一组固定常量的时候，应该使用 enum 代替 int 常量。
 第 35 条：用实例域代替序数
 应该给 enum 添加 int 域，而不是使用 ordinal() 方法来导出与枚举关联的序数值。(几乎不应使用 ordinal() 方法，除非在编写像
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-01-02</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/">05 Java</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/05-Java/02-Effective-Java/">02 Effective Java</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/05%20Java/02%20Effective%20Java/02%20%E5%AF%B9%E4%BA%8E%E6%89%80%E6%9C%89%E5%AF%B9%E8%B1%A1%E9%83%BD%E9%80%9A%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8810-14%EF%BC%89/">
+				<h2 class="index-title">
+					02 对于所有对象都通用的方法（10-14）
+				</h2>
+				<div class="index-brief">
+					第 10 条：覆盖 equals 时请遵守通用约定
+
+自反性 - 对象必须等于其自身
+对称性 - 任何两个对象对于它们是否相等的问题都必须保持一致，Timestamp 违反了，不值得效仿
+传递性 - 如果对象 A 等于B，B 等于 C，那么 A 一定等于 C
+一致性 - 相等的对象永远相等，不相等的
 					...
 				</div>
 			</a>

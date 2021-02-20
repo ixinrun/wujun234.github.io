@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 	<script src="/js/main.js"></script>
 	
@@ -4670,32 +4670,56 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/8%20Transaction/">
+			<a href="/06%20Spring/05%20Data.md/9%20Spring%20Cache%20+%20Caffeine/">
 				<h2 class="index-title">
-					8 Transaction
+					9 Spring Cache + Caffeine
 				</h2>
 				<div class="index-brief">
-					Spring 事务的本质是数据库对事务的支持。
-@EnableTransactionManagement 开启对事务注解的解析
-1 声明式事务
-1.1 @Transactional 注解
+					Caffeine 是使用 Java8 对 Guava 缓存的重写版本，在 Spring Boot 2.0 中取代 Guava。
+1 引入依赖
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
 
-
-
-属性
-类型
-描述
-
-
-
-
-value
-String
-事务管理器
-
-
-propagation
-Propaga
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2020-01-10</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/06-Spring/">06 Spring</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/06-Spring/05-Data-md/">05 Data.md</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/06%20Spring/05%20Data.md/7%20Dynamic%20DataSource/">
+				<h2 class="index-title">
+					7 Dynamic DataSource
+				</h2>
+				<div class="index-brief">
+					一、AOP 实现
+AOP 实现多数据源，可读写分离
+1 配置文件
+dynamic-db.master.driver-class-name = com.mysql.jdbc.Driver
+dynamic-db.master.jdbc-url = jdbc:mysql://somehost:3306/s
 					...
 				</div>
 			</a>
@@ -4735,46 +4759,6 @@ Propaga
 Spring 的缓存抽象在很大程度上是围绕切面构建的。 在 Spring 中启用缓存时，会创建一个切面， 它触发一个或更多的 Spring 的缓存注解。
 1 启用对缓存的支持
 配置类
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2020-01-10</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/06-Spring/">06 Spring</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/06-Spring/05-Data-md/">05 Data.md</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/06%20Spring/05%20Data.md/9%20Spring%20Cache%20+%20Caffeine/">
-				<h2 class="index-title">
-					9 Spring Cache + Caffeine
-				</h2>
-				<div class="index-brief">
-					Caffeine 是使用 Java8 对 Guava 缓存的重写版本，在 Spring Boot 2.0 中取代 Guava。
-1 引入依赖
-&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-
 					...
 				</div>
 			</a>

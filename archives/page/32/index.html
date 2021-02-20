@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 	<script src="/js/main.js"></script>
 	
@@ -4670,19 +4670,78 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/04%20%E6%9E%84%E7%AD%91%E6%B5%8B%E8%AF%95%E4%BD%93%E7%B3%BB/">
+			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/05%20%E9%87%8D%E6%9E%84%E5%88%97%E8%A1%A8/">
 				<h2 class="index-title">
-					04 构筑测试体系
+					05 重构列表
 				</h2>
 				<div class="index-brief">
-					编写优良的测试程序，可以极大地提高变成速度，即使不进行重构也一样如此。
-1 自测试代码的价值
+					1 重构的记录格式
+采用一个标准格式，每个重构手法都有如下五个部分：
 
-程序员时间消耗：编写代码占据很少一部分，大部分时间用来调试。
-确保所有测试都完全自动化，让它们检查自己的测试结果。
-撰写测试代码的最有用时机是在开始编程之前。当需要添加新特性得时候，先写测试代码。
+名称
+简短概要
+动机
+做法
+范例
 
-2 
+2 寻找引用点
+
+不要盲目替换。检查每一个引用点，确定它指向想要替换得东西。
+使用编译器帮助寻找引用点。
+
+使用编译器查找，要注意的问题：
+
+被删除的部分在继承体系中声明不止一次，编译器也会迷
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/13-重构/">13 重构</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/02%20%E9%87%8D%E6%9E%84%E7%9A%84%E5%8E%9F%E5%88%99/">
+				<h2 class="index-title">
+					02 重构的原则
+				</h2>
+				<div class="index-brief">
+					1 何为重构
+重构: 在不改变软件可观察行为的前提下改善其内部结构
+2 为何重构
+重构可以提高代码质量
+3 何时重构
+事不过三，三则重构。
+重构应该是在开发过程中实时的、渐进的演化过程：
+
+添加新功能时重构
+修补错误时重构
+复审代码时重构
+
+4 怎么对经理说
+为了质量 or 不要告诉
+5 重构的难题
 					...
 				</div>
 			</a>
@@ -4755,6 +4814,47 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
+			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/08%20%E9%87%8D%E6%96%B0%E7%BB%84%E7%BB%87%E6%95%B0%E6%8D%AE/">
+				<h2 class="index-title">
+					08 重新组织数据
+				</h2>
+				<div class="index-brief">
+					
+
+1 Self Encapsulate Filed 自封装字段
+2 Replace Data Value with Object 以对象取代数据值
+3 Change Value to Reference 将值对象改为引用对象
+4 Change Reference to Value 将引用对象改为值
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/13-重构/">13 重构</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/09%20%E7%AE%80%E5%8C%96%E6%9D%A1%E4%BB%B6%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
 				<h2 class="index-title">
 					09 简化条件表达式
@@ -4796,66 +4896,19 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/01%20%E9%87%8D%E6%9E%84%EF%BC%8C%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%A1%88%E4%BE%8B/">
+			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/11%20%E5%A4%84%E7%90%86%E6%A6%82%E6%8B%AC%E5%85%B3%E7%B3%BB/">
 				<h2 class="index-title">
-					01 重构，第一个案例
-				</h2>
-				<div class="index-brief">
-					1 起点
-重构前的程序
-
-无法复用
-很难扩展
-很难修改
-很容易引入bug
-
-2 重构的第一步
-重构前，先检查自己是否有一套可靠的测试环境。这些测试环境必须有自我检验能力。
-3 分解并重组statement()
-
-代码块愈小，代码的功能就愈容易管理，代码的处理和移动也就愈轻松。
-任何不会被修改的变量都
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/">13 重构</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/13-重构/1-重构-改善既有代码的设计/">1 重构-改善既有代码的设计</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/08%20%E9%87%8D%E6%96%B0%E7%BB%84%E7%BB%87%E6%95%B0%E6%8D%AE/">
-				<h2 class="index-title">
-					08 重新组织数据
+					11 处理概括关系
 				</h2>
 				<div class="index-brief">
 					
 
-1 Self Encapsulate Filed 自封装字段
-2 Replace Data Value with Object 以对象取代数据值
-3 Change Value to Reference 将值对象改为引用对象
-4 Change Reference to Value 将引用对象改为值
+1 Pull Up Field （字段上移）
+2 Pull Up Method （函数上移）
+3 Pull Up Constructor Body （构造函数本体上移）
+4 Push Down Method （函数下移）
+5 Push Down Field （字段下移）
+6 Extract Su
 					...
 				</div>
 			</a>
@@ -4930,47 +4983,6 @@ var _hmt = _hmt || [];
 		</div>	
 	
 		<div class="index-li">
-			<a href="/14%20%E5%89%8D%E7%AB%AF/4%20FIS/1%20FIS%203%E6%8E%A5%E5%8F%A3%E9%80%9F%E6%9F%A5/">
-				<h2 class="index-title">
-					1 FIS 3接口速查
-				</h2>
-				<div class="index-brief">
-					FIS 构建工具 前端工具框架
-官方文档：http://fis.baidu.com/fis3/docs/beginning/intro.html
-默认配置文件为 fis-conf.js，有此文件的目录被看做是项目根目
-配置接口
-
-fis.set(key, value)：设置一些配置，如系统内置属性。
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/14-前端/">14 前端</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/14-前端/4-FIS/">4 FIS</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
 			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/10%20%E7%AE%80%E5%8C%96%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8/">
 				<h2 class="index-title">
 					10 简化函数调用
@@ -5013,17 +5025,19 @@ fis.set(key, value)：设置一些配置，如系统内置属性。
 		</div>	
 	
 		<div class="index-li">
-			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/1%20Apache%20Commons/1%20Apache%20Commons%20-%20%E6%80%BB%E8%A7%88/">
+			<a href="/16%20%E8%BE%85%E5%8A%A9%E5%B7%A5%E5%85%B7%E7%B1%BB/4%20%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/1%20Lombok%E6%B6%88%E9%99%A4Java%E5%86%97%E9%95%BF/">
 				<h2 class="index-title">
-					1 Apache Commons - 总览
+					1 Lombok消除Java冗长
 				</h2>
 				<div class="index-brief">
-					Apache Commons是非常实用的开源框架，Apache Commons官网 在此。
-Apache Commons 项目由3部分组成:
-
-The Commons Proper - 可复用JAVA组件库
-The Commons Sandbox - Java组件开发工作区
-The Commons 
+					官方网址、
+github地址
+简介
+Lombok采取注解声明方法，注解后经编译，会自动生成注解声明的方法，减少很多重复代码的书写。比如说getter/setter/toString等方法。
+安装
+添加依赖
+&lt;dependency&gt;
+    &lt;groupId&gt;org.proje
 					...
 				</div>
 			</a>
@@ -5044,7 +5058,7 @@ The Commons
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/16-辅助工具类/1-Apache-Commons/">1 Apache Commons</a>
+                                        <a href="/categories/16-辅助工具类/4-数据格式/">4 数据格式</a>
 										
                                     </span>
                                 
@@ -5054,19 +5068,16 @@ The Commons
 		</div>	
 	
 		<div class="index-li">
-			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/11%20%E5%A4%84%E7%90%86%E6%A6%82%E6%8B%AC%E5%85%B3%E7%B3%BB/">
+			<a href="/13%20%E9%87%8D%E6%9E%84/1%20%E9%87%8D%E6%9E%84-%E6%94%B9%E5%96%84%E6%97%A2%E6%9C%89%E4%BB%A3%E7%A0%81%E7%9A%84%E8%AE%BE%E8%AE%A1/12%20%E5%A4%A7%E5%9E%8B%E9%87%8D%E6%9E%84/">
 				<h2 class="index-title">
-					11 处理概括关系
+					12 大型重构
 				</h2>
 				<div class="index-brief">
-					
-
-1 Pull Up Field （字段上移）
-2 Pull Up Method （函数上移）
-3 Pull Up Constructor Body （构造函数本体上移）
-4 Push Down Method （函数下移）
-5 Push Down Field （字段下移）
-6 Extract Su
+					1 Tease Apart Inheritance（梳理并分解继承体系）
+某个继承体系同时承担两项责任。
+建立两个继承体系，并使用委托关系让其中一个可以调用另一个。
+2 Convert Procedural Design to Objects（将过程化设计转换为对象设计）
+你手上有一些传统过程化风格
 					...
 				</div>
 			</a>

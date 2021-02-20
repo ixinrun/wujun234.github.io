@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 	<script src="/js/main.js"></script>
 	
@@ -4880,29 +4880,19 @@ Colla
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/4%20%E6%B6%88%E6%81%AF%E6%A0%BC%E5%BC%8F%E5%8C%96/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/5%20%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/">
 				<h2 class="index-title">
-					4 消息格式化
+					5 文本文件和字符集
 				</h2>
 				<div class="index-brief">
-					MessageFormat 格式化类似 printf，支持 Locale，可格式化数字和日期
-1 格式化数字和日期
-1.1 模式化字符串与占位符
-占位符索引后面可跟一个类型和一个风格
-1）类型
+					1 文本文件
+获取平台的编码机制
+Charset platformEncoding = Charset.defalutCharset();
 
-number
-风格
-
-intger
-currency
-percent
-数字格式模式
-
-
-time
-风格
-
+2 行结束符
+Window 中，文本文件希望每行末尾使用“\r\n”，UNIX只需“\n”。
+可使用 printf 和 %n 来产生平台相关的行结束符
+out
 					...
 				</div>
 			</a>
@@ -4943,19 +4933,29 @@ time
 		</div>	
 	
 		<div class="index-li">
-			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/5%20%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%92%8C%E5%AD%97%E7%AC%A6%E9%9B%86/">
+			<a href="/05%20Java/00%20Java%20%E5%9F%BA%E7%A1%80/14%20%E5%9B%BD%E9%99%85%E5%8C%96/4%20%E6%B6%88%E6%81%AF%E6%A0%BC%E5%BC%8F%E5%8C%96/">
 				<h2 class="index-title">
-					5 文本文件和字符集
+					4 消息格式化
 				</h2>
 				<div class="index-brief">
-					1 文本文件
-获取平台的编码机制
-Charset platformEncoding = Charset.defalutCharset();
+					MessageFormat 格式化类似 printf，支持 Locale，可格式化数字和日期
+1 格式化数字和日期
+1.1 模式化字符串与占位符
+占位符索引后面可跟一个类型和一个风格
+1）类型
 
-2 行结束符
-Window 中，文本文件希望每行末尾使用“\r\n”，UNIX只需“\n”。
-可使用 printf 和 %n 来产生平台相关的行结束符
-out
+number
+风格
+
+intger
+currency
+percent
+数字格式模式
+
+
+time
+风格
+
 					...
 				</div>
 			</a>

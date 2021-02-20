@@ -43,9 +43,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 	<script src="/js/main.js"></script>
 	
@@ -4670,20 +4670,22 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/2%20SVN/1%20%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D/">
+			<a href="/09%20DevOps/2%20SVN/2%20%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
 				<h2 class="index-title">
-					1 基础介绍
+					2 基本操作
 				</h2>
 				<div class="index-brief">
-					工作副本
-check out-在本地创建特定版本的工作副本
+					1 TortoiseSVN 基本操作
 
-SVN版本号
-全局版本号
-每提交一次就会产生一个唯一的版本号
-TortoiseSVN 图标
-
-
+浏览版本库（ Repo-browser ）
+检出文件（Checkout）
+更新最新文件（Update）
+增加文件（Add）
+删除文件（Delete）
+提交文件（Commit）
+修改文件（modify&amp;commit）
+放弃修改（Revert）
+导入/导出
 					...
 				</div>
 			</a>
@@ -4842,22 +4844,20 @@ tag：用于标记某个可用的版本，可以标记已经上线发布的版�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/3%20IDEA/1%20IDEA%20%E5%BF%AB%E6%8D%B7%E9%94%AE/">
+			<a href="/09%20DevOps/4%20Maven/1%20Maven%20%E7%AC%94%E8%AE%B0/">
 				<h2 class="index-title">
-					1 IDEA 快捷键
+					1 Maven 笔记
 				</h2>
 				<div class="index-brief">
-					可以在Settrings–Keymaps中修改快捷键
-快捷操作
+					一、安装和配置
+安装
 
-psvm：快捷创建main函数
-fori：快捷创建for循环
-sout：快速打出System.out.println()
-St：快速打出String
-todo：快速打出//Todo: 日期
-
-更多的提示可以CTRL + j 可以查看
-
+准备JDK环境
+下载Maven ，解压
+配置环境变量
+3.1 添加 M2_HOME 和 MAVEN_HOME 到环境变量，指向 Maven 文件夹
+3.2 添加 Maven bin 文件夹到 PATH 变量
+3.3 需要时设置MAVEN_OPTS环境变量，-Xms128m -
 					...
 				</div>
 			</a>
@@ -4878,7 +4878,7 @@ todo：快速打出//Todo: 日期
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/3-IDEA/">3 IDEA</a>
+                                        <a href="/categories/09-DevOps/4-Maven/">4 Maven</a>
 										
                                     </span>
                                 
@@ -4919,6 +4919,52 @@ mvn dependency:tree命令可以查看当前项目的依赖关系。可以将当�
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/09-DevOps/4-Maven/">4 Maven</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/09%20DevOps/3%20IDEA/1%20IDEA%20%E5%BF%AB%E6%8D%B7%E9%94%AE/">
+				<h2 class="index-title">
+					1 IDEA 快捷键
+				</h2>
+				<div class="index-brief">
+					可以在Settrings–Keymaps中修改快捷键
+快捷操作
+
+psvm：快捷创建main函数
+fori：快捷创建for循环
+sout：快速打出System.out.println()
+St：快速打出String
+todo：快速打出//Todo: 日期
+
+更多的提示可以CTRL + j 可以查看
+
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/3-IDEA/">3 IDEA</a>
 										
                                     </span>
                                 
@@ -5010,24 +5056,16 @@ Gradle 同时拥有 Ant 和 Maven 的优点，具有 Ant 的强大和灵活，�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/6%20Linux/2%20Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+			<a href="/09%20DevOps/7%20Zabbix/2%20zabbix%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/">
 				<h2 class="index-title">
-					2 Linux 常用命令
+					2 zabbix中文乱码
 				</h2>
 				<div class="index-brief">
-					1、文件相关
-1.1文件跳转
+					Zabbix中文界面下，图形页面会有乱码，是因为字体格式不一致导致
 
-pwd：打印当前目录名
-ls：列出目录内容
--a：列出所有文件，包括“.”开头的隐藏文件
--d：通常，指定目录名
--F：名字后面加指示符
--h：以人们可读的格式而非字节数，显示文件大小
--l：以长格式显示结果
--r：反序显示
--S：按文件大小排序
--t： 按修改时间排
+
+从C:\Windows\Fonts找到 中文字体上传至zabbix的fonts目录/usr/share/zabbix/fonts
+修改include下的defines.inc.php中字体的配置，将里面关于字体设置从graphf
 					...
 				</div>
 			</a>
@@ -5048,51 +5086,7 @@ ls：列出目录内容
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/09%20DevOps/4%20Maven/1%20Maven%20%E7%AC%94%E8%AE%B0/">
-				<h2 class="index-title">
-					1 Maven 笔记
-				</h2>
-				<div class="index-brief">
-					一、安装和配置
-安装
-
-准备JDK环境
-下载Maven ，解压
-配置环境变量
-3.1 添加 M2_HOME 和 MAVEN_HOME 到环境变量，指向 Maven 文件夹
-3.2 添加 Maven bin 文件夹到 PATH 变量
-3.3 需要时设置MAVEN_OPTS环境变量，-Xms128m -
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/4-Maven/">4 Maven</a>
+                                        <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
 										
                                     </span>
                                 
