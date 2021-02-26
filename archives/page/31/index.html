@@ -75,7 +75,18 @@ var _hmt = _hmt || [];
 		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
-		
+	
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+	
+
+	
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+	
+
 		<li class="menu-item">
 			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
@@ -4790,17 +4801,23 @@ Logstash ：数据收集处理
 		</div>	
 	
 		<div class="index-li">
-			<a href="/12%20%E6%B5%8B%E8%AF%95/1%20EasyMock/1%20EasyMock%20-%20%E6%A8%A1%E6%8B%9F%E5%AF%B9%E8%B1%A1%E6%B5%8B%E8%AF%95/">
+			<a href="/12%20%E6%B5%8B%E8%AF%95/2%20http_load/1%20http_load%20-%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/">
 				<h2 class="index-title">
-					1 EasyMock - 模拟对象测试
+					1 http_load - 压力测试
 				</h2>
 				<div class="index-brief">
-					easymock官网
-一、Mock对象
+					1.http_load简介
+http_load官网
+http_load是一款基于Linux平台的web服务器性能测试工具，以并行复用的方式运行，用于测试web服务器的吞吐量与负载，web页面的性能。
+优点：
 
-测试是个好习惯，然而当你想测试自己的代码，而依赖的其他类或方法又还没实现。或者你在实践TDD（测试驱动开发），还没完成你的实现，而又想先测试。该怎么办呢？
-简单情况可以手动编写mock类，复杂情况可以借助EasyMock等Mock框架来模拟这些类和方法。
-m
+基于命令行，简单、易于上手。
+小巧轻便，解压缩后不到100k。
+开源，免费。
+
+缺点：
+
+
 					...
 				</div>
 			</a>
@@ -4821,7 +4838,7 @@ m
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/1-EasyMock/">1 EasyMock</a>
+                                        <a href="/categories/12-测试/2-http-load/">2 http_load</a>
 										
                                     </span>
                                 
@@ -4870,23 +4887,17 @@ JMeter使用一个Java线程来模拟一个用户，线程组就是一组虚拟�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/12%20%E6%B5%8B%E8%AF%95/2%20http_load/1%20http_load%20-%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/">
+			<a href="/12%20%E6%B5%8B%E8%AF%95/1%20EasyMock/1%20EasyMock%20-%20%E6%A8%A1%E6%8B%9F%E5%AF%B9%E8%B1%A1%E6%B5%8B%E8%AF%95/">
 				<h2 class="index-title">
-					1 http_load - 压力测试
+					1 EasyMock - 模拟对象测试
 				</h2>
 				<div class="index-brief">
-					1.http_load简介
-http_load官网
-http_load是一款基于Linux平台的web服务器性能测试工具，以并行复用的方式运行，用于测试web服务器的吞吐量与负载，web页面的性能。
-优点：
+					easymock官网
+一、Mock对象
 
-基于命令行，简单、易于上手。
-小巧轻便，解压缩后不到100k。
-开源，免费。
-
-缺点：
-
-
+测试是个好习惯，然而当你想测试自己的代码，而依赖的其他类或方法又还没实现。或者你在实践TDD（测试驱动开发），还没完成你的实现，而又想先测试。该怎么办呢？
+简单情况可以手动编写mock类，复杂情况可以借助EasyMock等Mock框架来模拟这些类和方法。
+m
 					...
 				</div>
 			</a>
@@ -4907,7 +4918,51 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/2-http-load/">2 http_load</a>
+                                        <a href="/categories/12-测试/1-EasyMock/">1 EasyMock</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/12%20%E6%B5%8B%E8%AF%95/5%20MockMvc/1%20MockMvc/">
+				<h2 class="index-title">
+					1 MockMvc
+				</h2>
+				<div class="index-brief">
+					测试controller
+初始化
+SpringBoot 中很方便
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@AutoConfigureMockMvc
+public class HelloWorldControlerTests {
+
+    @Auto
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/12-测试/">12 测试</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/12-测试/5-MockMvc/">5 MockMvc</a>
 										
                                     </span>
                                 
@@ -4961,50 +5016,6 @@ http_load是一款基于Linux平台的web服务器性能测试工具，以并行
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/12-测试/4-JUnit/">4 JUnit</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/12%20%E6%B5%8B%E8%AF%95/5%20MockMvc/1%20MockMvc/">
-				<h2 class="index-title">
-					1 MockMvc
-				</h2>
-				<div class="index-brief">
-					测试controller
-初始化
-SpringBoot 中很方便
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureMockMvc
-public class HelloWorldControlerTests {
-
-    @Auto
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/">12 测试</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/12-测试/5-MockMvc/">5 MockMvc</a>
 										
                                     </span>
                                 

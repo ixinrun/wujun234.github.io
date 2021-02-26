@@ -75,7 +75,18 @@ var _hmt = _hmt || [];
 		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
-		
+	
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+	
+
+	
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+	
+
 		<li class="menu-item">
 			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
@@ -4670,22 +4681,16 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/3%20IDEA/1%20IDEA%20%E5%BF%AB%E6%8D%B7%E9%94%AE/">
+			<a href="/09%20DevOps/4%20Maven/2%20Maven%20%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/">
 				<h2 class="index-title">
-					1 IDEA 快捷键
+					2 Maven 冲突解决
 				</h2>
 				<div class="index-brief">
-					可以在Settrings–Keymaps中修改快捷键
-快捷操作
-
-psvm：快捷创建main函数
-fori：快捷创建for循环
-sout：快速打出System.out.println()
-St：快速打出String
-todo：快速打出//Todo: 日期
-
-更多的提示可以CTRL + j 可以查看
-
+					原文地址：https://www.jianshu.com/p/bbd5b0abcad1
+主要目的是升级现有的jar包，排除传递依赖引起的冲突
+1 maven 命令
+1.1 mvn dependency tree
+mvn dependency:tree命令可以查看当前项目的依赖关系。可以将当前POM的
 					...
 				</div>
 			</a>
@@ -4706,89 +4711,7 @@ todo：快速打出//Todo: 日期
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/3-IDEA/">3 IDEA</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/09%20DevOps/5%20Gradle/1%20Gradle%20%E6%A6%82%E8%BF%B0/">
-				<h2 class="index-title">
-					1 Gradle 概述
-				</h2>
-				<div class="index-brief">
-					Gradle 用户指南：https://docs.gradle.org/current/userguide/userguide.html
-
-Gradle 同时拥有 Ant 和 Maven 的优点，具有 Ant 的强大和灵活，继承了 Maven 的生命周期管理。
-它使用基于 Groovy 的 DSL，
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/5-Gradle/">5 Gradle</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/09%20DevOps/5%20Gradle/2%20maven%E8%BF%81%E7%A7%BB%E5%88%B0gradle/">
-				<h2 class="index-title">
-					2 maven迁移到gradle
-				</h2>
-				<div class="index-brief">
-					1 生成Maven构建图
-
-在根项目中 .mvn/extensions.xml 文件声明Gradle扩展
-
-&lt;extensions&gt;
-    &lt;extension&gt;
-        &lt;groupId&gt;com.gradle&lt;/groupId&gt;
-     
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/5-Gradle/">5 Gradle</a>
+                                        <a href="/categories/09-DevOps/4-Maven/">4 Maven</a>
 										
                                     </span>
                                 
@@ -4842,6 +4765,88 @@ Gradle 同时拥有 Ant 和 Maven 的优点，具有 Ant 的强大和灵活，�
 		</div>	
 	
 		<div class="index-li">
+			<a href="/09%20DevOps/2%20SVN/5%20%E5%BC%80%E5%8F%91%E5%91%A8%E6%9C%9F/">
+				<h2 class="index-title">
+					5 开发周期
+				</h2>
+				<div class="index-brief">
+					
+truck：是用来做主方向开发的，新功能的开发应放在主线中，当模块开发完成后，需要修改，就用branch。
+branch：分支开发和主线开发是可以同时进行的，也就是并行开发，分支通常用于修复bug时使用
+tag：用于标记某个可用的版本，可以标记已经上线发布的版本，也可以标记正在测试的版本，通常是只
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/2-SVN/">2 SVN</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/09%20DevOps/5%20Gradle/2%20maven%E8%BF%81%E7%A7%BB%E5%88%B0gradle/">
+				<h2 class="index-title">
+					2 maven迁移到gradle
+				</h2>
+				<div class="index-brief">
+					1 生成Maven构建图
+
+在根项目中 .mvn/extensions.xml 文件声明Gradle扩展
+
+&lt;extensions&gt;
+    &lt;extension&gt;
+        &lt;groupId&gt;com.gradle&lt;/groupId&gt;
+     
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/5-Gradle/">5 Gradle</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
 			<a href="/09%20DevOps/6%20Linux/1%20Centos%207%20%E9%85%8D%E7%BD%AE%20LAMP/">
 				<h2 class="index-title">
 					1 Centos 7 配置 LAMP
@@ -4880,64 +4885,15 @@ Gradle 同时拥有 Ant 和 Maven 的优点，具有 Ant 的强大和灵活，�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/09%20DevOps/4%20Maven/2%20Maven%20%E5%86%B2%E7%AA%81%E8%A7%A3%E5%86%B3/">
+			<a href="/09%20DevOps/5%20Gradle/1%20Gradle%20%E6%A6%82%E8%BF%B0/">
 				<h2 class="index-title">
-					2 Maven 冲突解决
+					1 Gradle 概述
 				</h2>
 				<div class="index-brief">
-					原文地址：https://www.jianshu.com/p/bbd5b0abcad1
-主要目的是升级现有的jar包，排除传递依赖引起的冲突
-1 maven 命令
-1.1 mvn dependency tree
-mvn dependency:tree命令可以查看当前项目的依赖关系。可以将当前POM的
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/">09 DevOps</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/4-Maven/">4 Maven</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/09%20DevOps/6%20Linux/2%20Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-				<h2 class="index-title">
-					2 Linux 常用命令
-				</h2>
-				<div class="index-brief">
-					1、文件相关
-1.1文件跳转
+					Gradle 用户指南：https://docs.gradle.org/current/userguide/userguide.html
 
-pwd：打印当前目录名
-ls：列出目录内容
--a：列出所有文件，包括“.”开头的隐藏文件
--d：通常，指定目录名
--F：名字后面加指示符
--h：以人们可读的格式而非字节数，显示文件大小
--l：以长格式显示结果
--r：反序显示
--S：按文件大小排序
--t： 按修改时间排
+Gradle 同时拥有 Ant 和 Maven 的优点，具有 Ant 的强大和灵活，继承了 Maven 的生命周期管理。
+它使用基于 Groovy 的 DSL，
 					...
 				</div>
 			</a>
@@ -4958,7 +4914,7 @@ ls：列出目录内容
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
+                                        <a href="/categories/09-DevOps/5-Gradle/">5 Gradle</a>
 										
                                     </span>
                                 
@@ -5046,6 +5002,54 @@ chmod +x filename
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/09-DevOps/7-Zabbix/">7 Zabbix</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/09%20DevOps/6%20Linux/2%20Linux%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+				<h2 class="index-title">
+					2 Linux 常用命令
+				</h2>
+				<div class="index-brief">
+					1、文件相关
+1.1文件跳转
+
+pwd：打印当前目录名
+ls：列出目录内容
+-a：列出所有文件，包括“.”开头的隐藏文件
+-d：通常，指定目录名
+-F：名字后面加指示符
+-h：以人们可读的格式而非字节数，显示文件大小
+-l：以长格式显示结果
+-r：反序显示
+-S：按文件大小排序
+-t： 按修改时间排
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/">09 DevOps</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/09-DevOps/6-Linux/">6 Linux</a>
 										
                                     </span>
                                 

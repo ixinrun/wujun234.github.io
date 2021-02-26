@@ -75,7 +75,18 @@ var _hmt = _hmt || [];
 		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
-		
+	
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+	
+
+	
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+	
+
 		<li class="menu-item">
 			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
@@ -4670,13 +4681,18 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/0%20%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/01%20Spring%20Cloud%20Eureka/">
+			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/1%20%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8/01%20Spring%20Cloud%20Ribbon/">
 				<h2 class="index-title">
-					01 Spring Cloud Eureka
+					01 Spring Cloud Ribbon
 				</h2>
 				<div class="index-brief">
-					简介
-Spring Cloud针对服务注册与发现，进行了一层抽象，并提供了三种实现：Eureka、Consul、Zookeeper。目前支持得最好的就是Eureka，其次是Consul，最后是Zookeeper。Eureka 是封装了 Netflix 的 Eureka 模块，采用了 C-S 的设计架
+					Spring Cloud Ribbon封装了Netflix Ribbon，是基于HTTP和TCP的客户端负载均衡器。
+它主要包括六个组件：
+
+ServerList：负载均衡使用的服务器列表。
+ServerListFilter：服务器列表过滤器。
+IPing：探测服务实例是否存活的策略。
+IRule：
 					...
 				</div>
 			</a>
@@ -4697,7 +4713,7 @@ Spring Cloud针对服务注册与发现，进行了一层抽象，并提供了�
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/10-微服务/0-服务注册与发现/">0 服务注册与发现</a>
+                                        <a href="/categories/10-微服务/1-服务调用/">1 服务调用</a>
 										
                                     </span>
                                 
@@ -4750,18 +4766,13 @@ Consul自身提供了服务端，不需要创建服务注册中心，通过命�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/1%20%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8/01%20Spring%20Cloud%20Ribbon/">
+			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/0%20%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/01%20Spring%20Cloud%20Eureka/">
 				<h2 class="index-title">
-					01 Spring Cloud Ribbon
+					01 Spring Cloud Eureka
 				</h2>
 				<div class="index-brief">
-					Spring Cloud Ribbon封装了Netflix Ribbon，是基于HTTP和TCP的客户端负载均衡器。
-它主要包括六个组件：
-
-ServerList：负载均衡使用的服务器列表。
-ServerListFilter：服务器列表过滤器。
-IPing：探测服务实例是否存活的策略。
-IRule：
+					简介
+Spring Cloud针对服务注册与发现，进行了一层抽象，并提供了三种实现：Eureka、Consul、Zookeeper。目前支持得最好的就是Eureka，其次是Consul，最后是Zookeeper。Eureka 是封装了 Netflix 的 Eureka 模块，采用了 C-S 的设计架
 					...
 				</div>
 			</a>
@@ -4782,7 +4793,7 @@ IRule：
                                 
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/10-微服务/1-服务调用/">1 服务调用</a>
+                                        <a href="/categories/10-微服务/0-服务注册与发现/">0 服务注册与发现</a>
 										
                                     </span>
                                 
@@ -4822,49 +4833,6 @@ Hystrix官方已经停止开发了，Hystrix官方推荐使用新一代熔断器
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/10-微服务/1-服务调用/">1 服务调用</a>
-										
-                                    </span>
-                                
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/3%20API%E7%BD%91%E5%85%B3/01%20Spring%20Cloud%20Zuul/">
-				<h2 class="index-title">
-					01 Spring Cloud Zuul
-				</h2>
-				<div class="index-brief">
-					Spring Cloud Zuul是提供负载均衡、反向代理、权限认证的一个API gateway。
-简单路由
-
-添加依赖
-引入 spring-cloud-starter-zuul 包
-
-&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2019-12-25</span>
-                    
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/10-微服务/">10 微服务</a>
-										
-											>
-										
-                                    </span>
-                                
-                            
-                                
-                                    <span>
-                                        <i class="fa fa-folder" aria-hidden="true"></i>
-                                        <a href="/categories/10-微服务/3-API网关/">3 API网关</a>
 										
                                     </span>
                                 
@@ -4940,6 +4908,49 @@ spring cloud bus整合 java的事件处理机制和消息中间件消息的发�
                                     <span>
                                         <i class="fa fa-folder" aria-hidden="true"></i>
                                         <a href="/categories/10-微服务/4-消息组件/">4 消息组件</a>
+										
+                                    </span>
+                                
+                            
+                    
+                </div>
+		</div>	
+	
+		<div class="index-li">
+			<a href="/10%20%E5%BE%AE%E6%9C%8D%E5%8A%A1/3%20API%E7%BD%91%E5%85%B3/01%20Spring%20Cloud%20Zuul/">
+				<h2 class="index-title">
+					01 Spring Cloud Zuul
+				</h2>
+				<div class="index-brief">
+					Spring Cloud Zuul是提供负载均衡、反向代理、权限认证的一个API gateway。
+简单路由
+
+添加依赖
+引入 spring-cloud-starter-zuul 包
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2019-12-25</span>
+                    
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/10-微服务/">10 微服务</a>
+										
+											>
+										
+                                    </span>
+                                
+                            
+                                
+                                    <span>
+                                        <i class="fa fa-folder" aria-hidden="true"></i>
+                                        <a href="/categories/10-微服务/3-API网关/">3 API网关</a>
 										
                                     </span>
                                 

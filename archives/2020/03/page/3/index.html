@@ -75,7 +75,18 @@ var _hmt = _hmt || [];
 		<li class="menu-item">
 			<a href="/about" class="menu-item-link">ABOUT</a>
 		</li>
-		
+	
+		<li class="menu-item">
+			<a href="/tags" class="menu-item-link">标签</a>
+		</li>
+	
+
+	
+		<li class="menu-item">
+			<a href="/categories" class="menu-item-link">分类</a>
+		</li>
+	
+
 		<li class="menu-item">
 			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
@@ -4670,15 +4681,26 @@ var _hmt = _hmt || [];
 		<div id="index">
 	
 		<div class="index-li">
-			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/2%20HDFS/">
+			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/5%20HBase/">
 				<h2 class="index-title">
-					2 HDFS
+					5 HBase
 				</h2>
 				<div class="index-brief">
-					HDFS官网
-1 简介
-HDFS 是 GFS（Google File System）的克隆版本。
-HDFS（Hadoop Distributed File System）是Hadoop项目的核心子项目，是分布式计算中数据存储管理的基础，是基于流数据模式访问和处理超大文件的需求而开发的，可以运行于廉价
+					HBASE官网
+参考：
+HBase 深入浅出
+1 HBase 简介
+
+HBase（Hadoop Database）是Bigtable的开源实现
+稀疏的，面向列
+基于HDFS，高可靠，可伸缩
+利用Zookeeper进行协同服务
+适合大数据随机和实时读写
+
+2 HBASE架构
+
+1）Client
+可以通
 					...
 				</div>
 			</a>
@@ -4709,26 +4731,15 @@ HDFS（Hadoop Distributed File System）是Hadoop项目的核心子项目，是�
 		</div>	
 	
 		<div class="index-li">
-			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/5%20HBase/">
+			<a href="/11%20%E5%88%86%E5%B8%83%E5%BC%8F/03%20%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/2%20HDFS/">
 				<h2 class="index-title">
-					5 HBase
+					2 HDFS
 				</h2>
 				<div class="index-brief">
-					HBASE官网
-参考：
-HBase 深入浅出
-1 HBase 简介
-
-HBase（Hadoop Database）是Bigtable的开源实现
-稀疏的，面向列
-基于HDFS，高可靠，可伸缩
-利用Zookeeper进行协同服务
-适合大数据随机和实时读写
-
-2 HBASE架构
-
-1）Client
-可以通
+					HDFS官网
+1 简介
+HDFS 是 GFS（Google File System）的克隆版本。
+HDFS（Hadoop Distributed File System）是Hadoop项目的核心子项目，是分布式计算中数据存储管理的基础，是基于流数据模式访问和处理超大文件的需求而开发的，可以运行于廉价
 					...
 				</div>
 			</a>
@@ -4808,18 +4819,16 @@ HBase（Hadoop Database）是Bigtable的开源实现
 		</div>	
 	
 		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/7%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/4%20%E9%89%B4%E5%88%AB/">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/7%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/5%20%E5%AF%86%E9%92%A5%E5%88%86%E9%85%8D/">
 				<h2 class="index-title">
-					4 鉴别
+					5 密钥分配
 				</h2>
 				<div class="index-brief">
-					
-鉴别和加密是不相同的概念。鉴别是要验证通信的对方的确是自己所要通信的对象，而不是其他的冒充者，并且所传送的报文是完整的，没有被他人篡改过。
-鉴别与授权也是不同的概念。授权涉及的问题是：所进行的过程是否被允许（如是否可以对某文件进行读或写）。
-
-鉴别可细分为两种。
-
-报文鉴别：鉴别所收到的报文的确是
+					由于密码算法是公开的，网络的安全性就完全基于密钥的安全保护上。
+密钥管理包括：密钥的产生、分配、注入、验证和使用。
+1 对称密钥的分配
+1.1 密钥分配中心 KDC
+密钥分配中心 KDC (Key Distribution Center)的任务就是给需要进行秘密通信的用户临时分配一个会话密钥（仅使用
 					...
 				</div>
 			</a>
@@ -4850,16 +4859,18 @@ HBase（Hadoop Database）是Bigtable的开源实现
 		</div>	
 	
 		<div class="index-li">
-			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/7%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/5%20%E5%AF%86%E9%92%A5%E5%88%86%E9%85%8D/">
+			<a href="/04%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/7%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/4%20%E9%89%B4%E5%88%AB/">
 				<h2 class="index-title">
-					5 密钥分配
+					4 鉴别
 				</h2>
 				<div class="index-brief">
-					由于密码算法是公开的，网络的安全性就完全基于密钥的安全保护上。
-密钥管理包括：密钥的产生、分配、注入、验证和使用。
-1 对称密钥的分配
-1.1 密钥分配中心 KDC
-密钥分配中心 KDC (Key Distribution Center)的任务就是给需要进行秘密通信的用户临时分配一个会话密钥（仅使用
+					
+鉴别和加密是不相同的概念。鉴别是要验证通信的对方的确是自己所要通信的对象，而不是其他的冒充者，并且所传送的报文是完整的，没有被他人篡改过。
+鉴别与授权也是不同的概念。授权涉及的问题是：所进行的过程是否被允许（如是否可以对某文件进行读或写）。
+
+鉴别可细分为两种。
+
+报文鉴别：鉴别所收到的报文的确是
 					...
 				</div>
 			</a>
